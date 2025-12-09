@@ -1,0 +1,68 @@
+{
+  "34632587817-1635700083@g.us": {
+    "152119252390062@lid": {
+      "race": "dark_elf",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 40,
+      "maxHp": 40,
+      "mana": 70,
+      "maxMana": 70,
+      "stats": {
+        "str": 4,
+        "agi": 7,
+        "int": 7,
+        "vit": 4
+      },
+      "inventory": [],
+      "gold": 27,
+      "location": "town",
+      "state": "idle",
+      "currentEnemy": null
+    },
+    "210801289871581@lid": {
+      "race": "dark_elf",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 40,
+      "maxHp": 40,
+      "mana": 70,
+      "maxMana": 70,
+      "stats": {
+        "str": 4,
+        "agi": 7,
+        "int": 7,
+        "vit": 4
+      },
+      "inventory": [],
+      "gold": 6,
+      "location": "town",
+      "state": "idle",
+      "currentEnemy": null
+    }
+  },
+  "120363407168412278@g.us": {
+    "97852307026020@lid": {
+      "race": "dark_elf",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 40,
+      "maxHp": 40,
+      "mana": 70,
+      "maxMana": 70,
+      "stats": {
+        "str": 4,
+        "agi": 7,
+        "int": 7,
+        "vit": 4
+      },
+      "inventory": [],
+      "gold": 0,
+      "location": "town",
+      "state": "idle"
+    }
+  }
+}

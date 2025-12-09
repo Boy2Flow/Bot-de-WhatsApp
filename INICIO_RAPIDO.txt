@@ -1,0 +1,105 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║          🤖 BOT DE WHATSAPP - INICIO RÁPIDO WINDOWS 🪟       ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📋 PASOS RÁPIDOS PARA EJECUTAR EL BOT:
+
+1️⃣  INSTALAR NODE.JS
+    └─ Descarga: https://nodejs.org/
+    └─ Instala la versión LTS (recomendada)
+    └─ Reinicia la terminal después de instalar
+
+2️⃣  ABRIR POWERSHELL
+    └─ Presiona: Win + R
+    └─ Escribe: powershell
+    └─ Presiona: Enter
+
+3️⃣  IR A LA CARPETA DEL PROYECTO
+    └─ Copia y pega este comando:
+    
+    cd "C:\Users\Omen\Desktop\Proyectos\Proyecto Bots WS"
+
+4️⃣  INSTALAR DEPENDENCIAS (solo la primera vez)
+    └─ Ejecuta:
+    
+    npm install
+    
+    └─ Espera 2-5 minutos a que termine
+
+5️⃣  INICIAR EL BOT
+    └─ Ejecuta:
+    
+    npm start
+
+6️⃣  ESCANEAR CÓDIGO QR
+    └─ Abre WhatsApp en tu teléfono (+34 608837414)
+    └─ Ve a: Dispositivos vinculados
+    └─ Toca: Vincular dispositivo
+    └─ Escanea el código QR que aparece en la terminal
+
+7️⃣  ¡LISTO! 🎉
+    └─ Prueba enviando: $menu
+    └─ El bot responderá con todos los comandos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ COMANDOS PRINCIPALES:
+
+$menu              → Ver todos los comandos
+$sticker           → Convertir imagen a sticker (envía con la imagen)
+$todos             → Mencionar a todos (solo admins en grupos)
+$ppt piedra        → Jugar Piedra, Papel o Tijera
+$adivina 5         → Adivinar número del 1 al 10
+$trivia            → Jugar trivia
+$dado              → Lanzar dado
+$moneda            → Lanzar moneda
+$info              → Información del bot
+$help              → Ayuda detallada
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 PARA DETENER EL BOT:
+    └─ Presiona: Ctrl + C en la terminal
+
+🔄 PARA REINICIAR EL BOT:
+    └─ Ejecuta de nuevo: npm start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ ¿PROBLEMAS?
+
+• Si "npm" no se reconoce:
+  └─ Instala Node.js desde https://nodejs.org/
+  └─ Reinicia PowerShell después de instalar
+
+• Si el bot se desconecta:
+  └─ Elimina la carpeta "auth_info"
+  └─ Ejecuta "npm start" de nuevo
+  └─ Escanea el QR otra vez
+
+• Si hay errores al instalar:
+  └─ Ejecuta PowerShell como Administrador
+  └─ Intenta: npm install --force
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 GUÍA COMPLETA:
+    └─ Lee el archivo: GUIA_WINDOWS.md
+    └─ Contiene soluciones detalladas a todos los problemas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 CONSEJOS:
+
+✓ Deja la terminal abierta para que el bot funcione
+✓ No cierres la ventana de PowerShell
+✓ El bot funciona 24/7 mientras la terminal esté activa
+✓ Todos los comandos empiezan con $
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 ¡Disfruta tu bot de WhatsApp!
+
+Creado con ❤️ usando Baileys y Node.js

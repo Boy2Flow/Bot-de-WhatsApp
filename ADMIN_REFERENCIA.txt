@@ -1,0 +1,100 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║        🛡️ COMANDOS DE ADMINISTRADOR - REFERENCIA RÁPIDA      ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 VER MENÚ COMPLETO DE ADMIN:
+    $admin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👥 GESTIÓN DE MIEMBROS:
+
+$kick @usuario              → Expulsar miembro
+$add 34612345678           → Añadir miembro
+$promote @usuario          → Dar admin
+$demote @usuario           → Quitar admin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📢 MENCIONES:
+
+$todos [mensaje]           → Mencionar a todos (borra tu mensaje)
+$hidetag [mensaje]         → Mención oculta (sin lista)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ CONFIGURACIÓN:
+
+$grupo abrir               → Abrir grupo (todos pueden escribir)
+$grupo cerrar              → Cerrar grupo (solo admins)
+$nombre [texto]            → Cambiar nombre del grupo
+$descripcion [texto]       → Cambiar descripción
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗑️ MODERACIÓN:
+
+$delete                    → Borrar mensaje (responde al mensaje)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 INFORMACIÓN:
+
+$infogrupo                 → Info completa del grupo
+$admins                    → Lista de administradores
+$link                      → Obtener link del grupo
+$resetlink                 → Generar nuevo link
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ IMPORTANTE:
+
+✓ Debes ser ADMINISTRADOR para usar estos comandos
+✓ El BOT debe ser ADMINISTRADOR del grupo
+✓ Solo funcionan en GRUPOS (no en chats privados)
+✓ Algunos comandos borran automáticamente tu mensaje
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 EJEMPLOS RÁPIDOS:
+
+Expulsar usuario:
+    $kick @123456789
+
+Anuncio a todos:
+    $todos Reunión importante hoy a las 5pm
+
+Cerrar grupo temporalmente:
+    $grupo cerrar
+    (hacer anuncio)
+    $grupo abrir
+
+Cambiar nombre:
+    $nombre Mi Grupo Actualizado 2024
+
+Obtener link:
+    $link
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 MÁS INFORMACIÓN:
+
+• Guía completa: COMANDOS_ADMIN.md
+• Menú general: $menu
+• Ayuda: $help
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 TOTAL DE COMANDOS DE ADMINISTRADOR: 14
+
+✅ Gestión de miembros: 4 comandos
+✅ Menciones: 2 comandos
+✅ Configuración: 4 comandos
+✅ Moderación: 1 comando
+✅ Información: 4 comandos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,33 @@
+{
+  "name": "whatsapp-bot-multifuncional",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp con múltiples funciones: menciones, stickers, juegos y más",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node launcher.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "stickers",
+    "games"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "^6.7.8",
+    "axios": "^1.6.7",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "discord-rpc": "^4.0.1",
+    "node-cache": "^5.1.2",
+    "pino": "^8.19.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.2"
+  }
+}

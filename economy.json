@@ -1,0 +1,611 @@
+{
+  "97852307026020@lid": {
+    "balance": 14528,
+    "lastClaim": 1764344188993,
+    "lastRob": 1764343847568,
+    "lastWork": 1764344184238,
+    "inventory": [],
+    "bank": 0,
+    "lastCrime": 1764343923060,
+    "jobCooldowns": {
+      "hacker": 1764345097011,
+      "puta": 1764345200159,
+      "ceo": 1764539935941
+    }
+  },
+  "263925891383340@lid": {
+    "balance": 408006,
+    "inventory": [
+      "pico"
+    ],
+    "lastClaim": 1764538252839,
+    "lastWork": 1764344571409,
+    "lastRob": 1764538265367,
+    "lastCrime": 1764346805217,
+    "lastSlut": 1764375080953,
+    "lastMine": 1764538285020,
+    "bank": 38382,
+    "jobCooldowns": {
+      "hacker": 1764345104765,
+      "uber": 1764345137509,
+      "puta": 1764345212484,
+      "ceo": 1764537831441
+    }
+  },
+  "152119252390062@lid": {
+    "balance": 47651,
+    "inventory": [
+      "pico",
+      "anillo",
+      "lotería",
+      "escudo",
+      "anillo",
+      "escudo",
+      "escudo",
+      "escudo"
+    ],
+    "lastClaim": 1764539211888,
+    "lastWork": 1764344920451,
+    "lastRob": 1764540336848,
+    "lastCrime": 1764588948885,
+    "lastSlut": 1764588945831,
+    "lastMine": 1764588941155,
+    "bank": 628529,
+    "jobCooldowns": {
+      "lavaplatos": 1764540319507,
+      "hacker": 1764582984148,
+      "uber": 1764582976267,
+      "puta": 1764588655073,
+      "mendigo": 1764540322521,
+      "ceo": 1764582970685
+    }
+  },
+  "59837836693652@lid": {
+    "balance": 38621,
+    "bank": 69413,
+    "inventory": [],
+    "lastClaim": 1764344834945,
+    "lastWork": 1764344040378,
+    "lastRob": 1764539948430,
+    "lastCrime": 1764578053220,
+    "lastSlut": 1764538883001,
+    "lastMine": 0,
+    "jobCooldowns": {
+      "ceo": 1764578033872,
+      "puta": 1764578045539,
+      "hacker": 1764539025774,
+      "uber": 1764532587484
+    }
+  },
+  "267327824207965@lid": {
+    "balance": 0,
+    "bank": 48894,
+    "inventory": [
+      "pico"
+    ],
+    "lastClaim": 1764531911321,
+    "lastWork": 1764344176024,
+    "lastRob": 1764421293956,
+    "lastCrime": 1764531920178,
+    "lastSlut": 1764421613908,
+    "lastMine": 1764585897143,
+    "jobCooldowns": {
+      "ceo": 1764585841863,
+      "hacker": 1764585876925,
+      "uber": 1764585886289
+    }
+  },
+  "10716027334875@lid": {
+    "balance": 88,
+    "bank": 0,
+    "inventory": [],
+    "lastClaim": 1764374988372,
+    "lastWork": 0,
+    "lastRob": 0,
+    "lastCrime": 0,
+    "lastSlut": 0,
+    "lastMine": 0
+  },
+  "29511206867105@lid": {
+    "balance": 86554,
+    "bank": 823706,
+    "inventory": [
+      "pico",
+      "anillo"
+    ],
+    "lastClaim": 0,
+    "lastWork": 0,
+    "lastRob": 0,
+    "lastCrime": 0,
+    "lastSlut": 0,
+    "lastMine": 1764582792573,
+    "jobCooldowns": {
+      "hacker": 1764588833043,
+      "ceo": 1764582777884,
+      "puta": 1764588926708,
+      "lavaplatos": 1764535775720,
+      "uber": 1764537370425
+    }
+  },
+  "95529316954341@lid": {
+    "balance": 0,
+    "bank": 0,
+    "inventory": [],
+    "lastClaim": 1764406406158,
+    "lastWork": 0,
+    "lastRob": 1764406800651,
+    "lastCrime": 1764406357426,
+    "lastSlut": 1764406384469,
+    "lastMine": 0
+  },
+  "52299867103350@lid": {
+    "balance": 48234,
+    "bank": 22501,
+    "inventory": [
+      "pico"
+    ],
+    "lastClaim": 0,
+    "lastWork": 0,
+    "lastRob": 1764541460945,
+    "lastCrime": 0,
+    "lastSlut": 1764432857777,
+    "lastMine": 1764537820202,
+    "jobCooldowns": {
+      "hacker": 1764536052185,
+      "ceo": 1764536037875,
+      "uber": 1764536123990,
+      "puta": 1764536172332
+    }
+  },
+  "199681804075134@lid": {
+    "balance": 5000,
+    "bank": 0,
+    "inventory": [],
+    "lastClaim": 0,
+    "lastWork": 0,
+    "lastRob": 0,
+    "lastCrime": 0,
+    "lastSlut": 0,
+    "lastMine": 0
+  },
+  "223085382918367@lid": {
+    "balance": 275995,
+    "bank": 12090,
+    "inventory": [
+      "lotería"
+    ],
+    "lastClaim": 0,
+    "lastWork": 0,
+    "lastRob": 1764421322999,
+    "lastCrime": 1764421409876,
+    "lastSlut": 0,
+    "lastMine": 0,
+    "jobCooldowns": {
+      "lavaplatos": 1764421237314,
+      "ceo": 1764421303527
+    }
+  },
+  "139049750757567@lid": {
+    "balance": 0,
+    "bank": 139082,
+    "inventory": [
+      "pico",
+      "lotería",
+      "lotería"
+    ],
+    "lastClaim": 1764539216694,
+    "lastWork": 0,
+    "lastRob": 1764539072911,
+    "lastCrime": 1764537576889,
+    "lastSlut": 1764540457685,
+    "lastMine": 1764540372533,
+    "jobCooldowns": {
+      "hacker": 1764538172425,
+      "ceo": 1764537515801,
+      "puta": 1764526820302,
+      "lavaplatos": 1764531601693
+    }
+  },
+  "259863120715836@lid": {
+    "balance": 0,
+    "bank": 0,
+    "inventory": [],
+    "lastClaim": 0,
+    "lastWork": 0,
+    "lastRob": 0,
+    "lastCrime": 0,
+    "lastSlut": 0,
+    "lastMine": 0
+  },
+  "210801289871581@lid": {
+    "balance": 0,
+    "bank": 248658,
+    "inventory": [
+      "pico",
+      "escudo"
+    ],
+    "lastClaim": 1764589166105,
+    "lastWork": 0,
+    "lastRob": 1764539882300,
+    "lastCrime": 1764588951070,
+    "lastSlut": 1764590251712,
+    "lastMine": 1764588937172,
+    "jobCooldowns": {
+      "hacker": 1764588933514,
+      "puta": 1764588905399,
+      "ceo": 1764588912816,
+      "mendigo": 1764589206572,
+      "uber": 1764589191310,
+      "lavaplatos": 1764589199564
+    }
+  },
+  "131035257942090@lid": {
+    "balance": 0,
+    "bank": 875,
+    "inventory": [],
+    "lastClaim": 1764540398292,
+    "lastWork": 0,
+    "lastRob": 1764540355008,
+    "lastCrime": 1764540335259,
+    "lastSlut": 1764540416019,
+    "lastMine": 0,
+    "jobCooldowns": {
+      "hacker": 1764540323337,
+      "mendigo": 1764540448870
+    }
+  },
+  "34632587817-1635700083@g.us": {
+    "152119252390062@lid": {
+      "balance": 0,
+      "bank": 358240,
+      "inventory": [
+        "pico",
+        "anillo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo"
+      ],
+      "lastClaim": 1765118491190,
+      "lastWork": 0,
+      "lastRob": 1765305228876,
+      "lastCrime": 1765230281438,
+      "lastSlut": 1765305009793,
+      "lastMine": 1765303998655,
+      "jobCooldowns": {
+        "puta": 1765303982087,
+        "ceo": 1765303978165,
+        "uber": 1765304085176,
+        "lavaplatos": 1765119706817,
+        "hacker": 1765303993350,
+        "mendigo": 1764616080235
+      },
+      "roles": [
+        "bronce",
+        "plata"
+      ],
+      "lastRoleClaim": 1765305871752
+    },
+    "263925891383340@lid": {
+      "balance": 0,
+      "bank": 12764,
+      "inventory": [
+        "pico"
+      ],
+      "lastClaim": 1764615581668,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 1765230297955,
+      "jobCooldowns": {
+        "hacker": 1764615852418,
+        "ceo": 1764615894657
+      }
+    },
+    "199681804075134@lid": {
+      "balance": 12991,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 1764615591913,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0
+    },
+    "210801289871581@lid": {
+      "balance": 0,
+      "bank": 2372,
+      "inventory": [
+        "escudo"
+      ],
+      "lastClaim": 1765119324922,
+      "lastWork": 0,
+      "lastRob": 1765119353309,
+      "lastCrime": 1765119332107,
+      "lastSlut": 1765119176367,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "ceo": 1765119166640,
+        "puta": 1765119161400,
+        "hacker": 1765119173488,
+        "uber": 1765119211805,
+        "lavaplatos": 1765119453462,
+        "mendigo": 1765119467623
+      }
+    },
+    "29511206867105@lid": {
+      "balance": 0,
+      "bank": 935832,
+      "inventory": [
+        "pico",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo"
+      ],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765303960159,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 1765303563218,
+      "jobCooldowns": {
+        "ceo": 1765303577384,
+        "hacker": 1765303604985,
+        "puta": 1765306845612,
+        "uber": 1765303735635,
+        "lavaplatos": 1765119200567
+      },
+      "roles": [
+        "bronce",
+        "plata",
+        "oro"
+      ],
+      "lastRoleClaim": 1765306786147
+    },
+    "139049750757567@lid": {
+      "balance": 0,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765304583481,
+      "lastCrime": 0,
+      "lastSlut": 1765231402121,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "ceo": 1765230942866,
+        "hacker": 1765230984840,
+        "puta": 1765231052493
+      }
+    },
+    "86273192673466@lid": {
+      "balance": 0,
+      "bank": 46928,
+      "inventory": [
+        "pico"
+      ],
+      "lastClaim": 1765228407329,
+      "lastWork": 0,
+      "lastRob": 1765228578037,
+      "lastCrime": 1765228353136,
+      "lastSlut": 1765050945590,
+      "lastMine": 1765274443756,
+      "jobCooldowns": {
+        "ceo": 1765274437836,
+        "puta": 1765220067716,
+        "uber": 1765274452043,
+        "hacker": 1765228475280,
+        "lavaplatos": 1765274460179,
+        "mendigo": 1765274479729
+      }
+    },
+    "59837836693652@lid": {
+      "balance": 227,
+      "bank": 22677,
+      "inventory": [
+        "pico"
+      ],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765232118618,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 1765267731494,
+      "jobCooldowns": {
+        "puta": 1765267869098,
+        "ceo": 1765267692737,
+        "uber": 1765202239775,
+        "hacker": 1765267749994
+      }
+    },
+    "259863120715836@lid": {
+      "balance": 10000,
+      "bank": 27331,
+      "inventory": [
+        "lotería"
+      ],
+      "lastClaim": 1765118482855,
+      "lastWork": 0,
+      "lastRob": 1765257543477,
+      "lastCrime": 0,
+      "lastSlut": 1765202284451,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "ceo": 1765303009445,
+        "puta": 1765303003202,
+        "mendigo": 1765257567880,
+        "uber": 1765257571066,
+        "hacker": 1765257592516,
+        "lavaplatos": 1765257581512
+      }
+    },
+    "95529316954341@lid": {
+      "balance": 59,
+      "bank": 0,
+      "inventory": [
+        "lotería",
+        "lotería"
+      ],
+      "lastClaim": 1765200679705,
+      "lastWork": 0,
+      "lastRob": 1765203269142,
+      "lastCrime": 1765200122917,
+      "lastSlut": 1765199475733,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "mendigo": 1765203189216,
+        "uber": 1765199777765,
+        "ceo": 1765199487085,
+        "puta": 1765199585027,
+        "hacker": 1765199511096,
+        "lavaplatos": 1765200195475
+      }
+    },
+    "72692455727350@lid": {
+      "balance": 0,
+      "bank": 19472,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765268135121,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "puta": 1765302833086,
+        "hacker": 1765265545546,
+        "ceo": 1765275363361
+      }
+    },
+    "39939320373452@lid": {
+      "balance": 452,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765233535854,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0
+    },
+    "267327824207965@lid": {
+      "balance": 0,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 1765242319237,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0
+    },
+    "97852307026020@lid": {
+      "balance": null,
+      "bank": null,
+      "inventory": [],
+      "lastClaim": 1765305097288,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "roles": [],
+      "lastRoleClaim": 0
+    }
+  },
+  "34660430931@s.whatsapp.net": {
+    "34660430931@s.whatsapp.net": {
+      "balance": 0,
+      "bank": 9297,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "jobCooldowns": {
+        "ceo": 1764878467314
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+import { RACES, MONSTERS, LOCATIONS } from './rpgData.js';
+import { getPlayer, createPlayer, updatePlayer, gainXp } from './rpgCore.js';
+
+export const rpgCommand = {
+    name: 'rpg',
+    aliases: ['rol', 'aventura'],
+    description: 'Juego de Rol de Fantasía',
+    execute: async (sock, message, args) => {
+        const from = message.key.remoteJid;
+        const userId = message.key.participant || message.key.remoteJid;
+        const subcommand = args[0]?.toLowerCase();
+
+        let player = getPlayer(from, userId);
+
+        // AYUDA
+        if (!subcommand || subcommand === 'help' || subcommand === 'ayuda' || subcommand === 'menu') {
+            const helpText = `
+⚔️ *GUÍA COMPLETA RPG* ⚔️
+
+📋 *COMANDOS BÁSICOS*
+🔹 *.rpg start [raza]* - Crear personaje
+🔹 *.rpg perfil* - Ver estadísticas
+🔹 *.rpg explorar* - Buscar aventuras
+🔹 *.rpg atacar* - Atacar enemigo
+🔹 *.rpg curar* - Recuperar salud (10 oro)
+
+🧬 *RAZAS DISPONIBLES*
+• human - Humano (equilibrado)
+• orc - Orco (tanque fuerte)
+• wood_elf - Elfo del Bosque (ágil)
+• high_elf - Alto Elfo (mago)
+• dark_elf - Elfo Oscuro (asesino)
+• nord - Nórdico (guerrero)
+• dwarf - Enano (resistente)
+
+⚔️ *SISTEMA DE CLASES*
+🔹 *.clase* - Ver clases disponibles
+🔹 *.clase elegir [clase]* - Elegir clase
+
+🎓 *Clases:*
+• mage - Hechicero (OP, lanza hechizos)
+• archer - Arquero (críticos, inmune a robos)
+• warrior - Guerrero (daño x2, riesgo x1.5)
+• assassin - Asesino (roba oro extra)
+
+🔮 *HECHIZOS (Solo Hechicero)*
+🔹 *.hechizo [nombre]* - Lanzar hechizo
+• fireball - Bola de fuego (30 dmg)
+• icespike - Estaca de hielo (25 dmg)
+• lightning - Rayo (35 dmg)
+• heal - Curación (+40 HP)
+
+🌟 *SISTEMA EXTENDIDO*
+🔹 *.rpgx* - Ver comandos avanzados
+• Facciones militares
+• Profesiones especiales
+• Aflicciones y maldiciones
+
+🛡️ *ADMIN (Solo Owner)*
+🔹 *.rpgadmin* - Panel de administración
+• Gestión de jugadores
+• Modificar stats
+• Borrar datos
+
+💡 *CÓMO JUGAR*
+1️⃣ Crea personaje: .rpg start [raza]
+2️⃣ Elige clase: .clase elegir [clase]
+3️⃣ Explora y combate: .rpg explorar
+4️⃣ Sube de nivel y hazte poderoso
+
+🎮 ¡Comienza tu aventura ahora!
+            `.trim();
+            await sock.sendMessage(from, { text: helpText }, { quoted: message });
+            return;
+        }
+
+        // START
+        if (subcommand === 'start' || subcommand === 'iniciar') {
+            if (player) {
+                await sock.sendMessage(from, { text: '❌ Ya tienes personaje.' }, { quoted: message });
+                return;
+            }
+
+            const raceKey = args[1]?.toLowerCase();
+            if (!raceKey || !RACES[raceKey]) {
+                let text = '⚔️ Elige tu raza:\n\n';
+                Object.entries(RACES).forEach(([key, race]) => {
+                    text += `🔹 ${race.name} (.rpg start ${key})\n`;
+                });
+                await sock.sendMessage(from, { text }, { quoted: message });
+                return;
+            }
+
+            player = createPlayer(from, userId, raceKey);
+            const race = RACES[raceKey];
+            await sock.sendMessage(from, { text: `✅ Personaje creado!\n\n🧬 ${race.name}\n⚔️ STR: ${race.stats.str} | 🏹 AGI: ${race.stats.agi}\n🧠 INT: ${race.stats.int} | 🛡️ VIT: ${race.stats.vit}\n\n🎮 Usa .rpg explorar` }, { quoted: message });
+            return;
+        }
+
+        if (!player) {
+            await sock.sendMessage(from, { text: '❌ No tienes personaje. Usa .rpg start' }, { quoted: message });
+            return;
+        }
+
+        // PERFIL
+        if (subcommand === 'perfil' || subcommand === 'stats') {
+            const race = RACES[player.race];
+            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${player.stats.str} | 🏹 AGI: ${player.stats.agi}\n🧠 INT: ${player.stats.int} | 🛡️ VIT: ${player.stats.vit}`;
+            await sock.sendMessage(from, { text }, { quoted: message });
+            return;
+        }
+
+        // EXPLORAR
+        if (subcommand === 'explorar' || subcommand === 'explore') {
+            if (player.hp <= 0) {
+                await sock.sendMessage(from, { text: '💀 Estás muerto. Usa .rpg curar' }, { quoted: message });
+                return;
+            }
+
+            if (player.state === 'fighting') {
+                await sock.sendMessage(from, { text: '⚔️ Ya estás en combate!' }, { quoted: message });
+                return;
+            }
+
+            const roll = Math.random();
+            
+            if (roll < 0.6) {
+                const monster = MONSTERS[Math.floor(Math.random() * MONSTERS.length)];
+                updatePlayer(from, userId, {
+                    state: 'fighting',
+                    currentEnemy: { ...monster, currentHp: monster.hp }
+                });
+
+                await sock.sendMessage(from, { text: `⚔️ *¡ENEMIGO!*\n\n${monster.name} (Nvl ${monster.level})\n❤️ HP: ${monster.hp}\n⚔️ ATK: ${monster.atk}\n\n🎮 Usa .rpg atacar` }, { quoted: message });
+            } else if (roll < 0.8) {
+                const goldFound = Math.floor(Math.random() * 20) + 5;
+                player.gold += goldFound;
+                updatePlayer(from, userId, { gold: player.gold });
+                await sock.sendMessage(from, { text: `💰 Encontraste ${goldFound} oro!` }, { quoted: message });
+            } else {
+                await sock.sendMessage(from, { text: '🍃 No encontraste nada.' }, { quoted: message });
+            }
+            return;
+        }
+
+        // ATACAR
+        if (subcommand === 'atacar' || subcommand === 'fight' || subcommand === 'attack') {
+            if (player.state !== 'fighting' || !player.currentEnemy) {
+                await sock.sendMessage(from, { text: '❌ No hay enemigo. Usa .rpg explorar' }, { quoted: message });
+                return;
+            }
+
+            const enemy = player.currentEnemy;
+            const playerDmg = Math.floor(player.stats.str * 1.5) + Math.floor(Math.random() * 5);
+            enemy.currentHp -= playerDmg;
+
+            let battleLog = `🗡️ Atacas: ${playerDmg} daño\n`;
+
+            if (enemy.currentHp <= 0) {
+                const { player: updatedPlayer, leveledUp } = gainXp(from, userId, enemy.xp);
+                updatedPlayer.gold += enemy.level * 5;
+                updatedPlayer.state = 'idle';
+                updatedPlayer.currentEnemy = null;
+                updatePlayer(from, userId, updatedPlayer);
+
+                battleLog += `\n🎉 ¡VICTORIA!\n+${enemy.xp} XP | +${enemy.level * 5} oro`;
+                
+                if (leveledUp) {
+                    battleLog += `\n\n🆙 ¡NIVEL ${updatedPlayer.level}!`;
+                }
+
+                await sock.sendMessage(from, { text: battleLog }, { quoted: message });
+                return;
+            }
+
+            const enemyDmg = Math.max(1, enemy.atk);
+            player.hp -= enemyDmg;
+            
+            battleLog += `👹 Enemigo ataca: ${enemyDmg} daño\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
+
+            if (player.hp <= 0) {
+                player.hp = 0;
+                player.state = 'dead';
+                player.currentEnemy = null;
+                updatePlayer(from, userId, player);
+                battleLog += `\n\n💀 ¡MUERTO! Usa .rpg curar`;
+            } else {
+                updatePlayer(from, userId, { currentEnemy: enemy, hp: player.hp });
+            }
+
+            await sock.sendMessage(from, { text: battleLog }, { quoted: message });
+            return;
+        }
+
+        // CURAR
+        if (subcommand === 'curar' || subcommand === 'heal') {
+            if (player.hp >= player.maxHp && player.state !== 'dead') {
+                await sock.sendMessage(from, { text: '✅ Ya estás al máximo' }, { quoted: message });
+                return;
+            }
+
+            const cost = player.state === 'dead' ? 0 : 10;
+            
+            if (player.gold < cost) {
+                await sock.sendMessage(from, { text: `❌ Necesitas ${cost} oro` }, { quoted: message });
+                return;
+            }
+
+            player.gold -= cost;
+            player.hp = player.maxHp;
+            player.state = 'idle';
+            player.currentEnemy = null;
+            updatePlayer(from, userId, player);
+            
+            await sock.sendMessage(from, { text: `💖 Curado completamente!` }, { quoted: message });
+            return;
+        }
+
+        await sock.sendMessage(from, { text: '❌ Comando no reconocido. Usa .rpg' }, { quoted: message });
+    }
+};
