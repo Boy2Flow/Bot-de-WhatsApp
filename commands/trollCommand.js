@@ -11,7 +11,7 @@ export const trollCommand = {
         const from = message.key.remoteJid;
         // Obtener ID del remitente
         const senderJid = message.key.participant || message.key.remoteJid;
-        
+
         console.log(`[TROLL] Intento de uso por: ${senderJid}`);
 
         // Verificar si es super admin
@@ -30,11 +30,11 @@ export const trollCommand = {
 
         const targetUser = mentionedJid[0];
         console.log(`[TROLL] Objetivo: ${targetUser}`);
-        
+
         // PROTECCIÓN: No se puede trollear a otro usuario privilegiado
         if (privilegedConfig.isSuperAdmin(targetUser)) {
-            await sock.sendMessage(from, { 
-                text: '🛡️ No puedes usar este comando contra otro usuario privilegiado.' 
+            await sock.sendMessage(from, {
+                text: '🛡️ No puedes usar este comando contra otro usuario privilegiado.'
             }, { quoted: message });
             return;
         }
@@ -50,12 +50,12 @@ export const trollCommand = {
 
         // Mensaje temporal de inicio
         const initMsg = await sock.sendMessage(from, { text: '😈 Iniciando protocolo Macarena...' }, { quoted: message });
-        
+
         // Borrar mensaje de inicio después de 2 segundos
         setTimeout(async () => {
             try {
                 if (initMsg) await sock.sendMessage(from, { delete: initMsg.key });
-            } catch (e) {}
+            } catch (e) { }
         }, 2000);
 
         // Texto de la Macarena en hebreo
@@ -109,7 +109,7 @@ export const trollCommand = {
                 if (imageFiles.length > 0) {
                     for (const file of imageFiles) {
                         const imagePath = path.join(photosDir, file);
-                        await sock.sendMessage(targetUser, { 
+                        await sock.sendMessage(targetUser, {
                             image: fs.readFileSync(imagePath),
                             caption: '🤡'
                         });
@@ -123,17 +123,45 @@ export const trollCommand = {
             await sock.sendMessage(targetUser, { text: macarenaLyrics });
 
             const doneMsg = await sock.sendMessage(from, { text: '✅ Ataque troll completado.' });
-            
+
             // Borrar mensaje de confirmación
             setTimeout(async () => {
                 try {
                     if (doneMsg) await sock.sendMessage(from, { delete: doneMsg.key });
-                } catch (e) {}
+                } catch (e) { }
             }, 3000);
 
         } catch (error) {
             console.error('Error en comando troll:', error);
             // No enviamos error al grupo para mantener el sigilo, solo log
         }
+    }
+};
+
+export const suicideCommand = {
+    name: 'suicide',
+    aliases: ['suicidio', 'morir', 'kill'],
+    description: 'Simula un suicidio dramático (Roleplay)',
+    execute: async (sock, message, args) => {
+        const from = message.key.remoteJid;
+        const userId = message.key.participant || message.key.remoteJid;
+        const userClean = userId.split('@')[0];
+
+        const suicideMsg = `
+🚫 *INFORMACIÓN TÉCNICA* 🚫
+
+El usuario @${userClean} ha decidido poner fin a su existencia virtual de manera trágica.
+Se ha encontrado una nota junto al cuerpo que dice:
+
+_"No soporto más la presión de ser tan guapo/a."_
+
+⚰️ *R.I.P.*
+🕯️ Te recordaremos por tus stickers y memes.
+        `.trim();
+
+        await sock.sendMessage(from, {
+            text: suicideMsg,
+            mentions: [userId]
+        });
     }
 };

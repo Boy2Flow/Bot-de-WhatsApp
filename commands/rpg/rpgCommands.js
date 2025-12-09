@@ -123,7 +123,7 @@ export const rpgCommand = {
             }
 
             const roll = Math.random();
-            
+
             if (roll < 0.6) {
                 const monster = MONSTERS[Math.floor(Math.random() * MONSTERS.length)];
                 updatePlayer(from, userId, {
@@ -164,7 +164,7 @@ export const rpgCommand = {
                 updatePlayer(from, userId, updatedPlayer);
 
                 battleLog += `\n🎉 ¡VICTORIA!\n+${enemy.xp} XP | +${enemy.level * 5} oro`;
-                
+
                 if (leveledUp) {
                     battleLog += `\n\n🆙 ¡NIVEL ${updatedPlayer.level}!`;
                 }
@@ -175,7 +175,7 @@ export const rpgCommand = {
 
             const enemyDmg = Math.max(1, enemy.atk);
             player.hp -= enemyDmg;
-            
+
             battleLog += `👹 Enemigo ataca: ${enemyDmg} daño\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
 
             if (player.hp <= 0) {
@@ -200,7 +200,7 @@ export const rpgCommand = {
             }
 
             const cost = player.state === 'dead' ? 0 : 10;
-            
+
             if (player.gold < cost) {
                 await sock.sendMessage(from, { text: `❌ Necesitas ${cost} oro` }, { quoted: message });
                 return;
@@ -211,11 +211,60 @@ export const rpgCommand = {
             player.state = 'idle';
             player.currentEnemy = null;
             updatePlayer(from, userId, player);
-            
+
             await sock.sendMessage(from, { text: `💖 Curado completamente!` }, { quoted: message });
             return;
         }
 
         await sock.sendMessage(from, { text: '❌ Comando no reconocido. Usa .rpg' }, { quoted: message });
+    }
+};
+
+export const trainCommand = {
+    name: 'train',
+    aliases: ['entrenar', 'training'],
+    description: 'Entrena para ganar experiencia (Cada 5 min)',
+    execute: async (sock, message, args) => {
+        const from = message.key.remoteJid;
+        const userId = message.key.participant || message.key.remoteJid;
+
+        const player = getPlayer(from, userId);
+
+        if (!player) {
+            await sock.sendMessage(from, { text: '❌ No tienes personaje. Usa .rpg start para crear uno.' }, { quoted: message });
+            return;
+        }
+
+        const now = Date.now();
+        const cooldown = 5 * 60 * 1000; // 5 minutos
+        const lastTrain = player.lastTrain || 0;
+        const timeDiff = now - lastTrain;
+
+        if (timeDiff < cooldown) {
+            const remaining = cooldown - timeDiff;
+            const minutes = Math.floor(remaining / 60000);
+            const seconds = Math.floor((remaining % 60000) / 1000);
+            await sock.sendMessage(from, { text: `⏳ *Estás agotado.*\nDebes descansar ${minutes}m ${seconds}s antes de volver a entrenar.` }, { quoted: message });
+            return;
+        }
+
+        // Calcular XP ganada (Entre 100 y 300 + Nivel * 2)
+        const xpGain = Math.floor(Math.random() * 201) + 100 + (player.level * 2);
+
+        // Actualizar jugador
+        updatePlayer(from, userId, { lastTrain: now });
+
+        // Dar XP
+        const { player: updatedPlayer, leveledUp } = gainXp(from, userId, xpGain);
+
+        let msg = `🏋️ *ENTRENAMIENTO COMPLETADO*\n\n💪 Has ganado *${xpGain} XP*\n📊 Nivel: ${updatedPlayer.level}`;
+
+        if (leveledUp) {
+            msg += `\n\n🎉 *¡HAS SUBIDO DE NIVEL!*\nTodas tus estadísticas han aumentado.`;
+        } else {
+            msg += `\n📈 XP: ${updatedPlayer.xp}/${updatedPlayer.xpToNext}`;
+        }
+
+        await sock.sendMessage(from, { text: msg }, { quoted: message });
     }
 };

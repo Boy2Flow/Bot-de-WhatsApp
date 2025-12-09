@@ -3285,3 +3285,342 @@ CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
 [ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explorar
 CMD_EXEC:backup:97852307026020:B2F 💚
 [ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .backup 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg atacar
+CMD_EXEC:bot:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .bot 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg atacar
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg curar
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg 
+CMD_EXEC:work:72692455727350:Rafitas
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:dep:72692455727350:Rafitas
+CMD_EXEC:premio:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .premio 
+CMD_EXEC:top:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .top 
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg atacar rayo
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg atacar hielo
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg curar
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:train:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .train 
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:train:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .train 
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:claimrol:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .claimrol 
+CMD_EXEC:dep:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .dep all
+CMD_EXEC:roles:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .roles 
+CMD_EXEC:withdraw:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .withdraw 750000
+CMD_EXEC:work:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .work 
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:withdraw:72692455727350:Rafitas
+CMD_EXEC:roulette:72692455727350:Rafitas
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:rob:86273192673466:Aitor
+CMD_EXEC:rob:86273192673466:Aitor
+CMD_EXEC:dep:86273192673466:Aitor
+CMD_EXEC:work:86273192673466:Aitor
+CMD_EXEC:work:86273192673466:Aitor
+CMD_EXEC:work:86273192673466:Aitor
+CMD_EXEC:dep:86273192673466:Aitor
+CMD_EXEC:mine:86273192673466:Aitor
+CMD_EXEC:dep:86273192673466:Aitor
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:bot:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .bot 
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:dep:72692455727350:Rafitas
+CMD_EXEC:rob:139049750757567:guille~
+CMD_EXEC:bal:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .bal @139049750757567
+Checking balance for: 139049750757567@lid
+[31m✗ Error ejecutando comando:[0m TypeError: Cannot read properties of null (reading 'toLocaleString')
+    at formatMoney (file:///home/b2f/Bot_whatsap/commands/economy.js:76:22)
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/economy.js:260:113)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:bal:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .bal 
+Checking balance for: 97852307026020@lid
+CMD_EXEC:bal:139049750757567:guille~
+Checking balance for: 139049750757567@lid
+[31m✗ Error ejecutando comando:[0m TypeError: Cannot read properties of null (reading 'toLocaleString')
+    at formatMoney (file:///home/b2f/Bot_whatsap/commands/economy.js:76:22)
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/economy.js:260:113)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rob:86273192673466:Aitor
+CMD_EXEC:mantenimiento:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .mantenimiento on
+CMD_EXEC:mantenimiento:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .mantenimiento off
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:bal:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .bal @139049750757567
+Checking balance for: 139049750757567@lid
+CMD_EXEC:top:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .top 
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:top:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:rob:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .rob @72692455727350
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:rob:139049750757567:guille~
+CMD_EXEC:dep:72692455727350:Rafitas
+CMD_EXEC:bal:139049750757567:guille~
+Checking balance for: 139049750757567@lid
+CMD_EXEC:pay:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .pay 801 @72692455727350
+CMD_EXEC:rob:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .rob @139049750757567
+CMD_EXEC:work:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rob @72692455727350
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:rob:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:rob:139049750757567:guille~
+CMD_EXEC:dep:72692455727350:Rafitas
+CMD_EXEC:kick:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .kick @72692455727350
+[GROUP UPDATE] Acción: remove | Grupo: 34632587817-1635700083@g.us | Actor: undefined | Participantes: ["72692455727350@lid"]
+[PROTECCIÓN] Check user 72692455727350@lid: Es Super Admin? false
+CMD_EXEC:rob:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rob @59837836693652
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+[GROUP UPDATE] Acción: remove | Grupo: 34632587817-1635700083@g.us | Actor: undefined | Participantes: ["231091000623175@lid"]
+[PROTECCIÓN] Check user 231091000623175@lid: Es Super Admin? false
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:suicide:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .suicide 
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:slap:59837836693652:Kennet Gerardo🍋
+
+🎭 === INICIANDO INTERACCIÓN: slap ===
+📍 Chat ID: 34632587817-1635700083@g.us
+👥 Menciones: [ '59837836693652@lid', '152119252390062@lid' ]
+🔍 Buscando media en: /home/b2f/Bot_whatsap/interactions/slap
+📁 Archivos encontrados en slap: [ 'slap.gif', 'slap.mp4' ]
+✅ Usando MP4 (prioridad): slap.mp4
+🖼️ Imagen obtenida: /home/b2f/Bot_whatsap/interactions/slap/slap.mp4
+📤 Enviando mensaje...
+📎 Enviando media: slap.mp4 (2.05 MB)
+🎬 Enviando como video...
+✅ Mensaje enviado exitosamente
+🎭 === FIN INTERACCIÓN ===
+
+CMD_EXEC:suicide:152119252390062:Janire🌻
+[ADMIN] Comando ejecutado por Janire🌻 (152119252390062): .suicide 
+CMD_EXEC:suicide:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .suicide 
+CMD_EXEC:backup:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .backup 

@@ -24,11 +24,11 @@ import { mensajesCommand } from './mensajes.js';
 import { inactivosCommand } from './inactivos.js';
 import { premioCommand } from './premio.js';
 import { configCommand } from './groupConfig.js';
-import { rpgCommand } from './rpg/rpgCommands.js';
+import { rpgCommand, trainCommand } from './rpg/rpgCommands.js';
 import { rpgAdminCommand } from './rpg/rpgAdminCommands.js';
 import { rpgExtendedCommand } from './rpg/rpgExtendedCommands.js';
 import { rpgClassCommand, spellCommand } from './rpg/rpgClassCommands.js';
-import { trollCommand } from './trollCommand.js';
+import { trollCommand, suicideCommand } from './trollCommand.js';
 import { marriageCommands } from './casarCommand.js';
 import { solterasCommands } from './solterasCommand.js';
 import { privilegedCommands } from './privilegedCommands.js';
@@ -61,11 +61,13 @@ export const commands = [
     // ...broadcastCommands,
     ...gameCommands,
     rpgCommand,
+    trainCommand,
     rpgAdminCommand,
     rpgExtendedCommand,
     rpgClassCommand,
     spellCommand,
     trollCommand,
+    suicideCommand,
     ...marriageCommands,
     ...privilegedCommands,
     superAdminMenuCommand,

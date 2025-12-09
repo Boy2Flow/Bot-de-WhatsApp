@@ -59,7 +59,8 @@ function getUser(data, groupId, userId) {
     }
     // Asegurar que existan todas las propiedades si el usuario ya existía
     if (!group[userId].inventory) group[userId].inventory = [];
-    if (group[userId].bank === undefined) group[userId].bank = 0;
+    if (group[userId].bank === undefined || group[userId].bank === null) group[userId].bank = 0;
+    if (group[userId].balance === undefined || group[userId].balance === null) group[userId].balance = 0;
     if (!group[userId].roles) group[userId].roles = [];
     if (!group[userId].lastRoleClaim) group[userId].lastRoleClaim = 0;
     // Usuario con dinero infinito (God Mode - Super Admins)
@@ -72,8 +73,9 @@ function getUser(data, groupId, userId) {
 }
 
 const formatMoney = (amount) => {
+    if (amount === null || amount === undefined) return '0 S Coins 🪙';
     if (amount === Infinity || amount >= Number.MAX_SAFE_INTEGER) return '∞ S Coins 🪙';
-    return `${amount.toLocaleString()} S Coins 🪙`;
+    return `${Number(amount).toLocaleString()} S Coins 🪙`;
 };
 
 // --- ITEMS DE LA TIENDA ---
@@ -677,6 +679,15 @@ export const robCommand = {
         const economy = loadEconomy();
         const thief = getUser(economy, from, userId);
         const victim = getUser(economy, from, victimId);
+
+        // PROTECCIÓN SUPREMA: No se puede robar a Super Admins
+        if (privilegedConfig.isSuperAdmin(victimId)) {
+            await sock.sendMessage(message.key.remoteJid, {
+                text: `⚡ *¡CASTIGO DIVINO!*\n\n¿Intentaste robarle a un DIOS?\nTu intento ha sido en vano, no puedes robar a un ser supremo.`,
+                mentions: [userId]
+            }, { quoted: message });
+            return;
+        }
 
         // Verificar escudo
         if (victim.inventory.includes('escudo')) {
