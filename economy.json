@@ -300,7 +300,7 @@
       }
     },
     "199681804075134@lid": {
-      "balance": 10274,
+      "balance": 27794,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1764615591913,
@@ -335,19 +335,19 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1043180,
+      "bank": 1145093,
       "inventory": [
         "pico"
       ],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765312746524,
+      "lastRob": 1765316280204,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765310323740,
+      "lastMine": 1765316293036,
       "jobCooldowns": {
         "ceo": 1765303577384,
-        "hacker": 1765310286027,
+        "hacker": 1765316313341,
         "puta": 1765310292758,
         "uber": 1765303735635,
         "lavaplatos": 1765119200567
@@ -360,7 +360,7 @@
       "lastRoleClaim": 1765306786147
     },
     "139049750757567@lid": {
-      "balance": null,
+      "balance": 223247,
       "bank": 0,
       "inventory": [],
       "lastClaim": 0,
@@ -468,16 +468,16 @@
     },
     "72692455727350@lid": {
       "balance": 0,
-      "bank": 139619,
+      "bank": 192958,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765311900759,
+      "lastRob": 1765315811016,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,
       "jobCooldowns": {
-        "puta": 1765302833086,
+        "puta": 1765314952324,
         "hacker": 1765308569009,
         "ceo": 1765311097655
       },

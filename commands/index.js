@@ -33,6 +33,8 @@ import { marriageCommands } from './casarCommand.js';
 import { solterasCommands } from './solterasCommand.js';
 import { privilegedCommands } from './privilegedCommands.js';
 import { superAdminMenuCommand } from './superAdminMenu.js';
+import { addIgCommand, igCommand, delIgCommand } from './instagramCommand.js';
+import { reminderCommand, listRemindersCommand, delReminderCommand, initReminderSystem } from './reminderCommand.js';
 
 export const commands = [
     configCommand,
@@ -71,6 +73,12 @@ export const commands = [
     ...marriageCommands,
     ...privilegedCommands,
     superAdminMenuCommand,
+    addIgCommand,
+    igCommand,
+    delIgCommand,
+    reminderCommand,
+    listRemindersCommand,
+    delReminderCommand,
     infoCommand,
     helpCommand
 ];

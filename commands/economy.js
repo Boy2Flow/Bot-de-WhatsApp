@@ -714,8 +714,8 @@ export const robCommand = {
         if (victim.balance < 100) {
             // Intento de robo al banco si no tiene efectivo
             if (victim.bank >= 100) {
-                // Robar del banco (menor porcentaje: 1% - 5%)
-                const percentage = (Math.random() * (0.05 - 0.01) + 0.01);
+                // Robar del banco (muy poco porcentaje: 0.1% - 0.5%)
+                const percentage = (Math.random() * (0.005 - 0.001) + 0.001);
                 const stolenAmount = Math.floor(victim.bank * percentage);
 
                 victim.bank -= stolenAmount;

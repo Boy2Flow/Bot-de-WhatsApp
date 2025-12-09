@@ -7,18 +7,19 @@ const __dirname = path.dirname(__filename);
 
 function startBot() {
     console.log('🚀 Iniciando bot...');
-    
+
     // Iniciar el proceso del bot (index.js)
     const child = spawn('node', ['index.js'], {
         cwd: __dirname,
         stdio: ['inherit', 'pipe', 'pipe'], // Capturar stdout y stderr
-        shell: true
+        shell: true,
+        env: { ...process.env, BOT_LAUNCHER_ACTIVE: 'true' }
     });
 
     const filterLog = (data, stream) => {
         const output = data.toString();
         // Filtrar mensajes específicos de Baileys/Auth que no son errores reales
-        if (!output.includes('Closing session: SessionEntry') && 
+        if (!output.includes('Closing session: SessionEntry') &&
             !output.includes('Removing old closed session')) {
             stream.write(data);
         }

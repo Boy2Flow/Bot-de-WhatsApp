@@ -14,6 +14,7 @@ import fs from 'fs';
 import path from 'path';
 import { exec } from 'child_process';
 import { getBotStatus } from './commands/systemCommands.js';
+import { initReminderSystem } from './commands/reminderCommand.js';
 import {
     initDiscordPresence,
     updateBotStats,
@@ -185,6 +186,9 @@ async function connectToWhatsApp() {
             console.log('   .todos - Mencionar a todos');
             console.log('   .jugar - Mini juegos');
             console.log('\n');
+
+            // Iniciar sistema de recordatorios
+            initReminderSystem(sock);
 
             // Actualizar Discord Rich Presence
             // Se actualiza más abajo cuando cargamos los grupos
