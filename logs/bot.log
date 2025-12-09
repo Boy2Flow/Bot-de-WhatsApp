@@ -179,3 +179,121 @@ Closing open session in favor of incoming prekey bundle
 Closing open session in favor of incoming prekey bundle
 
 ⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
+✅ [SISTEMA] Respaldo automático completado exitosamente.
+CMD_EXEC:ping:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .ping 
+CMD_EXEC:mine:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:mine:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .mine 
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:top:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rob @152119252390062
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔌 DESCONEXIÓN DETECTADA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 Status Code: 503
+📝 Error Message: Stream Errored (unknown)
+🕐 Timestamp: 12/9/2025, 10:59:02 PM
+💡 Razón: 🚫 Servicio no disponible
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[36mℹ 🔄 Reconectando en 3 segundos...[0m
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:rol:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rol 
+CMD_EXEC:buyrol:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buyrol 
+CMD_EXEC:train:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .train 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg perfil
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo heal
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg 
+CMD_EXEC:rpgx:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpgx 
+[GROUP UPDATE] Acción: remove | Grupo: 120363047098138666@g.us | Actor: undefined | Participantes: ["224111443882186@lid"]
+[PROTECCIÓN] Check user 224111443882186@lid: Es Super Admin? false
+
+⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
