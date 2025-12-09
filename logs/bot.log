@@ -2727,3 +2727,40 @@ CMD_EXEC:mantenimiento:97852307026020:B2F 💚
 [ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .mantenimiento off
 CMD_EXEC:backup:97852307026020:B2F 💚
 [ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .backup 
+CMD_EXEC:delete:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .delete 
+CMD_EXEC:work:72692455727350:Rafitas
+CMD_EXEC:rob:72692455727350:Rafitas
+CMD_EXEC:dep:72692455727350:Rafitas
+CMD_EXEC:reload:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .reload 
+🔄 Reiniciando proceso por comando .reload...
+⚠️ Bot detenido con código 1. Reiniciando en 3 segundos...
+🚀 Iniciando bot...
+[33m⚠ ⚠️ No se pudo conectar a Discord Rich Presence[0m
+[33m⚠ 💡 Asegúrate de que Discord esté abierto[0m
+[33m⚠ 💡 El bot funcionará normalmente sin Discord Rich Presence[0m
+[31m✗ Unhandled Rejection:[0m TypeError: Cannot read properties of null (reading 'write')
+    at IPCTransport.send (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:155:17)
+    at /home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:161:12
+    at new Promise (<anonymous>)
+    at IPCTransport.close (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/transports/ipc.js:159:12)
+    at RPCClient.destroy (/home/b2f/Bot_whatsap/node_modules/discord-rpc/src/client.js:656:26)
+    at initDiscordPresence (file:///home/b2f/Bot_whatsap/utils/discordPresence.js:111:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+CMD_EXEC:backup:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .backup 

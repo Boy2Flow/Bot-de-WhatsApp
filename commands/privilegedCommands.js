@@ -194,7 +194,7 @@ export const backupCommand = {
 
             await sock.sendMessage(message.key.remoteJid, { text: '🔄 *Creando respaldo y subiendo cambios...*\n\nEsto puede tardar unos segundos.' }, { quoted: message });
 
-            exec('bash sync.sh', (error, stdout, stderr) => {
+            exec('bash sync.sh', async (error, stdout, stderr) => {
                 if (error) {
                     console.error('Error en backup:', error);
                     // Solo enviamos las últimas líneas del error para no saturar
@@ -205,9 +205,21 @@ export const backupCommand = {
                     return;
                 }
 
-                sock.sendMessage(message.key.remoteJid, {
+                const sentMsg = await sock.sendMessage(message.key.remoteJid, {
                     text: `✅ *¡RESPALDO COMPLETADO!*\n\nLos cambios se han guardado y subido a la nube correctamente.`
                 }, { quoted: message });
+
+                // Auto-borrar después de 5 segundos (comando y respuesta)
+                setTimeout(async () => {
+                    try {
+                        // Borrar respuesta del bot
+                        await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
+                        // Borrar mensaje del usuario
+                        await sock.sendMessage(message.key.remoteJid, { delete: message.key });
+                    } catch (error) {
+                        // Ignorar errores si el mensaje ya no existe
+                    }
+                }, 5000);
             });
 
         } catch (error) {
