@@ -41,6 +41,66 @@
       "location": "town",
       "state": "idle",
       "currentEnemy": null
+    },
+    "86273192673466@lid": {
+      "race": "orc",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 70,
+      "maxHp": 70,
+      "mana": 20,
+      "maxMana": 20,
+      "stats": {
+        "str": 8,
+        "agi": 3,
+        "int": 2,
+        "vit": 7
+      },
+      "inventory": [],
+      "gold": 10,
+      "location": "town",
+      "state": "fighting",
+      "currentEnemy": {
+        "name": "Vampiro Menor",
+        "level": 7,
+        "hp": 100,
+        "atk": 15,
+        "xp": 100,
+        "canInfect": "vampirism",
+        "image": "https://i.pinimg.com/originals/55/55/55/55555555555555555555555555555555.jpg",
+        "currentHp": 100
+      }
+    },
+    "29511206867105@lid": {
+      "race": "dark_elf",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 40,
+      "maxHp": 40,
+      "mana": 120,
+      "maxMana": 120,
+      "stats": {
+        "str": 4,
+        "agi": 7,
+        "int": 12,
+        "vit": 4
+      },
+      "inventory": [],
+      "gold": 0,
+      "location": "town",
+      "state": "fighting",
+      "class": "mage",
+      "currentEnemy": {
+        "name": "Troll de Cueva",
+        "level": 8,
+        "hp": 150,
+        "atk": 20,
+        "xp": 150,
+        "image": "https://i.pinimg.com/originals/60/60/60/60606060606060606060606060606060.jpg",
+        "currentHp": 150
+      }
     }
   },
   "120363407168412278@g.us": {

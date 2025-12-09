@@ -489,7 +489,7 @@ export const workCommand = {
                 try {
                     await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
                 } catch (e) { }
-            }, 5000);
+            }, 15000);
             return;
         }
 
@@ -776,10 +776,17 @@ export const robCommand = {
             }, { quoted: message });
         } else {
             const fine = Math.min(thief.balance, 500);
-            thief.balance -= fine;
+            const bankFine = Math.floor(fine / 2); // Quitar del banco la mitad de la multa
+
+            thief.balance = Math.max(0, thief.balance - fine);
+            thief.bank = Math.max(0, thief.bank - bankFine); // Asegurar no bajar de 0
+
             saveEconomy(economy);
+
             await sock.sendMessage(message.key.remoteJid, {
-                text: `🚔 *¡TE ATRAPARON!*\n\nPagaste *${formatMoney(fine)}* de fianza.`
+                text: `🚔 *¡TE ATRAPARON!*\n\nLa policía te atrapó intentando robar.\n` +
+                    `💸 Multa pagada: *${formatMoney(fine)}*\n` +
+                    `🏦 Embargo bancario: *${formatMoney(bankFine)}*`
             }, { quoted: message });
         }
     }
@@ -905,14 +912,14 @@ export const shopCommand = {
         }
         const sentMsg = await sock.sendMessage(message.key.remoteJid, { text: text }, { quoted: message });
 
-        // Auto-borrar después de 8 segundos (mensaje largo)
+        // Auto-borrar después de 15 segundos (mensaje largo)
         setTimeout(async () => {
             try {
                 await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
             } catch (error) {
                 // Ignorar errores
             }
-        }, 5000);
+        }, 15000);
     }
 };
 
@@ -1191,12 +1198,12 @@ export const leaderboardCommand = {
 
             const sentMsg = await sock.sendMessage(message.key.remoteJid, { text, mentions }, { quoted: message });
 
-            // Auto-borrar después de 5 segundos
+            // Auto-borrar después de 15 segundos
             setTimeout(async () => {
                 try {
                     await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
                 } catch (e) { }
-            }, 5000);
+            }, 15000);
 
         } catch (error) {
             console.error('ERROR CRÍTICO EN LEADERBOARD:', error);
@@ -1263,14 +1270,14 @@ export const economyMenuCommand = {
 
         const sentMsg = await sock.sendMessage(message.key.remoteJid, { text: text }, { quoted: message });
 
-        // Auto-borrar después de 8 segundos (mensaje largo)
+        // Auto-borrar después de 15 segundos (mensaje largo)
         setTimeout(async () => {
             try {
                 await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
             } catch (error) {
                 // Ignorar errores
             }
-        }, 5000);
+        }, 15000);
     }
 };
 
@@ -1720,14 +1727,14 @@ export const rolesCommand = {
 
         const sentMsg = await sock.sendMessage(message.key.remoteJid, { text: text }, { quoted: message });
 
-        // Auto-borrar después de 5 segundos
+        // Auto-borrar después de 15 segundos
         setTimeout(async () => {
             try {
                 await sock.sendMessage(message.key.remoteJid, { delete: sentMsg.key });
             } catch (error) {
                 // Ignorar errores si no se puede borrar
             }
-        }, 5000);
+        }, 15000);
     }
 };
 

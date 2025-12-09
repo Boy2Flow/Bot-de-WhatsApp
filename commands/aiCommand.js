@@ -27,7 +27,7 @@ const smartResponses = {
 
 function getSmartResponse(prompt) {
     const lower = prompt.toLowerCase();
-    
+
     if (lower.match(/hola|hey|buenas|qué tal|que tal/)) {
         return smartResponses.saludos[Math.floor(Math.random() * smartResponses.saludos.length)];
     }
@@ -43,7 +43,7 @@ function getSmartResponse(prompt) {
     if (lower.match(/\?|cómo|como|qué|que|por qué|porque|cuál|cual/)) {
         return smartResponses.preguntas[Math.floor(Math.random() * smartResponses.preguntas.length)];
     }
-    
+
     return smartResponses.default[Math.floor(Math.random() * smartResponses.default.length)];
 }
 
@@ -56,19 +56,19 @@ export async function getGeminiResponse(prompt, systemInstruction = "") {
 
 export const aiCommand = {
     name: 'ia',
-    aliases: ['gemini', 'bot', 'gpt'],
+    aliases: ['gemini', 'gpt'],
     description: 'Habla con la IA o genera imágenes (Usa: .ia hola / .ia dibuja un gato)',
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
-        
+
         if (!args.length) {
             await sock.sendMessage(from, {
-                text: '🤖 *Hola, soy B2F Bot con IA.*\n\n' +
-                      'Puedes pedirme cosas como:\n' +
-                      '📝 *.ia* Explícame la teoría de la relatividad\n' +
-                      '🎨 *.ia* Dibuja un paisaje futurista\n' +
-                      '💡 *.ia* Dame ideas para cenar\n' +
-                      '🗣️ O simplemente mencióname en el grupo y hablo contigo'
+                text: '🤖 *Hola, soy Siri Bot con IA.*\n\n' +
+                    'Puedes pedirme cosas como:\n' +
+                    '📝 *.ia* Explícame la teoría de la relatividad\n' +
+                    '🎨 *.ia* Dibuja un paisaje futurista\n' +
+                    '💡 *.ia* Dame ideas para cenar\n' +
+                    '🗣️ O simplemente mencióname en el grupo y hablo contigo'
             }, { quoted: message });
             return;
         }
@@ -83,10 +83,10 @@ export const aiCommand = {
         if (isImageRequest) {
             try {
                 await sock.sendMessage(from, { text: '🎨 *Generando imagen...*' }, { quoted: message });
-                
+
                 // Usar Pollinations.ai para generar imágenes (Gratis y sin API Key)
                 let imagePrompt = prompt;
-                
+
                 const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}`;
 
                 await sock.sendMessage(from, {
@@ -111,12 +111,12 @@ export const aiCommand = {
             const text = await getGeminiResponse(prompt);
 
             await sock.sendMessage(from, {
-                text: `🤖 *B2F Bot:*\n\n${text}`
+                text: `🤖 *Siri Bot:*\n\n${text}`
             }, { quoted: message });
 
         } catch (error) {
             console.error('Error con IA:', error);
-            
+
             await sock.sendMessage(from, {
                 text: '❌ Hubo un error al conectar con la IA. Intenta de nuevo en unos segundos.'
             }, { quoted: message });
