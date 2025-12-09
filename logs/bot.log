@@ -297,3 +297,41 @@ CMD_EXEC:rpgx:29511206867105:𒉭Jemuzu Djevel𒉭
 [PROTECCIÓN] Check user 224111443882186@lid: Es Super Admin? false
 
 ⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
+✅ [SISTEMA] Respaldo automático completado exitosamente.
+[GROUP UPDATE] Acción: remove | Grupo: 34632587817-1635700083@g.us | Actor: undefined | Participantes: ["33432478437578@lid"]
+[PROTECCIÓN] Check user 33432478437578@lid: Es Super Admin? false
+CMD_EXEC:ping:97852307026020:B2F 💚
+[ADMIN] Comando ejecutado por B2F 💚 (97852307026020): .ping 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg atacar
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo heal
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo fireball
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo fireball
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+
+⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...

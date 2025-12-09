@@ -75,11 +75,11 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 4,
-      "xp": 32,
+      "xp": 132,
       "xpToNext": 337,
-      "hp": 70,
+      "hp": 50,
       "maxHp": 70,
-      "mana": 150,
+      "mana": 70,
       "maxMana": 150,
       "stats": {
         "str": 7,
@@ -88,7 +88,7 @@
         "vit": 7
       },
       "inventory": [],
-      "gold": 40,
+      "gold": 75,
       "location": "town",
       "state": "idle",
       "class": "mage",
