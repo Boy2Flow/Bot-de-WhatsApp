@@ -2969,3 +2969,21 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 2:34:39] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
 [10/12/2025, 2:34:45] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
 [10/12/2025, 3:11:16] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 6:37:16] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 6:37:46] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @152119252390062
+[10/12/2025, 6:38:21] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 6:39:07] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw all
+[10/12/2025, 6:39:23] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 38787
+[10/12/2025, 6:39:30] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 6:39:40] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 50000
+[10/12/2025, 6:39:45] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
+[10/12/2025, 6:39:49] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 6:39:55] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 6:40:05] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 6:40:09] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 6:40:17] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 6:40:22] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 6:40:26] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 6:40:33] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 6:40:38] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 6:40:48] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
