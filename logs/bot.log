@@ -662,3 +662,31 @@ CMD_EXEC:top:259863120715836:Gustabo Garcia
 ✅ [SISTEMA] Respaldo automático completado exitosamente.
 
 ⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
+✅ [SISTEMA] Respaldo automático completado exitosamente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔌 DESCONEXIÓN DETECTADA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 Status Code: 503
+📝 Error Message: Stream Errored (unknown)
+🕐 Timestamp: 12/10/2025, 4:03:06 AM
+💡 Razón: 🚫 Servicio no disponible
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[36mℹ 🔄 Reconectando en 3 segundos...[0m
+[32m✓ ✅ Bot conectado exitosamente![0m
+
+🤖 Bot de WhatsApp activo y listo!
+
+📋 Comandos disponibles:
+   .menu - Ver todos los comandos
+   .admin - Ver comandos de administrador
+   .sticker - Convertir imagen a sticker
+   .todos - Mencionar a todos
+   .jugar - Mini juegos
+
+
+🤖 Bot number establecido: 34613797968:8@s.whatsapp.net
+👑 Inmunidad activada para el bot y usuarios privilegiados
+
+⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
