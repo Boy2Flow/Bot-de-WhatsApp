@@ -3270,3 +3270,53 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 19:02:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .delete 
 [10/12/2025, 19:16:49] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
 [10/12/2025, 19:18:33] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .tag chisme despierten
+[10/12/2025, 20:17:39] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 20:17:55] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping morosos
+[10/12/2025, 20:18:01] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .tag morosos
+[10/12/2025, 20:24:44] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 20:27:27] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .bot 
+[10/12/2025, 20:29:27] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .reload 
+[10/12/2025, 20:29:39] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .bot 
+[10/12/2025, 20:29:44] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .bot 
+[10/12/2025, 20:29:47] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .reload 
+[10/12/2025, 20:29:57] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .bot 
+[10/12/2025, 20:31:17] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .casados 
+[10/12/2025, 20:32:35] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .divorciar @95529316954341
+[10/12/2025, 20:32:40] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .divorciar @139049750757567
+[10/12/2025, 20:32:45] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .misparejas 
+[10/12/2025, 20:50:53] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 20:51:20] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 20:51:29] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 20:51:36] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 20:51:44] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 20:51:47] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 20:51:57] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay 200000 @152119252390062
+[10/12/2025, 20:52:06] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 20:52:17] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 20:52:19] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 20:52:37] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 20:52:39] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 20:52:47] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .slut 
+[10/12/2025, 20:52:49] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claimrol 
+[10/12/2025, 20:52:56] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claim rol
+[10/12/2025, 20:52:57] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 20:53:08] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 20:53:14] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 20:53:20] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 20:53:26] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 20:53:29] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 20:53:35] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 20:53:36] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work puta
+[10/12/2025, 20:53:39] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work hacker
+[10/12/2025, 20:53:41] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 20:53:43] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work puta
+[10/12/2025, 20:53:48] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 20:53:49] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work uber
+[10/12/2025, 20:53:53] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 20:53:56] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work lavaplatos
+[10/12/2025, 20:54:04] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 20:54:07] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 20:54:13] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @86273192673466
+[10/12/2025, 20:54:15] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 20:54:19] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 20:54:21] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all

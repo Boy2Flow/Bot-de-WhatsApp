@@ -26,7 +26,7 @@ function trackMessage(groupId, userId) {
                 }
             }
         }
-        
+
         // Asegurar que data es un objeto
         if (!data || typeof data !== 'object') {
             data = {};
@@ -36,19 +36,19 @@ function trackMessage(groupId, userId) {
         if (data[groupId] && typeof data[groupId] !== 'object') {
             data[groupId] = {};
         }
-        
+
         // Inicializar grupo si no existe
         if (!data[groupId]) {
             data[groupId] = {};
         }
-        
+
         // Inicializar contador del usuario en el grupo
         if (!data[groupId][userId]) {
             data[groupId][userId] = 0;
         }
-        
+
         data[groupId][userId]++;
-        
+
         fs.writeFileSync(MESSAGES_FILE, JSON.stringify(data, null, 2));
     } catch (error) {
         console.error('Error tracking message:', error);
@@ -64,7 +64,7 @@ async function getGroupMetadataOptimized(sock, groupId) {
     if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
         return cached.data;
     }
-    
+
     const metadata = await sock.groupMetadata(groupId);
     groupMetadataCache.set(groupId, { data: metadata, timestamp: Date.now() });
     return metadata;
@@ -88,11 +88,11 @@ export async function handleMessage(sock, message) {
         if (!messageType) return;
 
         const isGroup = from.endsWith('@g.us');
-        
+
         // Obtener texto de forma optimizada
         let text = '';
         const msg = message.message;
-        
+
         if (messageType === 'conversation') {
             text = msg.conversation;
         } else if (messageType === 'extendedTextMessage') {
@@ -107,11 +107,64 @@ export async function handleMessage(sock, message) {
         // Verificaciones de grupo (optimizado para grupos)
         if (isGroup) {
             const senderId = message.key.participant;
-            
+
             // Verificar muteo (early return)
             if (isUserMuted(from, senderId)) {
-                sock.sendMessage(from, { delete: message.key }).catch(() => {});
+                sock.sendMessage(from, { delete: message.key }).catch(() => { });
                 return;
+            }
+        }
+
+        // --- SISTEMA ANTI-SPAM (ENLACES DE GRUPO) ---
+        if (isGroup) {
+            // Regex para detectar enlaces de invitación de WhatsApp
+            const inviteLinkRegex = /(https?:\/\/)?chat\.whatsapp\.com\/[A-Za-z0-9]{20,}/gi;
+
+            if (inviteLinkRegex.test(text)) {
+                const senderId = message.key.participant;
+
+                // Verificar si es super admin (inmune)
+                const isSuperUser = privilegedConfig.isSuperAdmin(senderId);
+
+                if (!isSuperUser) {
+                    try {
+                        const groupMetadata = await getGroupMetadataOptimized(sock, from);
+
+                        // Verificar si el remitente es admin del grupo
+                        const sender = groupMetadata.participants.find(p => p.id === senderId);
+                        const isSenderAdmin = sender?.admin === 'admin' || sender?.admin === 'superadmin';
+
+                        // Verificar si el BOT es admin (necesario para borrar y kickear)
+                        // Construir ID del bot limpio (sin :device)
+                        const botIdRaw = sock.user?.id?.split(':')[0];
+                        const botMember = groupMetadata.participants.find(p => p.id.includes(botIdRaw));
+                        const isBotAdmin = botMember?.admin === 'admin' || botMember?.admin === 'superadmin';
+
+                        // Si el usuario NO es admin y el bot SÍ es admin -> ACTUAR
+                        if (!isSenderAdmin && isBotAdmin) {
+                            console.log(`[ANTI-SPAM] 🚫 Enlace detectado de ${senderId} en ${from}`);
+
+                            // 1. Borrar mensaje
+                            await sock.sendMessage(from, { delete: message.key });
+
+                            // 2. Expulsar usuario
+                            await sock.groupParticipantsUpdate(from, [senderId], 'remove');
+
+                            // 3. Enviar mensaje de aviso
+                            await sock.sendMessage(from, {
+                                text: `🚫 *ANTI-SPAM DETECTADO*\n\n@${senderId.split('@')[0]} ha sido expulsado por enviar enlaces de otros grupos.\n\n_Aquí no permitimos spam._`,
+                                mentions: [senderId]
+                            });
+
+                            return; // Detener procesamiento del mensaje
+                        } else if (!isBotAdmin) {
+                            console.log('[ANTI-SPAM] Detectado spam, pero el bot no es admin para actuar.');
+                        }
+
+                    } catch (e) {
+                        console.error('Error en sistema anti-spam:', e);
+                    }
+                }
             }
         }
 
@@ -127,7 +180,7 @@ export async function handleMessage(sock, message) {
         // Verificar permisos de sistema (early return)
         if (['stop', 'start', 'reload'].includes(commandName)) {
             const participant = message.key.participant || from;
-            
+
             // Usar privilegedConfig para verificar permisos de sistema
             if (!privilegedConfig.isSuperAdmin(participant)) {
                 sock.sendMessage(from, {
@@ -138,7 +191,7 @@ export async function handleMessage(sock, message) {
         }
 
         // Buscar comando (optimizado con find)
-        const command = commands.find(cmd => 
+        const command = commands.find(cmd =>
             cmd.name === commandName || (cmd.aliases && cmd.aliases.includes(commandName))
         );
 
@@ -181,7 +234,7 @@ export async function handleMessage(sock, message) {
         if (command.adminOnly && isGroup) {
             const participant = message.key.participant;
             const isSuperUser = privilegedConfig.isSuperAdmin(participant);
-            
+
             // Verificar roles internos del bot (Moderadores configurados con .config)
             const botRole = groupConfig.getUserRole(from, participant);
             const isBotMod = botRole === 'mod' || botRole === 'admin';
@@ -208,7 +261,7 @@ export async function handleMessage(sock, message) {
             if (mentionedJid && mentionedJid.length > 0) {
                 const targetingPrivileged = mentionedJid.some(jid => privilegedConfig.isSuperAdmin(jid));
                 const senderIsPrivileged = privilegedConfig.isSuperAdmin(message.key.participant);
-                
+
                 // Si intenta atacar a un usuario privilegiado y el atacante NO es privilegiado
                 if (targetingPrivileged && !senderIsPrivileged) {
                     await sock.sendMessage(from, {
@@ -228,7 +281,7 @@ export async function handleMessage(sock, message) {
             const timestamp = new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' });
             const userName = message.pushName || 'Desconocido';
             let groupName = 'Privado';
-            
+
             if (isGroup) {
                 try {
                     const metadata = await getGroupMetadataOptimized(sock, from);
@@ -241,23 +294,23 @@ export async function handleMessage(sock, message) {
             const logLine = `[${timestamp}] 👤 ${userName} (${userPhone}) | 🏠 ${groupName} | 💻 .${commandName} ${args.join(' ')}\n`;
 
             const logFile = path.join(process.cwd(), 'COMMAND_LOGS.txt');
-            
+
             fs.appendFile(logFile, logLine, (err) => {
                 if (err) console.error('Error escribiendo log:', err);
             });
-            
+
         } catch (error) {
             console.error('Error en sistema de logs:', error);
         }
 
         // --- LOGGING PARA DASHBOARD Y TERMINAL ---
-        
+
         // 1. Para "Detected Commands" (Dashboard): Enviar TODOS los comandos
         console.log(`CMD_EXEC:${commandName}:${userPhone}:${message.pushName || 'Desconocido'}`);
 
         // 2. Para "System Terminal" (Consola visible): Solo mostrar si es admin o dueño
         const isSuper = privilegedConfig.isSuperAdmin(userJid);
-        
+
         // Verificar si es admin del grupo
         let isAdmin = false;
         if (isGroup) {
@@ -265,19 +318,19 @@ export async function handleMessage(sock, message) {
                 const groupMetadata = await getGroupMetadataOptimized(sock, from);
                 const participant = groupMetadata.participants.find(p => p.id === userJid);
                 isAdmin = participant?.admin === 'admin' || participant?.admin === 'superadmin';
-            } catch (e) {}
+            } catch (e) { }
         }
 
         if (isSuper || isAdmin) {
             console.log(`[ADMIN] Comando ejecutado por ${message.pushName || 'Desconocido'} (${userPhone}): .${commandName} ${args.join(' ')}`);
         }
-        
+
         // Ejecutar comando
         command.execute(sock, message, args).catch(error => {
             logger.error('Error ejecutando comando:', error);
             sock.sendMessage(message.key.remoteJid, {
                 text: '❌ Ocurrió un error al ejecutar el comando.'
-            }, { quoted: message }).catch(() => {});
+            }, { quoted: message }).catch(() => { });
         });
 
     } catch (error) {

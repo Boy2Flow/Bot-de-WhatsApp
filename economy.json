@@ -257,30 +257,30 @@
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
       "balance": 0,
-      "bank": 313145,
+      "bank": 532792,
       "inventory": [
         "pico",
         "anillo"
       ],
       "lastClaim": 1765118491190,
       "lastWork": 0,
-      "lastRob": 1765309624756,
+      "lastRob": 1765396444252,
       "lastCrime": 1765230281438,
       "lastSlut": 1765309721633,
       "lastMine": 1765309700105,
       "jobCooldowns": {
-        "puta": 1765309709307,
-        "ceo": 1765303978165,
+        "puta": 1765396416094,
+        "ceo": 1765396409040,
         "uber": 1765309711466,
         "lavaplatos": 1765119706817,
-        "hacker": 1765303993350,
+        "hacker": 1765396419276,
         "mendigo": 1764616080235
       },
       "roles": [
         "bronce",
         "plata"
       ],
-      "lastRoleClaim": 1765311563184
+      "lastRoleClaim": 1765396369159
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -374,7 +374,7 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 374764,
+      "bank": 372138,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -440,23 +440,23 @@
     },
     "259863120715836@lid": {
       "balance": 0,
-      "bank": 501530,
+      "bank": 617306,
       "inventory": [
         "lotería"
       ],
-      "lastClaim": 1765118482855,
+      "lastClaim": 1765396376970,
       "lastWork": 0,
-      "lastRob": 1765257543477,
+      "lastRob": 1765396455262,
       "lastCrime": 0,
-      "lastSlut": 1765202284451,
+      "lastSlut": 1765396367351,
       "lastMine": 0,
       "jobCooldowns": {
-        "ceo": 1765303009445,
-        "puta": 1765303003202,
+        "ceo": 1765396421261,
+        "puta": 1765396423947,
         "mendigo": 1765257567880,
-        "uber": 1765257571066,
+        "uber": 1765396429534,
         "hacker": 1765257592516,
-        "lavaplatos": 1765257581512
+        "lavaplatos": 1765396436044
       },
       "roles": [
         "bronce",
@@ -487,7 +487,7 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 1653,
+      "balance": 1408,
       "bank": 264573,
       "inventory": [],
       "lastClaim": 0,

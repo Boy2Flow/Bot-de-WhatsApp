@@ -11,25 +11,25 @@ const everyoneCommand = {
     execute: async (sock, message, args) => {
         try {
             const from = message.key.remoteJid;
-            
+
             // Obtener metadata del grupo
             const groupMetadata = await sock.groupMetadata(from);
             const participants = groupMetadata.participants;
 
             // Crear lista de menciones
             const mentions = participants.map(p => p.id);
-            
+
             // Crear mensaje personalizado
             const customMessage = args.join(' ') || '📢 ¡Atención a todos!';
-            
+
             // Crear texto con todas las menciones
             let text = `${customMessage}\n\n`;
             text += '━━━━━━━━━━━━━━━━━━━\n';
-            
+
             participants.forEach((participant, index) => {
                 text += `${index + 1}. @${participant.id.split('@')[0]}\n`;
             });
-            
+
             text += '━━━━━━━━━━━━━━━━━━━\n';
             text += `\n👥 Total: ${participants.length} miembros`;
 
@@ -87,7 +87,7 @@ const tagCommand = {
             const mentions = participants.map(p => p.id);
 
             const text = args.join(' ');
-            
+
             if (!text) {
                 await sock.sendMessage(from, { text: '⚠️ Escribe un mensaje para enviar.' }, { quoted: message });
                 return;
@@ -104,15 +104,15 @@ const tagCommand = {
 
             // Borrar el mensaje del bot (según petición)
             // Esto hará que llegue la notificación pero el mensaje desaparezca poco después
-            setTimeout(async () => {
-                try {
-                    if (sentMessage && sentMessage.key) {
-                        await sock.sendMessage(from, { delete: sentMessage.key });
-                    }
-                } catch (e) {
-                    console.log('Error borrando mensaje bot:', e);
-                }
-            }, 2000); // 2 segundos
+            // setTimeout(async () => {
+            //     try {
+            //         if (sentMessage && sentMessage.key) {
+            //             await sock.sendMessage(from, { delete: sentMessage.key });
+            //         }
+            //     } catch (e) {
+            //         console.log('Error borrando mensaje bot:', e);
+            //     }
+            // }, 2000); // 2 segundos
 
         } catch (error) {
             console.error('Error en hidetag:', error);

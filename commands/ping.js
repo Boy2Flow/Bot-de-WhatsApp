@@ -1,5 +1,7 @@
 // Comando para verificar el ping del bot
 import os from 'os';
+import fs from 'fs';
+import path from 'path';
 
 export const pingCommand = {
     name: 'ping',
@@ -100,7 +102,25 @@ export const pingCommand = {
             return (totalTick > 0) ? Math.round(((totalTick - totalIdle) / totalTick) * 100) : 0;
         };
 
-        const uptime = formatUptime(process.uptime());
+
+        // Calcular uptime persistente
+        const uptimeFile = path.join(process.cwd(), 'uptime.json');
+        let initialRunTime;
+
+        try {
+            if (fs.existsSync(uptimeFile)) {
+                const data = JSON.parse(fs.readFileSync(uptimeFile, 'utf8'));
+                initialRunTime = data.startTime;
+            } else {
+                initialRunTime = Date.now();
+                fs.writeFileSync(uptimeFile, JSON.stringify({ startTime: initialRunTime }));
+            }
+        } catch (err) {
+            initialRunTime = Date.now();
+        }
+
+        const uptimeSeconds = (Date.now() - initialRunTime) / 1000;
+        const uptime = formatUptime(uptimeSeconds);
         const ramPercentage = Math.round((usedMem / totalMem) * 100);
         const cpuPercentage = await getCpuUsage();
 

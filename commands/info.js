@@ -1,12 +1,30 @@
 import os from 'os';
+import fs from 'fs';
+import path from 'path';
 
 export const infoCommand = {
     name: 'info',
     aliases: ['información', 'about', 'bot'],
     description: 'Muestra información del bot y del sistema',
     execute: async (sock, message) => {
-        // Calcular estadísticas
-        const uptime = formatUptime(process.uptime());
+        // Calcular estadísticas con Uptime Persistente
+        const uptimeFile = path.join(process.cwd(), 'uptime.json');
+        let initialRunTime;
+
+        try {
+            if (fs.existsSync(uptimeFile)) {
+                const data = JSON.parse(fs.readFileSync(uptimeFile, 'utf8'));
+                initialRunTime = data.startTime;
+            } else {
+                initialRunTime = Date.now();
+                fs.writeFileSync(uptimeFile, JSON.stringify({ startTime: initialRunTime }));
+            }
+        } catch (err) {
+            initialRunTime = Date.now();
+        }
+
+        const uptimeSeconds = (Date.now() - initialRunTime) / 1000;
+        const uptime = formatUptime(uptimeSeconds);
 
         // Memoria
         const totalMem = os.totalmem();
