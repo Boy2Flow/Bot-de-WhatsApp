@@ -302,7 +302,7 @@
       "lastRoleClaim": 0
     },
     "199681804075134@lid": {
-      "balance": 31381,
+      "balance": 26369,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1764615591913,
@@ -374,11 +374,11 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 370234,
+      "bank": 376417,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765369566576,
+      "lastRob": 1765375710548,
       "lastCrime": 1765367563599,
       "lastSlut": 1765231402121,
       "lastMine": 0,
@@ -485,8 +485,8 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 757,
-      "bank": 253859,
+      "balance": 0,
+      "bank": 253445,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
