@@ -3393,3 +3393,6 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 22:54:30] 👤 B2F 💚 (34608837414) | 🏠 Privado | 💻 .start 
 [10/12/2025, 22:54:38] 👤 B2F 💚 (34608837414) | 🏠 Privado | 💻 .reload 
 [10/12/2025, 22:54:48] 👤 B2F 💚 (34608837414) | 🏠 Privado | 💻 .stop 
+[10/12/2025, 23:45:41] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .start 
+[10/12/2025, 23:47:01] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .kick 
+[10/12/2025, 23:49:38] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .delete 
