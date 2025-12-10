@@ -2968,3 +2968,4 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 2:34:33] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 50000
 [10/12/2025, 2:34:39] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
 [10/12/2025, 2:34:45] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 3:11:16] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
