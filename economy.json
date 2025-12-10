@@ -283,7 +283,7 @@
       "lastRoleClaim": 1765311563184
     },
     "263925891383340@lid": {
-      "balance": 0,
+      "balance": 100000,
       "bank": 12764,
       "inventory": [
         "pico"
@@ -437,8 +437,8 @@
       "lastRoleClaim": 1765326796569
     },
     "259863120715836@lid": {
-      "balance": 1242,
-      "bank": 827574,
+      "balance": 0,
+      "bank": 502574,
       "inventory": [
         "lotería"
       ],
@@ -456,7 +456,10 @@
         "hacker": 1765257592516,
         "lavaplatos": 1765257581512
       },
-      "roles": [],
+      "roles": [
+        "bronce",
+        "plata"
+      ],
       "lastRoleClaim": 0
     },
     "95529316954341@lid": {
