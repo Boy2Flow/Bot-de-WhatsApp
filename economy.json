@@ -416,14 +416,14 @@
       "lastRoleClaim": 1765402574175
     },
     "59837836693652@lid": {
-      "balance": 1000,
-      "bank": 175603,
+      "balance": 600,
+      "bank": 175253,
       "inventory": [
         "pico"
       ],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765368425144,
+      "lastRob": 1765407318449,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 1765320865749,
