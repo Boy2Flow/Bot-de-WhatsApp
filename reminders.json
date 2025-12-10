@@ -6,6 +6,6 @@
     "dateStr": "11/12/2025",
     "timeStr": "11:00",
     "message": "prueba",
-    "remindedDayBefore": false
+    "remindedDayBefore": true
   }
 ]

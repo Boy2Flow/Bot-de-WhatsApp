@@ -1,4 +1,5 @@
 import { getAudioUrl } from 'google-tts-api';
+import axios from 'axios';
 
 export const vozCommand = {
     name: 'voz',
@@ -22,27 +23,30 @@ export const vozCommand = {
                 }, { quoted: message });
             }
 
-            // Nota: La API gratuita de Google TTS tiene voces limitadas.
-            // Intentamos usar 'es' que es estándar.
-            // Para obtener una voz "masculina" específica gratis y estable es difícil sin API keys.
-            // Sin embargo, configuraremos lo mejor posible.
+            // Generar URL
             const url = getAudioUrl(text, {
                 lang: 'es',
                 slow: false,
                 host: 'https://translate.google.com',
             });
 
+            // Descargar buffer para asegurar integridad
+            const response = await axios.get(url, { responseType: 'arraybuffer' });
+            const buffer = Buffer.from(response.data);
+
+            // Enviar como audio normal (ptt: false) para garantizar compatibilidad sin ffmpeg
+            // ptt: true requiere codec OPUS que no podemos garantizar sin conversión
             await sock.sendMessage(from, {
-                audio: { url: url },
-                mimetype: 'audio/mp4',
-                ptt: true // Enviar como nota de voz (oculta el reproductor de audio)
+                audio: buffer,
+                mimetype: 'audio/mpeg',
+                ptt: false
             }, { quoted: message });
 
         } catch (error) {
             console.error('Error enviando voz:', error);
             const from = message.key.remoteJid;
             sock.sendMessage(from, {
-                text: '❌ Hubo un error al generar el audio.'
+                text: '❌ Hubo un error al descargar/generar el audio.'
             }, { quoted: message });
         }
     }

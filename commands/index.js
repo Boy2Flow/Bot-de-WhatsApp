@@ -34,7 +34,10 @@ import { solterasCommands } from './solterasCommand.js';
 import { privilegedCommands } from './privilegedCommands.js';
 import { superAdminMenuCommand } from './superAdminMenu.js';
 import { addIgCommand, igCommand, delIgCommand } from './instagramCommand.js';
-import { reminderCommand, listRemindersCommand, delReminderCommand, initReminderSystem } from './reminderCommand.js';
+import { reminderCommand, listRemindersCommand, delReminderCommand, alarmaCommand, initReminderSystem } from './reminderCommand.js';
+import { vozCommand } from './voz.js';
+import { transcribirCommand } from './transcribir.js';
+import { setKeyCommand } from './apiConfigCommand.js';
 
 export const commands = [
     configCommand,
@@ -79,7 +82,10 @@ export const commands = [
     reminderCommand,
     listRemindersCommand,
     delReminderCommand,
+    alarmaCommand,
     vozCommand,
+    transcribirCommand,
+    setKeyCommand,
     infoCommand,
     helpCommand
 ];

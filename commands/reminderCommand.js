@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import { getAudioUrl } from 'google-tts-api';
+import axios from 'axios';
 
 const REMINDERS_FILE = path.join(process.cwd(), 'reminders.json');
 
@@ -70,11 +72,48 @@ export const initReminderSystem = (sock) => {
             // Chequeo de hora exacta
             if (now >= reminder.timestamp) {
                 try {
-                    const msgText = `⏰ *¡ES HORA!*\n\nRecordatorio programado:\n\n📌 *"${reminder.message}"*\n\n📅 Fecha: ${reminder.dateStr} ${reminder.timeStr}`;
+                    // SI ES UNA ALARMA (Tipo 'alarm')
+                    if (reminder.type === 'alarm') {
+                        const msgText = `🚨 *¡ALARMA! ¡ALARMA!* 🚨\n\n📌 *"${reminder.message}"*\n📅 ${reminder.timeStr}`;
+                        await sock.sendMessage(reminder.userId, { text: msgText });
 
-                    await sock.sendMessage(reminder.userId, { text: msgText });
-                    console.log(`✅ Recordatorio final enviado a ${reminder.userId}`);
-                    changed = true; // Se eliminará porque no lo pusimos en remainingReminders
+                        // Generar y enviar audio
+                        try {
+                            const alarmText = `Alarma, alarma. Es hora de ${reminder.message}. Alarma, alarma.`;
+                            const url = getAudioUrl(alarmText, {
+                                lang: 'es',
+                                slow: false,
+                                host: 'https://translate.google.com',
+                            });
+
+                            const response = await axios.get(url, { responseType: 'arraybuffer' });
+                            const buffer = Buffer.from(response.data);
+
+                            await sock.sendMessage(reminder.userId, {
+                                audio: buffer,
+                                mimetype: 'audio/mpeg',
+                                ptt: true // Nota de voz para que "suene" más directo
+                            });
+
+                            // Enviar una segunda vez para insistir
+                            await sock.sendMessage(reminder.userId, {
+                                audio: buffer,
+                                mimetype: 'audio/mpeg',
+                                ptt: true
+                            });
+
+                        } catch (err) {
+                            console.error('Error generando audio de alarma:', err);
+                        }
+
+                    } else {
+                        // RECORDATORIO NORMAL
+                        const msgText = `⏰ *¡ES HORA!*\n\nRecordatorio programado:\n\n📌 *"${reminder.message}"*\n\n📅 Fecha: ${reminder.dateStr} ${reminder.timeStr}`;
+                        await sock.sendMessage(reminder.userId, { text: msgText });
+                    }
+
+                    console.log(`✅ Recordatorio/Alarma enviado a ${reminder.userId}`);
+                    changed = true;
                 } catch (error) {
                     console.error('❌ Error enviando recordatorio final:', error);
                     // Si falla, podrías decidir guardarlo, pero por ahora asumimos enviado/descartado para evitar spam
@@ -218,5 +257,99 @@ export const delReminderCommand = {
         saveReminders(newReminders);
 
         await sock.sendMessage(from, { text: '🗑️ Recordatorio eliminado.' }, { quoted: message });
+    }
+};
+
+export const alarmaCommand = {
+    name: 'alarma',
+    aliases: ['alarm', 'despertador'],
+    description: 'Programa una alarma que enviará notas de voz. Uso: .alarma HH:MM [Mensaje]',
+    execute: async (sock, message, args) => {
+        const from = message.key.remoteJid;
+        const userId = message.key.participant || from;
+
+        // Validar argumentos
+        // Formatos aceptados:
+        // 1. .alarma HH:MM (asume hoy o mañana)
+        // 2. .alarma HH:MM Mensaje
+        // 3. .alarma DD/MM/AAAA HH:MM Mensaje
+
+        if (args.length < 1) {
+            await sock.sendMessage(from, {
+                text: '❌ Formato incorrecto.\n\nUso simple: *.alarma HORA:MINUTO [Mensaje]*\nEjemplo: .alarma 07:00 Despertar'
+            }, { quoted: message });
+            return;
+        }
+
+        let dateStr, timeStr, msg;
+        const now = new Date();
+
+        // Caso simple: Solo hora (o hora + mensaje)
+        // Intentamos detectar si el primer arg es una hora (contiene :)
+        if (args[0].includes(':') && !args[0].includes('/')) {
+            timeStr = args[0];
+            msg = args.slice(1).join(' ') || 'Alarma';
+
+            // Determinar fecha (hoy o mañana)
+            const [h, m] = timeStr.split(':').map(Number);
+            const targetTime = new Date();
+            targetTime.setHours(h, m, 0, 0);
+
+            if (targetTime < now) {
+                // Si la hora ya pasó hoy, es para mañana
+                targetTime.setDate(targetTime.getDate() + 1);
+            }
+
+            dateStr = `${targetTime.getDate()}/${targetTime.getMonth() + 1}/${targetTime.getFullYear()}`;
+        }
+        // Caso completo: Fecha y hora
+        else if (args[0].includes('/') && args[1].includes(':')) {
+            dateStr = args[0];
+            timeStr = args[1];
+            msg = args.slice(2).join(' ') || 'Alarma';
+        } else {
+            await sock.sendMessage(from, {
+                text: '❌ Formato de hora inválido. Usa HH:MM (ej: 14:30)'
+            }, { quoted: message });
+            return;
+        }
+
+        const targetDate = parseDate(dateStr, timeStr);
+
+        if (!targetDate) {
+            await sock.sendMessage(from, { text: '❌ Fecha u hora inválida.' }, { quoted: message });
+            return;
+        }
+
+        if (targetDate <= now) {
+            await sock.sendMessage(from, { text: '❌ La fecha/hora debe ser futura.' }, { quoted: message });
+            return;
+        }
+
+        const reminders = loadReminders();
+
+        reminders.push({
+            id: Date.now().toString(36) + Math.random().toString(36).substr(2),
+            userId: userId,
+            timestamp: targetDate.getTime(),
+            dateStr,
+            timeStr,
+            message: msg,
+            remindedDayBefore: true, // Las alarmas no necesitan aviso de 24h
+            type: 'alarm' // Marcamos como alarma
+        });
+
+        saveReminders(reminders);
+
+        // Calcular tiempo restante
+        const diffValid = targetDate - now;
+        const hours = Math.floor(diffValid / (1000 * 60 * 60));
+        const minutes = Math.floor((diffValid % (1000 * 60 * 60)) / (1000 * 60));
+
+        await sock.sendMessage(from, {
+            text: `🚨 *ALARMA CONFIGURADA*\n\n📅 Fecha: ${dateStr}\n⏰ Hora: ${timeStr}\n📝 Mensaje: ${msg}\n\n🔔 Sonará en: ${hours}h ${minutes}m\n(Te enviaré notas de voz cuando sea la hora)`
+        }, { quoted: message });
+
+        initReminderSystem(sock);
     }
 };

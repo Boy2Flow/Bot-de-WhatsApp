@@ -3070,3 +3070,62 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 10:23:42] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
 [10/12/2025, 10:23:51] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
 [10/12/2025, 11:09:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bot 
+[10/12/2025, 11:11:23] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .slot 
+[10/12/2025, 11:12:16] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @112902442897512
+[10/12/2025, 11:12:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 11:12:52] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz hola
+[10/12/2025, 11:13:04] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz hola maricon
+[10/12/2025, 11:13:18] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz hola hola hola
+[10/12/2025, 11:13:44] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .voz jajajajajajajnsjajajajajajajajs
+[10/12/2025, 11:16:06] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 11:16:23] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz hola pitufiña guarilla
+[10/12/2025, 11:16:55] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @263925891383340
+[10/12/2025, 11:17:08] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .help 
+[10/12/2025, 11:17:21] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .help 
+[10/12/2025, 11:17:39] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .help 
+[10/12/2025, 11:18:28] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 11:18:29] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work 
+[10/12/2025, 11:18:30] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .trivia 
+[10/12/2025, 11:18:45] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 11:18:45] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .trivia 5
+[10/12/2025, 11:19:53] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz TRES TRISTES TIGRES COMEN TRIGO EN UN TRIGAL
+[10/12/2025, 11:20:06] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz manzana maricon
+[10/12/2025, 11:20:22] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz manzana maricón
+[10/12/2025, 11:20:30] 👤 alex (273417735545061) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz me cago en tu puta madre nahuel molina
+[10/12/2025, 11:20:52] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz alex el rechazado
+[10/12/2025, 11:21:05] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz Alex el mejor
+[10/12/2025, 11:21:11] 👤 alex (273417735545061) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz nassar zampabollos
+[10/12/2025, 11:21:21] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz alex callate que te comiste a martu
+[10/12/2025, 11:21:22] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz Alex el mongolo
+[10/12/2025, 11:21:54] 👤 alex (273417735545061) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz Me acaba de desconcentrar una tía en el gimnasio porque en medio de la serie de ha puesto a bailar como una concubina de la persia sasanida
+[10/12/2025, 11:22:27] 👤 alex (273417735545061) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz Hoy amanecí con la polla empinada como la torre de Francia ya van 2 pajas y no se me baja
+[10/12/2025, 11:24:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .help 
+[10/12/2025, 11:24:47] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz @97852307026020 es un folla gordas
+[10/12/2025, 11:27:49] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 11:28:23] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz Nasar moro de mierda
+[10/12/2025, 11:28:44] 👤 alex (273417735545061) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz nasar pene chiquito
+[10/12/2025, 11:30:20] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz guatabo moro renegado
+[10/12/2025, 11:30:47] 👤 Fino (10716027334875) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .voz gustabo moro renegado
+[10/12/2025, 11:31:34] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .sticker 
+[10/12/2025, 11:33:46] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 11:36:29] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 11:36:42] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 11:37:27] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .kiss @152119252390062
+[10/12/2025, 11:42:43] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 11:43:28] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .trans 
+[10/12/2025, 11:48:26] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .ping 
+[10/12/2025, 11:48:36] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .ping 
+[10/12/2025, 11:49:28] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .ping 
+[10/12/2025, 11:49:53] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .menu 
+[10/12/2025, 11:50:10] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .menu 
+[10/12/2025, 11:50:26] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .ping 
+[10/12/2025, 11:50:28] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .menu 
+[10/12/2025, 11:50:36] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .ping 
+[10/12/2025, 11:50:51] 👤 B2F 💚 (97852307026020) | 🏠 🤖SIRI BOT 🤖 | 💻 .menu 
+[10/12/2025, 12:05:32] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 12:05:50] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 12:20:46] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @86273192673466
+[10/12/2025, 12:23:30] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 12:23:39] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 12:23:54] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 12:24:20] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567

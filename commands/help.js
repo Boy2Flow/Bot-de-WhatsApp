@@ -8,7 +8,7 @@ export const helpCommand = {
 ║   📚 GUÍA DE USO DEL BOT  ║
 ╚═══════════════════════════╝
 *Soporte y uso de comandos y juegos en:*
-https://chat.whatsapp.com/GfbbXC9E7Ly2jPrOijxypk
+https://chat.whatsapp.com/DxbL55bwgOt8i7L4FWGdcX
 
 🔰 *CÓMO USAR LOS COMANDOS*
 

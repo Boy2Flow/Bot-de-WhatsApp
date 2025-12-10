@@ -283,8 +283,8 @@
       "lastRoleClaim": 1765311563184
     },
     "263925891383340@lid": {
-      "balance": 100000,
-      "bank": 12764,
+      "balance": 0,
+      "bank": 125923,
       "inventory": [
         "pico"
       ],
@@ -296,7 +296,7 @@
       "lastMine": 1765230297955,
       "jobCooldowns": {
         "hacker": 1764615852418,
-        "ceo": 1764615894657
+        "ceo": 1765361908698
       },
       "roles": [],
       "lastRoleClaim": 0
@@ -373,7 +373,7 @@
       "lastRoleClaim": 1765326745168
     },
     "139049750757567@lid": {
-      "balance": 223731,
+      "balance": 180422,
       "bank": 0,
       "inventory": [],
       "lastClaim": 0,
@@ -392,7 +392,7 @@
     },
     "86273192673466@lid": {
       "balance": 0,
-      "bank": 65794,
+      "bank": 65642,
       "inventory": [
         "pico"
       ],
@@ -485,12 +485,12 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 0,
+      "balance": 43461,
       "bank": 192958,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765315811016,
+      "lastRob": 1765365860373,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,
@@ -556,7 +556,7 @@
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765357774826,
+      "lastRob": 1765361815575,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,

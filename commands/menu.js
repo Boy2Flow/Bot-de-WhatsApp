@@ -59,6 +59,23 @@ https://chat.whatsapp.com/GfbbXC9E7Ly2jPrOijxypk
    Crea imágenes con IA
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  ⏰ RECORDATORIOS & VOZ  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+🔹 *.alarma HH:MM [msg]* - Alarma
+   🔊 Te avisa con nota de voz
+   Ej: .alarma 07:00 Despertar
+
+🔹 *.recordar DD/MM HH:MM [msg]*
+   📅 Agenda un recordatorio
+   Ej: .recordar 25/12 00:00 Navidad
+
+🔹 *.misrecordatorios* - Ver lista
+🔹 *.delrecordatorio [num]* - Borrar
+
+🔹 *.voz [texto]* - Decir en audio
+   🗣️ El bot dice lo que escribas
+┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  📋 COMANDOS GENERALES   ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
 

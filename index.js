@@ -25,7 +25,60 @@ import {
 import { getWelcomeImage, sendMessageWithImage } from './utils/imageManager.js';
 import { config as privilegedConfig } from './config/privilegedUsers.js';
 
+// Variable global para socket
+let globalSock;
 
+
+
+
+
+// ... (imports)
+
+// IPC para comandos desde terminal separada
+const IPC_FILE = path.join(process.cwd(), 'ipc_commands.json');
+
+// Asegurar que el archivo existe y está limpio
+try {
+    if (fs.existsSync(IPC_FILE)) fs.unlinkSync(IPC_FILE);
+} catch (e) { }
+
+// Función para procesar comandos externos
+function checkIpcCommands() {
+    if (fs.existsSync(IPC_FILE)) {
+        try {
+            const content = fs.readFileSync(IPC_FILE, 'utf8');
+            if (!content) return;
+
+            const cmdData = JSON.parse(content);
+            fs.unlinkSync(IPC_FILE); // Borrar inmedatamente para no repetir
+
+            const input = cmdData.command;
+            console.log(`[TERMINAL REMOTA] Recibido: ${input}`);
+
+            if (globalSock) {
+                const mockMsg = {
+                    key: {
+                        remoteJid: 'status@broadcast',
+                        fromMe: true,
+                        id: 'TERM_' + Date.now()
+                    },
+                    message: { conversation: input.startsWith('.') ? input : '.' + input },
+                    pushName: 'Admin Terminal'
+                };
+                handleMessage(globalSock, mockMsg);
+            }
+        } catch (e) {
+            // Ignorar errores de lectura/polling
+        }
+    }
+}
+
+// Check rápido (polling)
+setInterval(checkIpcCommands, 500);
+
+// Mantener también el readline por si se ejecuta directo
+import readline from 'readline';
+// ... (resto del readline)
 
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info');
@@ -59,6 +112,8 @@ async function connectToWhatsApp() {
             return undefined;
         }
     });
+
+    globalSock = sock;
 
     sock.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect, qr } = update;
