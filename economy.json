@@ -488,7 +488,7 @@
     },
     "72692455727350@lid": {
       "balance": 0,
-      "bank": 253445,
+      "bank": 264573,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -499,7 +499,7 @@
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765369717384
+        "ceo": 1765388276213
       },
       "roles": [],
       "lastRoleClaim": 0
