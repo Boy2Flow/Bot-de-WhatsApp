@@ -16,7 +16,7 @@ export const stopCommand = {
             return;
         }
         setBotStatus(false);
-        await sock.sendMessage(message.key.remoteJid, { text: '🛑 *BOT DETENIDO*\n\nEl bot dejará de responder a comandos.\nUsa *.start* para reactivarlo.' }, { quoted: message });
+        await sock.sendMessage(message.key.remoteJid, { text: '🛑 *BOT DETENIDO*\n\nEl bot dejará de responder a comandos.\n(El contador de mensajes seguirá activo 📊)\n\nUsa *.start* para reactivarlo.' }, { quoted: message });
     }
 };
 
