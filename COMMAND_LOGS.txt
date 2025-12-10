@@ -3129,3 +3129,67 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 12:23:39] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
 [10/12/2025, 12:23:54] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
 [10/12/2025, 12:24:20] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:41:40] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 12:41:52] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[10/12/2025, 12:42:06] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 12:50:41] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:51:03] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[10/12/2025, 12:51:20] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:51:29] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:51:36] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:51:49] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 12:52:04] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:52:14] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:52:23] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:52:39] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:52:43] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .crime 
+[10/12/2025, 12:52:56] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:07] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:14] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:21] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:28] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:38] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:53:48] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:54:09] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:54:18] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @263925891383340
+[10/12/2025, 12:54:26] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:54:33] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:54:39] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:54:45] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:54:54] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:55:01] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 12:55:40] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 12:55:50] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 12:59:24] 👤 Dana 🫶🏻 (196886233350396) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .crime 
+[10/12/2025, 12:59:26] 👤 Dana 🫶🏻 (196886233350396) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @37404903739561
+[10/12/2025, 13:02:47] 👤 Dana 🫶🏻 (196886233350396) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @197310948630638
+[10/12/2025, 13:03:42] 👤 Dana 🫶🏻 (196886233350396) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @197310948630638
+[10/12/2025, 13:06:43] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top 
+[10/12/2025, 13:07:05] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @72692455727350
+[10/12/2025, 13:07:19] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claimrol 
+[10/12/2025, 13:07:50] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 13:07:58] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claimrol 
+[10/12/2025, 13:08:02] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 14000
+[10/12/2025, 13:08:06] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 13:08:15] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit 20000
+[10/12/2025, 13:08:23] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 9000
+[10/12/2025, 13:08:34] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 50000
+[10/12/2025, 13:08:38] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 13:08:43] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
+[10/12/2025, 13:08:48] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 13:08:53] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 1000
+[10/12/2025, 13:08:57] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 13:09:12] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 170000
+[10/12/2025, 13:09:15] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 13:09:18] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 170000
+[10/12/2025, 13:09:28] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 13:09:43] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 13:09:49] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 13:10:02] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work hacker
+[10/12/2025, 13:10:08] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 13:10:14] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .suicide 
+[10/12/2025, 13:11:22] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work puta
+[10/12/2025, 13:11:26] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[10/12/2025, 13:11:36] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 16000
+[10/12/2025, 13:11:44] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 32000
+[10/12/2025, 13:11:50] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
