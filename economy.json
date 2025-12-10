@@ -257,7 +257,7 @@
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
       "balance": 0,
-      "bank": 314314,
+      "bank": 313145,
       "inventory": [
         "pico",
         "anillo"
@@ -284,7 +284,7 @@
     },
     "263925891383340@lid": {
       "balance": 0,
-      "bank": 125642,
+      "bank": 124631,
       "inventory": [
         "pico"
       ],
@@ -302,7 +302,7 @@
       "lastRoleClaim": 0
     },
     "199681804075134@lid": {
-      "balance": 27794,
+      "balance": 31381,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1764615591913,
@@ -374,11 +374,11 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 374351,
+      "bank": 370817,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765367750703,
+      "lastRob": 1765369566576,
       "lastCrime": 1765367563599,
       "lastSlut": 1765231402121,
       "lastMine": 0,
@@ -438,7 +438,7 @@
     },
     "259863120715836@lid": {
       "balance": 0,
-      "bank": 502574,
+      "bank": 501530,
       "inventory": [
         "lotería"
       ],
@@ -485,8 +485,8 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 142,
-      "bank": 243273,
+      "balance": 674,
+      "bank": 254109,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -497,7 +497,7 @@
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765311097655
+        "ceo": 1765369717384
       },
       "roles": [],
       "lastRoleClaim": 0
@@ -551,7 +551,7 @@
       "lastRoleClaim": 0
     },
     "10716027334875@lid": {
-      "balance": 0,
+      "balance": 337,
       "bank": 0,
       "inventory": [],
       "lastClaim": 0,
@@ -571,6 +571,19 @@
       "lastWork": 0,
       "lastRob": 0,
       "lastCrime": 1765367964995,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "roles": [],
+      "lastRoleClaim": 0
+    },
+    "273417735545061@lid": {
+      "balance": 2851,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,
       "roles": [],
