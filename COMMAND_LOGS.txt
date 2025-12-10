@@ -2811,3 +2811,4 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 0:19:49] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .hechizo fireball
 [10/12/2025, 0:20:00] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg attack
 [10/12/2025, 0:20:11] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg attack
+[10/12/2025, 1:10:45] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explore

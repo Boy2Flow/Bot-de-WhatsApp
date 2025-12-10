@@ -90,9 +90,17 @@
       "inventory": [],
       "gold": 75,
       "location": "town",
-      "state": "idle",
+      "state": "fighting",
       "class": "mage",
-      "currentEnemy": null,
+      "currentEnemy": {
+        "name": "Lobo Huargo",
+        "level": 3,
+        "hp": 50,
+        "atk": 8,
+        "xp": 35,
+        "image": "https://i.pinimg.com/originals/40/40/40/40404040404040404040404040404040.jpg",
+        "currentHp": 50
+      },
       "lastTrain": 1765321181073
     }
   },
