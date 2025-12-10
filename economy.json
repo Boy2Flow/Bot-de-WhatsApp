@@ -257,7 +257,7 @@
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
       "balance": 0,
-      "bank": 318030,
+      "bank": 316911,
       "inventory": [
         "pico",
         "anillo"
@@ -335,7 +335,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 110244,
+      "bank": 492,
       "inventory": [
         "pico",
         "escudo",
@@ -354,7 +354,7 @@
       "lastRob": 1765326534447,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765326885791,
+      "lastMine": 1765329263977,
       "jobCooldowns": {
         "ceo": 1765326629688,
         "hacker": 1765326644247,
@@ -413,7 +413,7 @@
     },
     "59837836693652@lid": {
       "balance": 0,
-      "bank": 27603,
+      "bank": 106603,
       "inventory": [
         "pico"
       ],
@@ -425,7 +425,7 @@
       "lastMine": 1765320865749,
       "jobCooldowns": {
         "puta": 1765326639709,
-        "ceo": 1765312736970,
+        "ceo": 1765330355662,
         "uber": 1765202239775,
         "hacker": 1765326634625
       },

@@ -2914,3 +2914,57 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 1:36:13] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 10000
 [10/12/2025, 1:36:22] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
 [10/12/2025, 1:55:19] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .ping 
+[10/12/2025, 2:12:55] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 2:13:16] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 2:13:37] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 2:13:44] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 2:13:52] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .leaderboard 
+[10/12/2025, 2:14:06] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work 
+[10/12/2025, 2:14:23] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mine 
+[10/12/2025, 2:14:31] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:14:42] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 10000
+[10/12/2025, 2:14:50] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 10000
+[10/12/2025, 2:14:56] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:15:07] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 1000
+[10/12/2025, 2:15:13] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 1000
+[10/12/2025, 2:15:21] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 10000
+[10/12/2025, 2:15:27] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 10000
+[10/12/2025, 2:15:34] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:16:28] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100
+[10/12/2025, 2:16:34] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100
+[10/12/2025, 2:16:44] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 20000
+[10/12/2025, 2:16:50] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 20000
+[10/12/2025, 2:16:56] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:17:55] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100
+[10/12/2025, 2:18:01] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100
+[10/12/2025, 2:18:11] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 50000
+[10/12/2025, 2:18:18] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
+[10/12/2025, 2:18:24] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:18:53] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100
+[10/12/2025, 2:19:25] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100
+[10/12/2025, 2:19:35] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 2:19:41] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 2:19:47] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[10/12/2025, 2:20:04] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .leaderboard 
+[10/12/2025, 2:20:22] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @janire
+[10/12/2025, 2:20:38] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @152119252390062
+[10/12/2025, 2:20:59] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 1119
+[10/12/2025, 2:21:09] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 2:21:19] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 10000
+[10/12/2025, 2:21:33] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[10/12/2025, 2:21:40] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 2:21:47] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .leaderboard 
+[10/12/2025, 2:22:04] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roles 
+[10/12/2025, 2:32:23] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay @29511206867105 1000
+[10/12/2025, 2:32:35] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[10/12/2025, 2:32:54] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 13000
+[10/12/2025, 2:33:10] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay @29511206867105 1000
+[10/12/2025, 2:33:34] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit 20000
+[10/12/2025, 2:33:43] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 6000
+[10/12/2025, 2:33:57] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit 9000
+[10/12/2025, 2:34:07] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 3000
+[10/12/2025, 2:34:14] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 6000
+[10/12/2025, 2:34:21] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 12000
+[10/12/2025, 2:34:33] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 50000
+[10/12/2025, 2:34:39] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 50000
+[10/12/2025, 2:34:45] 👤 Kennet Gerardo🍋 (59837836693652) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
