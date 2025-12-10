@@ -3069,3 +3069,4 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 10:23:21] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
 [10/12/2025, 10:23:42] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
 [10/12/2025, 10:23:51] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[10/12/2025, 11:09:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bot 

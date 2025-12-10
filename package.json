@@ -24,6 +24,7 @@
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.11.0",
     "discord-rpc": "^4.0.1",
+    "google-tts-api": "^2.0.2",
     "node-cache": "^5.1.2",
     "pino": "^8.19.0",
     "qrcode": "^1.5.4",

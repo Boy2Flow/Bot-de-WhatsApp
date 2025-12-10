@@ -79,6 +79,7 @@ export const commands = [
     reminderCommand,
     listRemindersCommand,
     delReminderCommand,
+    vozCommand,
     infoCommand,
     helpCommand
 ];
