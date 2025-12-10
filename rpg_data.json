@@ -77,9 +77,9 @@
       "level": 4,
       "xp": 177,
       "xpToNext": 337,
-      "hp": 31,
+      "hp": 70,
       "maxHp": 70,
-      "mana": 45,
+      "mana": 25,
       "maxMana": 150,
       "stats": {
         "str": 7,
@@ -88,7 +88,7 @@
         "vit": 7
       },
       "inventory": [],
-      "gold": 119,
+      "gold": 138,
       "location": "town",
       "state": "idle",
       "class": "mage",
