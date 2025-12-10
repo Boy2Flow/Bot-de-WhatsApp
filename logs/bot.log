@@ -343,3 +343,197 @@ CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
 [ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
 
 ⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...
+✅ [SISTEMA] Respaldo automático completado exitosamente.
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo fireball
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg attack
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg 
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg explore
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo fireball
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:hechizo:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .hechizo lightning
+[31m✗ Error ejecutando comando:[0m ReferenceError: require is not defined
+    at Object.execute (file:///home/b2f/Bot_whatsap/commands/rpg/rpgClassCommands.js:185:58)
+    at handleMessage (file:///home/b2f/Bot_whatsap/handlers/messageHandler.js:276:17)
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg fight
+CMD_EXEC:rpg:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rpg fight
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:leaderboard:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .leaderboard 
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:139049750757567:guille~
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+[GROUP UPDATE] Acción: remove | Grupo: 34632587817-1635700083@g.us | Actor: undefined | Participantes: ["223346906161279@lid"]
+[PROTECCIÓN] Check user 223346906161279@lid: Es Super Admin? false
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:rob:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rob @152119252390062
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 745
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1490
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 50000
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:buy:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buy escudo
+CMD_EXEC:rob:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .rob @59837836693652
+CMD_EXEC:rob:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:rob:139049750757567:guille~
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 100000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 100000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:work:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:work:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .work ceo
+CMD_EXEC:work:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:work:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:work:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .work hacker
+CMD_EXEC:work:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .work puta
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:buyrol:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buyrol 
+CMD_EXEC:roles:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roles 
+CMD_EXEC:roles:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 2000000
+CMD_EXEC:buyrol:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .buyrol diamante
+CMD_EXEC:bal:59837836693652:Kennet Gerardo🍋
+Checking balance for: 59837836693652@lid
+CMD_EXEC:buy:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:claimrol:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .claimrol 
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:claimrol:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 1000
+CMD_EXEC:roles:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:buyrol:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:claimrol:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 1000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:withdraw:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .withdraw 50000
+CMD_EXEC:roulette:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .roulette 50000
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:bal:59837836693652:Kennet Gerardo🍋
+Checking balance for: 59837836693652@lid
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:mine:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .mine 
+CMD_EXEC:deposit:29511206867105:𒉭Jemuzu Djevel𒉭
+[ADMIN] Comando ejecutado por 𒉭Jemuzu Djevel𒉭 (29511206867105): .deposit all
+CMD_EXEC:bal:59837836693652:Kennet Gerardo🍋
+Checking balance for: 59837836693652@lid
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:withdraw:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:roulette:59837836693652:Kennet Gerardo🍋
+CMD_EXEC:deposit:59837836693652:Kennet Gerardo🍋
+
+⏰ [SISTEMA] Iniciando respaldo automático de Git (30 mins)...

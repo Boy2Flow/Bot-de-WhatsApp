@@ -75,11 +75,11 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 4,
-      "xp": 132,
+      "xp": 177,
       "xpToNext": 337,
-      "hp": 50,
+      "hp": 31,
       "maxHp": 70,
-      "mana": 70,
+      "mana": 45,
       "maxMana": 150,
       "stats": {
         "str": 7,
@@ -88,19 +88,11 @@
         "vit": 7
       },
       "inventory": [],
-      "gold": 75,
+      "gold": 119,
       "location": "town",
-      "state": "fighting",
+      "state": "idle",
       "class": "mage",
-      "currentEnemy": {
-        "name": "Lobo Huargo",
-        "level": 3,
-        "hp": 50,
-        "atk": 8,
-        "xp": 35,
-        "image": "https://i.pinimg.com/originals/40/40/40/40404040404040404040404040404040.jpg",
-        "currentHp": 50
-      },
+      "currentEnemy": null,
       "lastTrain": 1765321181073
     }
   },
