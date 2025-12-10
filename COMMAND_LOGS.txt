@@ -3268,3 +3268,5 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [10/12/2025, 18:38:01] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
 [10/12/2025, 19:01:57] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bot 
 [10/12/2025, 19:02:35] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .delete 
+[10/12/2025, 19:16:49] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[10/12/2025, 19:18:33] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .tag chisme despierten
