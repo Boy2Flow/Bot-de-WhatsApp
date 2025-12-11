@@ -440,13 +440,13 @@
     },
     "259863120715836@lid": {
       "balance": 0,
-      "bank": 1022343,
+      "bank": 1016850,
       "inventory": [
         "lotería"
       ],
       "lastClaim": 1765433115811,
       "lastWork": 0,
-      "lastRob": 1765434077815,
+      "lastRob": 1765434478224,
       "lastCrime": 0,
       "lastSlut": 1765396367351,
       "lastMine": 0,
@@ -488,8 +488,8 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 1000,
-      "bank": 163323,
+      "balance": 0,
+      "bank": 178198,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -500,7 +500,7 @@
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765388276213
+        "ceo": 1765434532913
       },
       "roles": [],
       "lastRoleClaim": 0
