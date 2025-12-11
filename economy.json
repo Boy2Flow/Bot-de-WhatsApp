@@ -339,8 +339,8 @@
       "lastRoleClaim": 0
     },
     "29511206867105@lid": {
-      "balance": 0,
-      "bank": 1159126,
+      "balance": 1000,
+      "bank": 1861280,
       "inventory": [
         "pico"
       ],
@@ -349,7 +349,7 @@
       "lastRob": 1765444925704,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765445605690,
+      "lastMine": 1765466147784,
       "jobCooldowns": {
         "ceo": 1765461878335,
         "hacker": 1765326644247,
