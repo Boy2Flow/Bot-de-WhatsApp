@@ -5086,3 +5086,4 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [11/12/2025, 21:03:18] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
 [11/12/2025, 21:06:00] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .backup 
 [11/12/2025, 21:06:35] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[11/12/2025, 21:36:52] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .backup 
