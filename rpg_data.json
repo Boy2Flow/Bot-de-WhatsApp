@@ -75,7 +75,7 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 7,
-      "xp": 721,
+      "xp": 893,
       "xpToNext": 1135,
       "hp": 74,
       "maxHp": 100,
@@ -101,7 +101,7 @@
         "image": "https://i.pinimg.com/originals/30/30/30/30303030303030303030303030303030.jpg",
         "currentHp": 1
       },
-      "lastTrain": 1765469518493
+      "lastTrain": 1765471245915
     },
     "59837836693652@lid": {
       "race": "dark_elf",
