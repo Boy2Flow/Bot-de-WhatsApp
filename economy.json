@@ -256,18 +256,18 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 26390,
-      "bank": 744727,
+      "balance": 0,
+      "bank": 1037432,
       "inventory": [
         "pico",
         "anillo"
       ],
       "lastClaim": 1765444852483,
       "lastWork": 0,
-      "lastRob": 1765396444252,
+      "lastRob": 1765445105460,
       "lastCrime": 1765230281438,
       "lastSlut": 1765444832537,
-      "lastMine": 1765309700105,
+      "lastMine": 1765445613713,
       "jobCooldowns": {
         "puta": 1765442847160,
         "ceo": 1765442844787,
@@ -278,7 +278,8 @@
       },
       "roles": [
         "bronce",
-        "plata"
+        "plata",
+        "oro"
       ],
       "lastRoleClaim": 1765442768282
     },
@@ -339,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 312803,
+      "bank": 507771,
       "inventory": [
         "pico"
       ],
@@ -348,7 +349,7 @@
       "lastRob": 1765444925704,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765329263977,
+      "lastMine": 1765445605690,
       "jobCooldowns": {
         "ceo": 1765444684804,
         "hacker": 1765326644247,
@@ -366,7 +367,7 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 256164,
+      "bank": 255476,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -431,14 +432,14 @@
       "lastRoleClaim": 1765442777890
     },
     "259863120715836@lid": {
-      "balance": 0,
-      "bank": 1052115,
+      "balance": 498,
+      "bank": 46918,
       "inventory": [
         "lotería"
       ],
       "lastClaim": 1765433115811,
       "lastWork": 0,
-      "lastRob": 1765443056207,
+      "lastRob": 1765445102926,
       "lastCrime": 0,
       "lastSlut": 1765396367351,
       "lastMine": 0,
@@ -480,8 +481,8 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 1107,
-      "bank": 192619,
+      "balance": 0,
+      "bank": 194494,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
