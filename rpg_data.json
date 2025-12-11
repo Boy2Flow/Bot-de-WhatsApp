@@ -77,9 +77,9 @@
       "level": 6,
       "xp": 238,
       "xpToNext": 757,
-      "hp": 61,
+      "hp": 90,
       "maxHp": 90,
-      "mana": 100,
+      "mana": 50,
       "maxMana": 170,
       "stats": {
         "str": 9,
