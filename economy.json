@@ -256,22 +256,22 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 0,
-      "bank": 1037432,
+      "balance": 4184,
+      "bank": 1064572,
       "inventory": [
         "pico",
         "anillo"
       ],
-      "lastClaim": 1765444852483,
+      "lastClaim": 1765457275407,
       "lastWork": 0,
       "lastRob": 1765445105460,
       "lastCrime": 1765230281438,
-      "lastSlut": 1765444832537,
+      "lastSlut": 1765457274143,
       "lastMine": 1765445613713,
       "jobCooldowns": {
-        "puta": 1765442847160,
-        "ceo": 1765442844787,
-        "uber": 1765444494555,
+        "puta": 1765457267935,
+        "ceo": 1765457255953,
+        "uber": 1765457272270,
         "lavaplatos": 1765119706817,
         "hacker": 1765396419276,
         "mendigo": 1764616080235
@@ -281,10 +281,10 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765442768282
+      "lastRoleClaim": 1765457193732
     },
     "263925891383340@lid": {
-      "balance": 0,
+      "balance": 13782,
       "bank": 124631,
       "inventory": [
         "pico"
@@ -294,10 +294,10 @@
       "lastRob": 1765367628826,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765230297955,
+      "lastMine": 1765457673492,
       "jobCooldowns": {
         "hacker": 1764615852418,
-        "ceo": 1765361908698
+        "ceo": 1765457680489
       },
       "roles": [],
       "lastRoleClaim": 0
@@ -366,12 +366,12 @@
       "lastRoleClaim": 1765444669267
     },
     "139049750757567@lid": {
-      "balance": 898,
-      "bank": 253518,
+      "balance": 0,
+      "bank": 253305,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765375710548,
+      "lastRob": 1765457128190,
       "lastCrime": 1765367563599,
       "lastSlut": 1765231402121,
       "lastMine": 0,
@@ -384,7 +384,7 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 12596,
+      "balance": 9666,
       "bank": 4877,
       "inventory": [
         "pico"
@@ -481,12 +481,12 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 200,
-      "bank": 206812,
+      "balance": 0,
+      "bank": 212151,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765444386650,
+      "lastRob": 1765457604001,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,
