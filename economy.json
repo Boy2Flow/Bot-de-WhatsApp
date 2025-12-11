@@ -256,13 +256,13 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 4184,
-      "bank": 1064572,
+      "balance": 3654,
+      "bank": 829156,
       "inventory": [
         "pico",
         "anillo"
       ],
-      "lastClaim": 1765457275407,
+      "lastClaim": 1765457961471,
       "lastWork": 0,
       "lastRob": 1765445105460,
       "lastCrime": 1765230281438,
@@ -284,12 +284,12 @@
       "lastRoleClaim": 1765457193732
     },
     "263925891383340@lid": {
-      "balance": 13782,
-      "bank": 124631,
+      "balance": 72,
+      "bank": 138413,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1764615581668,
+      "lastClaim": 1765457696960,
       "lastWork": 0,
       "lastRob": 1765367628826,
       "lastCrime": 0,
@@ -340,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 507771,
+      "bank": 908671,
       "inventory": [
         "pico"
       ],
@@ -367,12 +367,12 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 253305,
+      "bank": 0,
       "inventory": [],
-      "lastClaim": 0,
+      "lastClaim": 1765458926410,
       "lastWork": 0,
-      "lastRob": 1765457128190,
-      "lastCrime": 1765367563599,
+      "lastRob": 1765458712780,
+      "lastCrime": 1765458642259,
       "lastSlut": 1765231402121,
       "lastMine": 0,
       "jobCooldowns": {
@@ -384,12 +384,12 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 9666,
+      "balance": 9721,
       "bank": 4877,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765402565691,
+      "lastClaim": 1765457918771,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
@@ -409,8 +409,8 @@
       "lastRoleClaim": 1765402574175
     },
     "59837836693652@lid": {
-      "balance": 4107,
-      "bank": 643492,
+      "balance": 0,
+      "bank": 649599,
       "inventory": [
         "pico"
       ],
@@ -429,7 +429,7 @@
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765442777890
+      "lastRoleClaim": 1765457687411
     },
     "259863120715836@lid": {
       "balance": 498,
@@ -482,9 +482,9 @@
     },
     "72692455727350@lid": {
       "balance": 0,
-      "bank": 212151,
+      "bank": 511899,
       "inventory": [],
-      "lastClaim": 0,
+      "lastClaim": 1765458942393,
       "lastWork": 0,
       "lastRob": 1765457604001,
       "lastCrime": 0,
