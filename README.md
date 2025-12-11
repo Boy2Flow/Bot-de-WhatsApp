@@ -45,7 +45,7 @@ Bot completo de WhatsApp con múltiples funcionalidades: creación de stickers, 
 
 - Node.js 18 o superior
 - npm o yarn
-- Cuenta de WhatsApp (+34 608837414 o cualquier número)
+- Cuenta de WhatsApp 
 
 ## 🚀 Instalación
 
@@ -65,7 +65,7 @@ npm start
 
 4. **Escanea el código QR:**
 
-   - Abre WhatsApp en tu teléfono con el número +34 608837414 (o el que prefieras)
+   - Abre WhatsApp en tu teléfono con el número 
    - Ve a **Dispositivos vinculados**
    - Toca **Vincular dispositivo**
    - Escanea el código QR que aparece en la terminal
