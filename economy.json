@@ -256,8 +256,8 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 2566,
-      "bank": 843656,
+      "balance": 0,
+      "bank": 883318,
       "inventory": [
         "pico",
         "anillo"
@@ -267,11 +267,11 @@
       "lastRob": 1765445105460,
       "lastCrime": 1765230281438,
       "lastSlut": 1765457274143,
-      "lastMine": 1765445613713,
+      "lastMine": 1765493601670,
       "jobCooldowns": {
-        "puta": 1765457267935,
-        "ceo": 1765457255953,
-        "uber": 1765457272270,
+        "puta": 1765493515055,
+        "ceo": 1765493465171,
+        "uber": 1765493556442,
         "lavaplatos": 1765119706817,
         "hacker": 1765396419276,
         "mendigo": 1764616080235
@@ -281,7 +281,7 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765470075021
+      "lastRoleClaim": 1765493471265
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -317,7 +317,7 @@
     },
     "210801289871581@lid": {
       "balance": 0,
-      "bank": 130282,
+      "bank": 210282,
       "inventory": [
         "escudo"
       ],
@@ -340,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1150664,
+      "bank": 1250164,
       "inventory": [
         "pico"
       ],
@@ -364,7 +364,7 @@
         "diamante",
         "leyenda"
       ],
-      "lastRoleClaim": 1765469492236
+      "lastRoleClaim": 1765493480298
     },
     "139049750757567@lid": {
       "balance": 80000,
@@ -410,14 +410,14 @@
       "lastRoleClaim": 1765402574175
     },
     "59837836693652@lid": {
-      "balance": 1000,
-      "bank": 647961,
+      "balance": 500,
+      "bank": 647711,
       "inventory": [
         "pico"
       ],
       "lastClaim": 0,
       "lastWork": 0,
-      "lastRob": 1765480002469,
+      "lastRob": 1765494038649,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 1765320865749,
