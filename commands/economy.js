@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { config as privilegedConfig } from '../config/privilegedUsers.js';
+import { buyCommand as rpgBuyCommand } from './rpg/rpgMarket.js';
 
 // Archivo para almacenar la economía
 const ECONOMY_FILE = path.join(process.cwd(), 'economy.json');
@@ -944,8 +945,16 @@ export const buyCommand = {
         const userId = message.key.participant || message.key.remoteJid;
         const itemKey = args[0]?.toLowerCase();
 
+        // INTEGRACIÓN CON RPG MARKET
+        // Si intenta comprar arma o armadura, redirigir al comando RPG
+        const rpgKeywords = ['arma', 'armas', 'weapon', 'armadura', 'armaduras', 'armors', 'armor'];
+        if (rpgKeywords.includes(itemKey)) {
+            await rpgBuyCommand.execute(sock, message, args);
+            return;
+        }
+
         if (!itemKey || !SHOP_ITEMS[itemKey]) {
-            await sock.sendMessage(message.key.remoteJid, { text: '❌ Item no encontrado. Usa .shop para ver la lista.' }, { quoted: message });
+            await sock.sendMessage(message.key.remoteJid, { text: '❌ Item no encontrado. Usa .shop para ver la lista.\nPara items RPG usa: .mercado' }, { quoted: message });
             return;
         }
 

@@ -167,27 +167,32 @@ export const marketCommand = {
 
         let filteredItems = [];
         let title = '';
+        let showIndex = false;
 
-        if (category === 'armas' || category === 'weapons') {
-            filteredItems = market.items.filter(i => i.type === 'weapon');
+        if (category === 'armas' || category === 'weapons' || category === 'arma') {
+            // Primeros 20 son armas
+            filteredItems = market.items.slice(0, 20);
             title = '⚔️ ARMAS DISPONIBLES';
-        } else if (category === 'armaduras' || category === 'armor' || category === 'armors') {
-            filteredItems = market.items.filter(i => i.type === 'armor');
+            showIndex = true;
+        } else if (category === 'armaduras' || category === 'armor' || category === 'armors' || category === 'armadura') {
+            // Siguientes 20 son armaduras
+            filteredItems = market.items.slice(20, 40);
             title = '🛡️ ARMADURAS DISPONIBLES';
+            showIndex = true;
         } else {
             // Menú principal
-            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas (20)*: Usa *.mercado armas*\n🛡️ *Armaduras (20)*: Usa *.mercado armaduras*\n\n🛒 Para comprar usa *.comprar [ID]*`;
+            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas*: Usa *.mercado armas*\n🛡️ *Armaduras*: Usa *.mercado armaduras*\n\n🛒 *COMPRA:*\n.comprar arma [ID] (1-20)\n.comprar armadura [ID] (1-20)`;
             await sock.sendMessage(from, { text }, { quoted: message });
             return;
         }
 
         let text = `🏪 *${title}* 🏪\n\n`;
 
-        filteredItems.forEach((item) => {
-            // Encontrar el índice real en el array global para el ID de compra
-            const globalIndex = market.items.findIndex(i => i.id === item.id) + 1;
+        filteredItems.forEach((item, index) => {
+            // ID local (1-20)
+            const localId = index + 1;
 
-            text += `📦 *ID: ${globalIndex}* | ${item.name}\n`;
+            text += `📦 *ID: ${localId}* | ${item.name}\n`;
             text += `   📝 ${item.rarity}\n`;
             if (item.stats.damage) text += `   ⚔️ Daño: ${item.stats.damage}\n`;
             if (item.stats.defense) text += `   🛡️ Defensa: ${item.stats.defense}\n`;
@@ -195,7 +200,11 @@ export const marketCommand = {
             text += `   💰 ${item.price} oro\n\n`;
         });
 
-        text += `🛒 Para comprar: *.comprar [ID]*`;
+        if (category.startsWith('arm')) {
+            text += `🛒 Para comprar: *.comprar arma [ID]*`;
+        } else {
+            text += `🛒 Para comprar: *.comprar armadura [ID]*`;
+        }
 
         await sock.sendMessage(from, { text }, { quoted: message });
     }
@@ -208,10 +217,38 @@ export const buyCommand = {
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
         const userId = message.key.participant || message.key.remoteJid;
-        const itemId = parseInt(args[0]);
 
-        if (isNaN(itemId) || itemId < 1 || itemId > 6) {
-            await sock.sendMessage(from, { text: '❌ ID de objeto inválido. Usa .mercado para ver los items.' }, { quoted: message });
+        const type = args[0]?.toLowerCase(); // arma / armadura
+        let localId = parseInt(args[1]);
+
+        // Soporte legacy o directo (.comprar [ID GLOBAL]) - Opcional, pero mejor forzar la nueva sintaxis para evitar errores
+        // Si el usuario pone solo numeros en el primer argumento, asumimos que intenta usar ID global, pero le guiaremos al nuevo sistema
+        if (!isNaN(parseInt(type))) {
+            await sock.sendMessage(from, { text: '❌ Usa el formato: .comprar arma [ID] o .comprar armadura [ID]' }, { quoted: message });
+            return;
+        }
+
+        if (!localId || isNaN(localId)) {
+            await sock.sendMessage(from, { text: '❌ Debes especificar el ID numérico. Ejemplo: .comprar arma 1' }, { quoted: message });
+            return;
+        }
+
+        let realIndex = -1;
+
+        if (type === 'arma' || type === 'weapon' || type === 'armas') {
+            if (localId < 1 || localId > 20) {
+                await sock.sendMessage(from, { text: '❌ El ID de arma debe ser entre 1 y 20.' }, { quoted: message });
+                return;
+            }
+            realIndex = localId - 1; // 0-19
+        } else if (type === 'armadura' || type === 'armor' || type === 'armaduras') {
+            if (localId < 1 || localId > 20) {
+                await sock.sendMessage(from, { text: '❌ El ID de armadura debe ser entre 1 y 20.' }, { quoted: message });
+                return;
+            }
+            realIndex = localId - 1 + 20; // 20-39
+        } else {
+            await sock.sendMessage(from, { text: '❌ Tipo desconocido. Usa "arma" o "armadura".' }, { quoted: message });
             return;
         }
 
@@ -222,10 +259,10 @@ export const buyCommand = {
         }
 
         const market = getMarket();
-        const item = market.items[itemId - 1]; // 0-indexed
+        const item = market.items[realIndex];
 
         if (!item) {
-            await sock.sendMessage(from, { text: '❌ Este objeto ya no está disponible.' }, { quoted: message });
+            await sock.sendMessage(from, { text: '❌ Error: Objeto no encontrado. Intenta de nuevo.' }, { quoted: message });
             return;
         }
 

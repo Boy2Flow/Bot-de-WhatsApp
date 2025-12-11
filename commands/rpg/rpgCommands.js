@@ -1,4 +1,4 @@
-import { RACES, MONSTERS, LOCATIONS } from './rpgData.js';
+import { RACES, MONSTERS, LOCATIONS, AFFLICTIONS } from './rpgData.js';
 import { getPlayer, createPlayer, updatePlayer, gainXp } from './rpgCore.js';
 
 export const rpgCommand = {
@@ -105,7 +105,13 @@ export const rpgCommand = {
         // PERFIL
         if (subcommand === 'perfil' || subcommand === 'stats') {
             const race = RACES[player.race];
-            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${player.stats.str} | 🏹 AGI: ${player.stats.agi}\n🧠 INT: ${player.stats.int} | 🛡️ VIT: ${player.stats.vit}`;
+            let affText = '';
+            if (player.afflictions && player.afflictions.length > 0) {
+                const affNames = player.afflictions.map(k => AFFLICTIONS[k]?.name || k).join(', ');
+                affText = `\n🦠 *Aflicciones:* ${affNames}`;
+            }
+
+            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${player.stats.str} | 🏹 AGI: ${player.stats.agi}\n🧠 INT: ${player.stats.int} | 🛡️ VIT: ${player.stats.vit}${affText}`;
             await sock.sendMessage(from, { text }, { quoted: message });
             return;
         }
@@ -175,6 +181,21 @@ export const rpgCommand = {
 
             const enemyDmg = Math.max(1, enemy.atk);
             player.hp -= enemyDmg;
+
+            // Lógica de Infección (Vampirismo / Licantropía)
+            if (enemy.canInfect && Math.random() < 0.2) {
+                const afflictionKey = enemy.canInfect;
+                if (!player.afflictions) player.afflictions = [];
+
+                if (!player.afflictions.includes(afflictionKey)) {
+                    player.afflictions.push(afflictionKey);
+                    const affData = AFFLICTIONS[afflictionKey];
+                    battleLog += `\n\n⚠️ *¡MALDICIÓN OCURRIDA!*\n¡El ataque te ha infectado!\nHas contraído: *${affData.name}*\n_${affData.description}_`;
+
+                    // Aseguramos guardar la nueva aflicción inmediatamente
+                    updatePlayer(from, userId, { afflictions: player.afflictions });
+                }
+            }
 
             battleLog += `👹 Enemigo ataca: ${enemyDmg} daño\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
 
