@@ -316,8 +316,8 @@
       "lastRoleClaim": 0
     },
     "210801289871581@lid": {
-      "balance": 50000,
-      "bank": 282,
+      "balance": 0,
+      "bank": 130282,
       "inventory": [
         "escudo"
       ],
@@ -367,7 +367,7 @@
       "lastRoleClaim": 1765469492236
     },
     "139049750757567@lid": {
-      "balance": 0,
+      "balance": 80000,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1765458926410,

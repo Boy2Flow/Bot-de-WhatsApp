@@ -1,509 +1,764 @@
 {
-  "lastRefresh": 1765481722199,
+  "lastRefresh": 1765483107002,
   "items": [
     {
-      "id": "ynhu0nxym",
+      "id": "20tgzzbpc",
       "rarity": "Inusual",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 20
-      },
-      "name": "Espada Inusual",
-      "price": 450
-    },
-    {
-      "id": "d37xjko2p",
-      "rarity": "Común",
       "type": "weapon",
       "subtype": "bow",
       "stats": {
-        "damage": 10
+        "damage": 14
       },
-      "name": "Arco Común",
-      "price": 150
+      "name": "Ballesta Inusual",
+      "price": 315
     },
     {
-      "id": "yd5xu9lru",
-      "rarity": "Raro",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 25
-      },
-      "name": "Hoja Raro",
-      "price": 750
-    },
-    {
-      "id": "rchxb05n5",
+      "id": "19bur5j75",
       "rarity": "Común",
-      "type": "weapon",
-      "subtype": "staff",
-      "stats": {
-        "damage": 19,
-        "magicDamage": 5,
-        "element": "Tierra"
-      },
-      "name": "Cetro de Tierra Común",
-      "effect": "+5 Daño de Tierra",
-      "price": 285
-    },
-    {
-      "id": "7yioe6aa8",
-      "rarity": "Raro",
-      "type": "weapon",
-      "subtype": "bow",
-      "stats": {
-        "damage": 20
-      },
-      "name": "Arco Largo Raro",
-      "price": 600
-    },
-    {
-      "id": "qznucg4ln",
-      "rarity": "Épico",
-      "type": "weapon",
-      "subtype": "staff",
-      "stats": {
-        "damage": 35,
-        "magicDamage": 21,
-        "element": "Tierra"
-      },
-      "name": "Vara de Tierra Épico",
-      "effect": "+21 Daño de Tierra",
-      "price": 1575
-    },
-    {
-      "id": "ht1z5f60f",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "staff",
-      "stats": {
-        "damage": 18,
-        "magicDamage": 12,
-        "element": "Viento"
-      },
-      "name": "Bastón de Viento Común",
-      "effect": "+12 Daño de Viento",
-      "price": 270
-    },
-    {
-      "id": "mbz16ut75",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "greatsword",
-      "stats": {
-        "damage": 14,
-        "physDamage": 16
-      },
-      "name": "Gran Espada Pesado Común",
-      "effect": "+16 Daño Físico",
-      "price": 210
-    },
-    {
-      "id": "ejk07wkrl",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 11
-      },
-      "name": "Espada Común",
-      "price": 165
-    },
-    {
-      "id": "uy2vcoyk5",
-      "rarity": "Inusual",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 18
-      },
-      "name": "Hoja Inusual",
-      "price": 405
-    },
-    {
-      "id": "aplaatfm8",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 15
-      },
-      "name": "Sable Común",
-      "price": 225
-    },
-    {
-      "id": "04mylkk94",
-      "rarity": "Inusual",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 19
-      },
-      "name": "Espada Inusual",
-      "price": 427
-    },
-    {
-      "id": "2j5qytf14",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "sword",
-      "stats": {
-        "damage": 13
-      },
-      "name": "Hoja Común",
-      "price": 195
-    },
-    {
-      "id": "plwmnptf5",
-      "rarity": "Inusual",
       "type": "weapon",
       "subtype": "sword",
       "stats": {
         "damage": 14
       },
-      "name": "Hoja Inusual",
-      "price": 315
+      "name": "Espada Común",
+      "price": 210
     },
     {
-      "id": "7h9m27gik",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "greatsword",
-      "stats": {
-        "damage": 11,
-        "physDamage": 13
-      },
-      "name": "Mandoble Pesado Común",
-      "effect": "+13 Daño Físico",
-      "price": 165
-    },
-    {
-      "id": "fobhru9ve",
+      "id": "ki2bdh7f9",
       "rarity": "Inusual",
       "type": "weapon",
       "subtype": "staff",
       "stats": {
-        "damage": 15,
-        "magicDamage": 7,
+        "damage": 16,
+        "magicDamage": 10,
         "element": "Fuego"
       },
       "name": "Cetro de Fuego Inusual",
-      "effect": "+7 Daño de Fuego",
-      "price": 337
+      "effect": "+10 Daño de Fuego",
+      "price": 360
     },
     {
-      "id": "59i73qiz3",
+      "id": "fhwrx7dgk",
+      "rarity": "Épico",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 29
+      },
+      "name": "Arco Épico",
+      "price": 1305
+    },
+    {
+      "id": "nkvic20gi",
+      "rarity": "Raro",
+      "type": "weapon",
+      "subtype": "sword",
+      "stats": {
+        "damage": 27
+      },
+      "name": "Espada Raro",
+      "price": 810
+    },
+    {
+      "id": "09lv005ni",
       "rarity": "Común",
       "type": "weapon",
       "subtype": "staff",
       "stats": {
-        "damage": 17,
-        "magicDamage": 10,
-        "element": "Luz"
+        "damage": 10,
+        "magicDamage": 7,
+        "element": "Tierra"
       },
-      "name": "Cetro de Luz Común",
-      "effect": "+10 Daño de Luz",
-      "price": 255
+      "name": "Vara de Tierra Común",
+      "effect": "+7 Daño de Tierra",
+      "price": 150
     },
     {
-      "id": "djts7h7ex",
+      "id": "ziemwcy99",
+      "rarity": "Raro",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 27
+      },
+      "name": "Arco Largo Raro",
+      "price": 810
+    },
+    {
+      "id": "q83lkh1fq",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "staff",
+      "stats": {
+        "damage": 12,
+        "magicDamage": 13,
+        "element": "Viento"
+      },
+      "name": "Cetro de Viento Inusual",
+      "effect": "+13 Daño de Viento",
+      "price": 270
+    },
+    {
+      "id": "id72xom0r",
+      "rarity": "Común",
+      "type": "weapon",
+      "subtype": "sword",
+      "stats": {
+        "damage": 19
+      },
+      "name": "Sable Común",
+      "price": 285
+    },
+    {
+      "id": "0dhgrft6g",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "greatsword",
+      "stats": {
+        "damage": 12,
+        "physDamage": 13
+      },
+      "name": "Claymore Pesado Inusual",
+      "effect": "+13 Daño Físico",
+      "price": 270
+    },
+    {
+      "id": "lhtc39ha6",
       "rarity": "Común",
       "type": "weapon",
       "subtype": "bow",
       "stats": {
         "damage": 12
       },
-      "name": "Arco Común",
+      "name": "Ballesta Común",
       "price": 180
     },
     {
-      "id": "m2wl23k4j",
-      "rarity": "Común",
-      "type": "weapon",
-      "subtype": "staff",
-      "stats": {
-        "damage": 15,
-        "magicDamage": 6,
-        "element": "Luz"
-      },
-      "name": "Bastón de Luz Común",
-      "effect": "+6 Daño de Luz",
-      "price": 225
-    },
-    {
-      "id": "x838cihg7",
+      "id": "0x4kbb3fl",
       "rarity": "Común",
       "type": "weapon",
       "subtype": "greatsword",
       "stats": {
-        "damage": 16,
-        "physDamage": 17
+        "damage": 13,
+        "physDamage": 14
       },
-      "name": "Gran Espada Pesado Común",
-      "effect": "+17 Daño Físico",
+      "name": "Claymore Pesado Común",
+      "effect": "+14 Daño Físico",
+      "price": 195
+    },
+    {
+      "id": "84dq88o01",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 17
+      },
+      "name": "Ballesta Inusual",
+      "price": 382
+    },
+    {
+      "id": "nulf3zqn1",
+      "rarity": "Común",
+      "type": "weapon",
+      "subtype": "greatsword",
+      "stats": {
+        "damage": 19,
+        "physDamage": 15
+      },
+      "name": "Mandoble Pesado Común",
+      "effect": "+15 Daño Físico",
+      "price": 285
+    },
+    {
+      "id": "2kn8bl6bo",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "greatsword",
+      "stats": {
+        "damage": 17,
+        "physDamage": 15
+      },
+      "name": "Claymore Pesado Inusual",
+      "effect": "+15 Daño Físico",
+      "price": 382
+    },
+    {
+      "id": "386732clw",
+      "rarity": "Raro",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 19
+      },
+      "name": "Arco Raro",
+      "price": 570
+    },
+    {
+      "id": "vivl0ddvf",
+      "rarity": "Común",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 16
+      },
+      "name": "Arco Largo Común",
       "price": 240
     },
     {
-      "id": "6uizrrhg7",
-      "rarity": "Épico",
-      "type": "armor",
-      "subtype": "chest",
+      "id": "ohnu91q17",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "bow",
       "stats": {
-        "defense": 19,
-        "magicDef": 20
+        "damage": 21
       },
-      "name": "Cota de Defensa Mágica",
-      "effect": "+20 Defensa Mágica",
-      "price": 684
+      "name": "Ballesta Inusual",
+      "price": 472
     },
     {
-      "id": "3bolja29i",
+      "id": "umesabjcr",
+      "rarity": "Inusual",
+      "type": "weapon",
+      "subtype": "bow",
+      "stats": {
+        "damage": 15
+      },
+      "name": "Arco Largo Inusual",
+      "price": 337
+    },
+    {
+      "id": "sfiuvh1mb",
+      "rarity": "Común",
+      "type": "weapon",
+      "subtype": "greatsword",
+      "stats": {
+        "damage": 19,
+        "physDamage": 13
+      },
+      "name": "Gran Espada Pesado Común",
+      "effect": "+13 Daño Físico",
+      "price": 285
+    },
+    {
+      "id": "vjqsetx1i",
       "rarity": "Común",
       "type": "armor",
       "subtype": "chest",
       "stats": {
-        "defense": 6,
-        "lifesteal": 2
-      },
-      "name": "Pechera de Robo de Vida",
-      "effect": "+2 Robo de Vida",
-      "price": 72
-    },
-    {
-      "id": "14clhh6aa",
-      "rarity": "Épico",
-      "type": "armor",
-      "subtype": "chest",
-      "stats": {
-        "defense": 10,
-        "lifesteal": 2
-      },
-      "name": "Cota de Robo de Vida",
-      "effect": "+2 Robo de Vida",
-      "price": 360
-    },
-    {
-      "id": "kjac1hh8u",
-      "rarity": "Inusual",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 10,
-        "magicDef": 10
-      },
-      "name": "Casco de Defensa Mágica",
-      "effect": "+10 Defensa Mágica",
-      "price": 180
-    },
-    {
-      "id": "22txn5haj",
-      "rarity": "Inusual",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 9,
-        "magicDef": 7
-      },
-      "name": "Capucha de Defensa Mágica",
-      "effect": "+7 Defensa Mágica",
-      "price": 162
-    },
-    {
-      "id": "d7rmeqers",
-      "rarity": "Legendario",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 32,
-        "magicDef": 21
-      },
-      "name": "Yelmo de Defensa Mágica",
-      "effect": "+21 Defensa Mágica",
-      "price": 1920
-    },
-    {
-      "id": "fxwfx5p4h",
-      "rarity": "Raro",
-      "type": "armor",
-      "subtype": "chest",
-      "stats": {
-        "defense": 7,
-        "magicDef": 12
-      },
-      "name": "Pechera de Defensa Mágica",
-      "effect": "+12 Defensa Mágica",
-      "price": 168
-    },
-    {
-      "id": "i0p5w67o0",
-      "rarity": "Inusual",
-      "type": "armor",
-      "subtype": "chest",
-      "stats": {
-        "defense": 9,
+        "defense": 5,
         "manaRegen": 9
       },
-      "name": "Pechera de Regeneración de Maná",
+      "name": "Túnica de Regeneración de Maná",
       "effect": "+9 Regeneración de Maná",
-      "price": 162
+      "price": 60
     },
     {
-      "id": "zh1mtfqo6",
-      "rarity": "Raro",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 17,
-        "manaRegen": 9
-      },
-      "name": "Capucha de Regeneración de Maná",
-      "effect": "+9 Regeneración de Maná",
-      "price": 408
-    },
-    {
-      "id": "xeku5f1jy",
-      "rarity": "Raro",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 8,
-        "critChance": 16
-      },
-      "name": "Capucha de Golpe Crítico",
-      "effect": "+16 Golpe Crítico",
-      "price": 192
-    },
-    {
-      "id": "ui941ip0u",
-      "rarity": "Inusual",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 10,
-        "magicDef": 5
-      },
-      "name": "Casco de Defensa Mágica",
-      "effect": "+5 Defensa Mágica",
-      "price": 180
-    },
-    {
-      "id": "vzhx2mkgl",
-      "rarity": "Raro",
-      "type": "armor",
-      "subtype": "chest",
-      "stats": {
-        "defense": 8,
-        "critChance": 13
-      },
-      "name": "Cota de Golpe Crítico",
-      "effect": "+13 Golpe Crítico",
-      "price": 192
-    },
-    {
-      "id": "coevj2djs",
+      "id": "yecqbc1hj",
       "rarity": "Épico",
-      "type": "armor",
-      "subtype": "chest",
-      "stats": {
-        "defense": 17,
-        "manaRegen": 5
-      },
-      "name": "Pechera de Regeneración de Maná",
-      "effect": "+5 Regeneración de Maná",
-      "price": 612
-    },
-    {
-      "id": "tvm1sxik4",
-      "rarity": "Común",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 6,
-        "manaRegen": 2
-      },
-      "name": "Casco de Regeneración de Maná",
-      "effect": "+2 Regeneración de Maná",
-      "price": 72
-    },
-    {
-      "id": "5ugsqlylx",
-      "rarity": "Común",
       "type": "armor",
       "subtype": "chest",
       "stats": {
         "defense": 12,
-        "lifesteal": 2
+        "magicRes": 9
       },
-      "name": "Pechera de Robo de Vida",
-      "effect": "+2 Robo de Vida",
+      "name": "Pechera de Resistencia Mágica",
+      "effect": "+9 Resistencia Mágica",
+      "price": 432
+    },
+    {
+      "id": "nkmb6uomo",
+      "rarity": "Común",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 5,
+        "magicRes": 5
+      },
+      "name": "Túnica de Resistencia Mágica",
+      "effect": "+5 Resistencia Mágica",
+      "price": 60
+    },
+    {
+      "id": "u8fklv1o3",
+      "rarity": "Raro",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 14,
+        "manaRegen": 10
+      },
+      "name": "Túnica de Regeneración de Maná",
+      "effect": "+10 Regeneración de Maná",
+      "price": 336
+    },
+    {
+      "id": "wj31yzobq",
+      "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 12,
+        "critChance": 10
+      },
+      "name": "Cota de Golpe Crítico",
+      "effect": "+10 Golpe Crítico",
+      "price": 216
+    },
+    {
+      "id": "15zr1jnjt",
+      "rarity": "Común",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 10,
+        "manaRegen": 9
+      },
+      "name": "Pechera de Regeneración de Maná",
+      "effect": "+9 Regeneración de Maná",
+      "price": 120
+    },
+    {
+      "id": "nzpwatyjb",
+      "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 7,
+        "lifesteal": 3
+      },
+      "name": "Yelmo de Robo de Vida",
+      "effect": "+3 Robo de Vida",
+      "price": 126
+    },
+    {
+      "id": "aeegbu6x5",
+      "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 8,
+        "magicRes": 14
+      },
+      "name": "Túnica de Resistencia Mágica",
+      "effect": "+14 Resistencia Mágica",
       "price": 144
     },
     {
-      "id": "gij48fvxs",
+      "id": "a94qgf7j3",
       "rarity": "Épico",
       "type": "armor",
       "subtype": "chest",
       "stats": {
-        "defense": 11,
-        "magicRes": 23
+        "defense": 23,
+        "critChance": 34
       },
-      "name": "Pechera de Resistencia Mágica",
-      "effect": "+23 Resistencia Mágica",
-      "price": 396
+      "name": "Pechera de Golpe Crítico",
+      "effect": "+34 Golpe Crítico",
+      "price": 828
     },
     {
-      "id": "4x63touwe",
-      "rarity": "Inusual",
+      "id": "fuxmu1vn5",
+      "rarity": "Épico",
       "type": "armor",
       "subtype": "helmet",
       "stats": {
-        "defense": 14,
-        "critChance": 7
-      },
-      "name": "Capucha de Golpe Crítico",
-      "effect": "+7 Golpe Crítico",
-      "price": 252
-    },
-    {
-      "id": "gr3lw4c6m",
-      "rarity": "Raro",
-      "type": "armor",
-      "subtype": "helmet",
-      "stats": {
-        "defense": 13,
+        "defense": 22,
         "lifesteal": 5
       },
       "name": "Capucha de Robo de Vida",
       "effect": "+5 Robo de Vida",
-      "price": 312
+      "price": 792
     },
     {
-      "id": "sygzzd08s",
+      "id": "ecfzamnf1",
+      "rarity": "Épico",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 17,
+        "lifesteal": 6
+      },
+      "name": "Casco de Robo de Vida",
+      "effect": "+6 Robo de Vida",
+      "price": 612
+    },
+    {
+      "id": "0o1jdcjr3",
       "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 10,
+        "magicDef": 8
+      },
+      "name": "Yelmo de Defensa Mágica",
+      "effect": "+8 Defensa Mágica",
+      "price": 180
+    },
+    {
+      "id": "d0ab0jtjp",
+      "rarity": "Común",
       "type": "armor",
       "subtype": "chest",
       "stats": {
-        "defense": 7,
-        "magicDef": 8
+        "defense": 9,
+        "critChance": 5
       },
-      "name": "Túnica de Defensa Mágica",
-      "effect": "+8 Defensa Mágica",
-      "price": 126
+      "name": "Túnica de Golpe Crítico",
+      "effect": "+5 Golpe Crítico",
+      "price": 108
     },
     {
-      "id": "qybggoskr",
+      "id": "0l90p7lgs",
+      "rarity": "Común",
+      "type": "armor",
+      "subtype": "chest",
+      "stats": {
+        "defense": 10,
+        "lifesteal": 1
+      },
+      "name": "Cota de Robo de Vida",
+      "effect": "+1 Robo de Vida",
+      "price": 120
+    },
+    {
+      "id": "9q1y5qsfz",
       "rarity": "Común",
       "type": "armor",
       "subtype": "helmet",
       "stats": {
-        "defense": 5,
-        "magicDef": 5
+        "defense": 6,
+        "magicDef": 4
       },
-      "name": "Capucha de Defensa Mágica",
-      "effect": "+5 Defensa Mágica",
-      "price": 60
+      "name": "Yelmo de Defensa Mágica",
+      "effect": "+4 Defensa Mágica",
+      "price": 72
+    },
+    {
+      "id": "6ncbuq9ip",
+      "rarity": "Épico",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 9,
+        "critChance": 33
+      },
+      "name": "Yelmo de Golpe Crítico",
+      "effect": "+33 Golpe Crítico",
+      "price": 324
+    },
+    {
+      "id": "919y933ya",
+      "rarity": "Común",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 10,
+        "manaRegen": 7
+      },
+      "name": "Capucha de Regeneración de Maná",
+      "effect": "+7 Regeneración de Maná",
+      "price": 120
+    },
+    {
+      "id": "oopnu236e",
+      "rarity": "Épico",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 18,
+        "lifesteal": 6
+      },
+      "name": "Casco de Robo de Vida",
+      "effect": "+6 Robo de Vida",
+      "price": 648
+    },
+    {
+      "id": "cqdnw7n05",
+      "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 13,
+        "magicRes": 10
+      },
+      "name": "Yelmo de Resistencia Mágica",
+      "effect": "+10 Resistencia Mágica",
+      "price": 234
+    },
+    {
+      "id": "vmlyj793b",
+      "rarity": "Inusual",
+      "type": "armor",
+      "subtype": "helmet",
+      "stats": {
+        "defense": 6,
+        "magicRes": 7
+      },
+      "name": "Capucha de Resistencia Mágica",
+      "effect": "+7 Resistencia Mágica",
+      "price": 108
+    },
+    {
+      "id": "eqnr3lbu4",
+      "name": "Grimorio: Gran Bola de Fuego",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Explosión masiva de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 3500
+    },
+    {
+      "id": "2g445pkk9",
+      "name": "Grimorio: Rayo",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Común",
+      "element": "lightning",
+      "effect": "Ataque eléctrico rápido",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1300
+    },
+    {
+      "id": "46mzi7bjc",
+      "name": "Grimorio: Levantar Esqueleto",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Común",
+      "element": "dark",
+      "effect": "Invoca un esqueleto guerrero",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1500
+    },
+    {
+      "id": "n18kvh8hy",
+      "name": "Grimorio: Invocar Atronach",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Invoca un golem de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 4000
+    },
+    {
+      "id": "41zl50f3j",
+      "name": "Grimorio: Levantar Esqueleto",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Común",
+      "element": "dark",
+      "effect": "Invoca un esqueleto guerrero",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1500
+    },
+    {
+      "id": "p4llcf0ux",
+      "name": "Grimorio: Señor Drémora",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Legendario",
+      "element": "dark",
+      "effect": "Invoca un poderoso guerrero daedra",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 15000
+    },
+    {
+      "id": "bpetq35lw",
+      "name": "Grimorio: Gran Bola de Fuego",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Explosión masiva de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 3500
+    },
+    {
+      "id": "vd447pxvs",
+      "name": "Grimorio: Gran Bola de Fuego",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Explosión masiva de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 3500
+    },
+    {
+      "id": "5m2ch9qf0",
+      "name": "Grimorio: Gran Bola de Fuego",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Explosión masiva de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 3500
+    },
+    {
+      "id": "uwvxrw4gt",
+      "name": "Grimorio: Tormenta de Rayos",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Épico",
+      "element": "lightning",
+      "effect": "Lluvia de rayos devastadora",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 8000
+    },
+    {
+      "id": "ib38kd4ef",
+      "name": "Grimorio: Rayo",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Común",
+      "element": "lightning",
+      "effect": "Ataque eléctrico rápido",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1300
+    },
+    {
+      "id": "deonf30zu",
+      "name": "Grimorio: Invocar Atronach",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Invoca un golem de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 4000
+    },
+    {
+      "id": "3k7s2tw8i",
+      "name": "Grimorio: Levantar Esqueleto",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Común",
+      "element": "dark",
+      "effect": "Invoca un esqueleto guerrero",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1500
+    },
+    {
+      "id": "dsppuec5f",
+      "name": "Grimorio: Invocar Atronach",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Raro",
+      "element": "fire",
+      "effect": "Invoca un golem de fuego",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 4000
+    },
+    {
+      "id": "cedrqi5zn",
+      "name": "Grimorio: Levantar Esqueleto",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Común",
+      "element": "dark",
+      "effect": "Invoca un esqueleto guerrero",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1500
+    },
+    {
+      "id": "ufdqvtfvt",
+      "name": "Grimorio: Estaca de Tierra",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Común",
+      "element": "earth",
+      "effect": "Daño de tierra perforante",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 1200
+    },
+    {
+      "id": "16mhq24sx",
+      "name": "Grimorio: Tormenta de Rayos",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Épico",
+      "element": "lightning",
+      "effect": "Lluvia de rayos devastadora",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 8000
+    },
+    {
+      "id": "ah2op38ev",
+      "name": "Grimorio: Tormenta de Rayos",
+      "type": "grimoire",
+      "subtype": "damage",
+      "rarity": "Épico",
+      "element": "lightning",
+      "effect": "Lluvia de rayos devastadora",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 8000
+    },
+    {
+      "id": "huplmapih",
+      "name": "Grimorio: Señor Drémora",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Legendario",
+      "element": "dark",
+      "effect": "Invoca un poderoso guerrero daedra",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 15000
+    },
+    {
+      "id": "tqblzephr",
+      "name": "Grimorio: Señor Drémora",
+      "type": "grimoire",
+      "subtype": "summon",
+      "rarity": "Legendario",
+      "element": "dark",
+      "effect": "Invoca un poderoso guerrero daedra",
+      "stats": {
+        "magicDamage": 10
+      },
+      "price": 15000
     }
   ]
 }

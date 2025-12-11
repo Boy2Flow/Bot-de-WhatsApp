@@ -5068,3 +5068,20 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [11/12/2025, 20:35:22] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado armadura
 [11/12/2025, 20:35:45] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .buy armadura 8
 [11/12/2025, 20:36:01] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .equipar 1
+[11/12/2025, 20:49:57] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal @139049750757567
+[11/12/2025, 20:50:04] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .delete 
+[11/12/2025, 20:50:24] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .addmoney 80000 @139049750757567
+[11/12/2025, 20:51:04] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .addmoney 80000 @210801289871581
+[11/12/2025, 20:51:52] 👤 🕷️🐈‍⬛ (210801289871581) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .menu 
+[11/12/2025, 20:52:14] 👤 🕷️🐈‍⬛ (210801289871581) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[11/12/2025, 20:55:13] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .reload 
+[11/12/2025, 20:55:30] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado 
+[11/12/2025, 20:55:44] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
+[11/12/2025, 20:56:09] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .mercado 
+[11/12/2025, 20:56:19] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .mercado hechizos
+[11/12/2025, 20:58:10] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .reload 
+[11/12/2025, 20:58:26] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .mercado hechizos
+[11/12/2025, 21:01:16] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .reload 
+[11/12/2025, 21:01:34] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .mercado hechizos
+[11/12/2025, 21:03:18] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
+[11/12/2025, 21:06:00] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .backup 

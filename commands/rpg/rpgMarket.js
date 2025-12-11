@@ -32,6 +32,16 @@ const ENCHANTMENTS = [
     { name: 'Golpe Crítico', key: 'critChance', min: 5, max: 20 }
 ];
 
+const SPELL_BOOKS = [
+    { name: 'Grimorio: Levantar Esqueleto', type: 'summon', element: 'dark', rarity: 'Común', basePrice: 1500, desc: 'Invoca un esqueleto guerrero' },
+    { name: 'Grimorio: Estaca de Tierra', type: 'damage', element: 'earth', rarity: 'Común', basePrice: 1200, desc: 'Daño de tierra perforante' },
+    { name: 'Grimorio: Gran Bola de Fuego', type: 'damage', element: 'fire', rarity: 'Raro', basePrice: 3500, desc: 'Explosión masiva de fuego' },
+    { name: 'Grimorio: Invocar Atronach', type: 'summon', element: 'fire', rarity: 'Raro', basePrice: 4000, desc: 'Invoca un golem de fuego' },
+    { name: 'Grimorio: Rayo', type: 'damage', element: 'lightning', rarity: 'Común', basePrice: 1300, desc: 'Ataque eléctrico rápido' },
+    { name: 'Grimorio: Tormenta de Rayos', type: 'damage', element: 'lightning', rarity: 'Épico', basePrice: 8000, desc: 'Lluvia de rayos devastadora' },
+    { name: 'Grimorio: Señor Drémora', type: 'summon', element: 'dark', rarity: 'Legendario', basePrice: 15000, desc: 'Invoca un poderoso guerrero daedra' }
+];
+
 // --- FUNCIONES DE GENERACIÓN ---
 
 function getRandomElement(arr) {
@@ -114,6 +124,25 @@ function generateRandomItem(forceType = null) {
     return item;
 }
 
+function generateRandomSpellItem() {
+    const baseSpell = getRandomElement(SPELL_BOOKS);
+
+    // Variación de precio y rareza leve
+    const item = {
+        id: Math.random().toString(36).substr(2, 9),
+        name: baseSpell.name,
+        type: 'grimoire', // Nuevo tipo de item
+        subtype: baseSpell.type,
+        rarity: baseSpell.rarity,
+        element: baseSpell.element,
+        effect: baseSpell.desc,
+        stats: { magicDamage: 10 }, // Stats base genéricos por ahora
+        price: baseSpell.basePrice
+    };
+
+    return item;
+}
+
 function generateMarket() {
     const items = [];
     // Generar 20 armas
@@ -123,6 +152,10 @@ function generateMarket() {
     // Generar 20 armaduras
     for (let i = 0; i < 20; i++) {
         items.push(generateRandomItem('armor'));
+    }
+    // Generar 20 hechizos
+    for (let i = 0; i < 20; i++) {
+        items.push(generateRandomSpellItem());
     }
 
     const marketData = {
@@ -179,9 +212,14 @@ export const marketCommand = {
             filteredItems = market.items.slice(20, 40);
             title = '🛡️ ARMADURAS DISPONIBLES';
             showIndex = true;
+        } else if (category === 'hechizos' || category === 'spells' || category === 'hechizo' || category === 'grimorios') {
+            // Siguientes 20 son hechizos
+            filteredItems = market.items.slice(40, 60);
+            title = '🔮 HECHIZOS DISPONIBLES';
+            showIndex = true;
         } else {
             // Menú principal
-            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas*: Usa *.mercado armas*\n🛡️ *Armaduras*: Usa *.mercado armaduras*\n\n🛒 *COMPRA:*\n.comprar arma [ID] (1-20)\n.comprar armadura [ID] (1-20)\n\n🎒 *GESTION:*\n.inv - Ver inventario\n.equipar [num] - Usar objeto\n.desequipar [tipo] - Quitar objeto`;
+            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas*: Usa *.mercado armas*\n🛡️ *Armaduras*: Usa *.mercado armaduras*\n🔮 *Hechizos*: Usa *.mercado hechizos*\n\n🛒 *COMPRA:*\n.comprar arma [ID] (1-20)\n.comprar armadura [ID] (1-20)\n.comprar hechizo [ID] (1-20)\n\n🎒 *GESTION:*\n.inv - Ver inventario\n.equipar [num] - Usar objeto\n.desequipar [tipo] - Quitar objeto`;
             await sock.sendMessage(from, { text }, { quoted: message });
             return;
         }
@@ -195,6 +233,7 @@ export const marketCommand = {
             text += `📦 *ID: ${localId}* | ${item.name}\n`;
             text += `   📝 ${item.rarity}\n`;
             if (item.stats.damage) text += `   ⚔️ Daño: ${item.stats.damage}\n`;
+            if (item.stats.magicDamage) text += `   🔥 Daño Mágico: ${item.stats.magicDamage}\n`;
             if (item.stats.defense) text += `   🛡️ Defensa: ${item.stats.defense}\n`;
             if (item.effect) text += `   ✨ ${item.effect}\n`;
             text += `   💰 ${item.price} oro\n\n`;
@@ -202,6 +241,8 @@ export const marketCommand = {
 
         if (category.startsWith('arm')) {
             text += `🛒 Para comprar: *.comprar arma [ID]*`;
+        } else if (category.startsWith('hech') || category.startsWith('grim')) {
+            text += `🛒 Para comprar: *.comprar hechizo [ID]*`;
         } else {
             text += `🛒 Para comprar: *.comprar armadura [ID]*`;
         }
@@ -224,7 +265,7 @@ export const buyCommand = {
         // Soporte legacy o directo (.comprar [ID GLOBAL]) - Opcional, pero mejor forzar la nueva sintaxis para evitar errores
         // Si el usuario pone solo numeros en el primer argumento, asumimos que intenta usar ID global, pero le guiaremos al nuevo sistema
         if (!isNaN(parseInt(type))) {
-            await sock.sendMessage(from, { text: '❌ Usa el formato: .comprar arma [ID] o .comprar armadura [ID]' }, { quoted: message });
+            await sock.sendMessage(from, { text: '❌ Usa el formato: .comprar arma [ID], .comprar armadura [ID] o .comprar hechizo [ID]' }, { quoted: message });
             return;
         }
 
@@ -247,8 +288,15 @@ export const buyCommand = {
                 return;
             }
             realIndex = localId - 1 + 20; // 20-39
+            realIndex = localId - 1 + 20; // 20-39
+        } else if (type === 'hechizo' || type === 'spell' || type === 'hechizos' || type === 'grimorio') {
+            if (localId < 1 || localId > 20) {
+                await sock.sendMessage(from, { text: '❌ El ID de hechizo debe ser entre 1 y 20.' }, { quoted: message });
+                return;
+            }
+            realIndex = localId - 1 + 40; // 40-59
         } else {
-            await sock.sendMessage(from, { text: '❌ Tipo desconocido. Usa "arma" o "armadura".' }, { quoted: message });
+            await sock.sendMessage(from, { text: '❌ Tipo desconocido. Usa "arma", "armadura" o "hechizo".' }, { quoted: message });
             return;
         }
 

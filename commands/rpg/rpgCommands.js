@@ -188,10 +188,21 @@ export const rpgCommand = {
                 statScaling = Math.floor(player.stats.str * 1.5);
             }
 
-            const playerDmg = statScaling + weaponDmg + Math.floor(Math.random() * 5);
+            // Daño de Hechizo (Si está equipado)
+            const spell = player.equipped?.spell;
+            let spellDmg = 0;
+            let spellMsg = '';
+
+            if (spell) {
+                // Escala con INT (x2) + Daño Base del Hechizo
+                spellDmg = (spell.stats.magicDamage || 0) + Math.floor(player.stats.int * 2);
+                spellMsg = `\n🔥 *${spell.name}*: +${spellDmg} daño mágico`;
+            }
+
+            const playerDmg = statScaling + weaponDmg + spellDmg + Math.floor(Math.random() * 5);
             enemy.currentHp -= playerDmg;
 
-            let battleLog = `🗡️ Atacas: ${playerDmg} daño\n`;
+            let battleLog = `🗡️ Atacas: ${playerDmg} daño total${spellMsg}\n`;
 
             if (enemy.currentHp <= 0) {
                 const { player: updatedPlayer, leveledUp } = gainXp(from, userId, enemy.xp);

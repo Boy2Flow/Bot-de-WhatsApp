@@ -20,6 +20,7 @@ export const inventoryCommand = {
         text += `🛡️ *EQUIPAMIENTO ACTUAL:*\n`;
         const weapon = player.equipped?.weapon;
         const armor = player.equipped?.armor;
+        const spell = player.equipped?.spell;
 
         text += `⚔️ Arma: ${weapon ? weapon.name : 'Puños'}\n`;
         if (weapon) {
@@ -29,13 +30,21 @@ export const inventoryCommand = {
         if (armor) {
             text += `   └ Defensa: ${armor.stats.defense} ${armor.effect ? `| ${armor.effect}` : ''}\n`;
         }
+        text += `🔮 Hechizo: ${spell ? spell.name : 'Ninguno'}\n`;
+        if (spell) {
+            text += `   └ Magia: ${spell.stats.magicDamage} ${spell.effect ? `| ${spell.effect}` : ''}\n`;
+        }
         text += `\n📦 *OBJETOS EN MOCHILA:*\n`;
 
         if (!player.inventory || player.inventory.length === 0) {
             text += `_Mochila vacía_\n`;
         } else {
             player.inventory.forEach((item, index) => {
-                const typeIcon = item.type === 'weapon' ? '⚔️' : item.type === 'armor' ? '🛡️' : '📦';
+                let typeIcon = '📦';
+                if (item.type === 'weapon') typeIcon = '⚔️';
+                else if (item.type === 'armor') typeIcon = '🛡️';
+                else if (item.type === 'grimoire') typeIcon = '🔮';
+
                 text += `${index + 1}. ${typeIcon} *${item.name}* | ${item.rarity}\n`;
             });
         }
@@ -61,9 +70,9 @@ export const equipCommand = {
         // Si el primer argumento no es un número, intentamos ver si es 'arma' o 'armadura' y buscamos el segundo argumento
         let itemIndex = parseInt(args[0]);
         if (isNaN(itemIndex)) {
-            // Chequear si puso "arma" o "armadura" primero
+            // Chequear si puso "arma", "armadura" o "hechizo" primero
             const type = args[0]?.toLowerCase();
-            if (['arma', 'armadura', 'weapon', 'armor'].includes(type)) {
+            if (['arma', 'armadura', 'weapon', 'armor', 'hechizo', 'spell', 'grimorio', 'grimoire'].includes(type)) {
                 itemIndex = parseInt(args[1]);
             }
         }
@@ -98,6 +107,12 @@ export const equipCommand = {
                 player.inventory.push(player.equipped.armor);
             }
             player.equipped.armor = item;
+        } else if (item.type === 'grimoire') {
+            if (player.equipped.spell) {
+                // Devolver a inventario
+                player.inventory.push(player.equipped.spell);
+            }
+            player.equipped.spell = item;
         } else {
             await sock.sendMessage(from, { text: '❌ Este objeto no se puede equipar.' }, { quoted: message });
             return;
@@ -128,8 +143,8 @@ export const unequipCommand = {
 
         const type = args[0]?.toLowerCase();
 
-        if (!['arma', 'weapon', 'armadura', 'armor'].includes(type)) {
-            await sock.sendMessage(from, { text: '❌ ¿Qué quieres desequipar? Usa ".desequipar arma" o ".desequipar armadura"' }, { quoted: message });
+        if (!['arma', 'weapon', 'armadura', 'armor', 'hechizo', 'spell', 'grimorio'].includes(type)) {
+            await sock.sendMessage(from, { text: '❌ ¿Qué quieres desequipar? Usa ".desequipar arma", ".desequipar armadura" o ".desequipar hechizo"' }, { quoted: message });
             return;
         }
 
@@ -146,6 +161,14 @@ export const unequipCommand = {
                 delete player.equipped.weapon;
             } else {
                 await sock.sendMessage(from, { text: '❌ No tienes arma equipada.' }, { quoted: message });
+                return;
+            }
+        } else if (['hechizo', 'spell', 'grimorio'].includes(type)) {
+            if (player.equipped.spell) {
+                unequippedItem = player.equipped.spell;
+                delete player.equipped.spell;
+            } else {
+                await sock.sendMessage(from, { text: '❌ No tienes hechizo equipado.' }, { quoted: message });
                 return;
             }
         } else {
