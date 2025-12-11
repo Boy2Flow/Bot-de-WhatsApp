@@ -75,11 +75,11 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 7,
-      "xp": 151,
+      "xp": 592,
       "xpToNext": 1135,
-      "hp": 100,
+      "hp": 84,
       "maxHp": 100,
-      "mana": 180,
+      "mana": 0,
       "maxMana": 180,
       "stats": {
         "str": 10,
@@ -88,12 +88,12 @@
         "vit": 10
       },
       "inventory": [],
-      "gold": 267,
+      "gold": 282,
       "location": "town",
       "state": "idle",
       "class": "mage",
       "currentEnemy": null,
-      "lastTrain": 1765457704576
+      "lastTrain": 1765467233451
     },
     "59837836693652@lid": {
       "race": "dark_elf",
