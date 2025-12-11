@@ -366,8 +366,8 @@
       "lastRoleClaim": 1765444669267
     },
     "139049750757567@lid": {
-      "balance": 0,
-      "bank": 254263,
+      "balance": 898,
+      "bank": 253518,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -481,8 +481,8 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 1213,
-      "bank": 194494,
+      "balance": 200,
+      "bank": 206812,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -493,7 +493,7 @@
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765434532913
+        "ceo": 1765450653855
       },
       "roles": [],
       "lastRoleClaim": 0
