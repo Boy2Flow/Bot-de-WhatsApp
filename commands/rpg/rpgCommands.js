@@ -105,13 +105,28 @@ export const rpgCommand = {
         // PERFIL
         if (subcommand === 'perfil' || subcommand === 'stats') {
             const race = RACES[player.race];
+
+            // Calcular stats totales con equipo
+            const weapon = player.equipped?.weapon;
+            const armor = player.equipped?.armor;
+
+            const totalStr = player.stats.str + (weapon?.stats?.str || 0);
+            const totalAgi = player.stats.agi + (weapon?.stats?.agi || 0);
+            const totalInt = player.stats.int + (weapon?.stats?.int || 0);
+            const totalVit = player.stats.vit + (armor?.stats?.vit || 0);
+
             let affText = '';
             if (player.afflictions && player.afflictions.length > 0) {
                 const affNames = player.afflictions.map(k => AFFLICTIONS[k]?.name || k).join(', ');
                 affText = `\n🦠 *Aflicciones:* ${affNames}`;
             }
 
-            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${player.stats.str} | 🏹 AGI: ${player.stats.agi}\n🧠 INT: ${player.stats.int} | 🛡️ VIT: ${player.stats.vit}${affText}`;
+            // Información de equipo
+            let equipText = '\n\n🛡️ *EQUIPO:*';
+            equipText += `\n⚔️ Arma: ${weapon ? `${weapon.name} (+${weapon.stats.damage} dmg)` : 'Ninguna'}`;
+            equipText += `\n🛡️ Armadura: ${armor ? `${armor.name} (+${armor.stats.defense} def)` : 'Ninguna'}`;
+
+            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${totalStr} | 🏹 AGI: ${totalAgi}\n🧠 INT: ${totalInt} | 🛡️ VIT: ${totalVit}${affText}${equipText}`;
             await sock.sendMessage(from, { text }, { quoted: message });
             return;
         }
@@ -157,7 +172,23 @@ export const rpgCommand = {
             }
 
             const enemy = player.currentEnemy;
-            const playerDmg = Math.floor(player.stats.str * 1.5) + Math.floor(Math.random() * 5);
+
+            // CÁLCULO DE DAÑO DEL JUGADOR
+            // Base STR + Daño de Arma + Random
+            const weapon = player.equipped?.weapon;
+            let weaponDmg = weapon?.stats?.damage || 0;
+
+            // Si es bastón mágico, usa INT en lugar de STR para el escalado
+            let statScaling = 0;
+            if (weapon?.subtype === 'staff') {
+                statScaling = Math.floor(player.stats.int * 1.5);
+                // Bonus de magia
+                if (weapon.stats.magicDamage) weaponDmg += weapon.stats.magicDamage;
+            } else {
+                statScaling = Math.floor(player.stats.str * 1.5);
+            }
+
+            const playerDmg = statScaling + weaponDmg + Math.floor(Math.random() * 5);
             enemy.currentHp -= playerDmg;
 
             let battleLog = `🗡️ Atacas: ${playerDmg} daño\n`;
@@ -179,8 +210,23 @@ export const rpgCommand = {
                 return;
             }
 
-            const enemyDmg = Math.max(1, enemy.atk);
-            player.hp -= enemyDmg;
+            // CÁLCULO DE DAÑO RECIBIDO
+            // Defensa de armadura reduce daño
+            const armor = player.equipped?.armor;
+            let defense = armor?.stats?.defense || 0;
+
+            // Bonus por defensa mágica si aplica (simplificado: defensa general por ahora)
+            if (armor?.stats?.magicDef) defense += Math.floor(armor.stats.magicDef / 2);
+
+            // Fórmula simple de reducción: Daño - (Defensa / 2)
+            // Mínimo 1 de daño siempre
+            let enemyAttack = enemy.atk;
+            if (player.afflictions?.includes('vampirism')) {
+                // Vampiros reciben menos daño físico pero más mágico (no implementado tipos de daño enemigo aún)
+            }
+
+            const damageTaken = Math.max(1, enemyAttack - Math.floor(defense / 2));
+            player.hp -= damageTaken;
 
             // Lógica de Infección (Vampirismo / Licantropía)
             if (enemy.canInfect && Math.random() < 0.2) {
@@ -197,7 +243,7 @@ export const rpgCommand = {
                 }
             }
 
-            battleLog += `👹 Enemigo ataca: ${enemyDmg} daño\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
+            battleLog += `👹 Enemigo ataca: ${damageTaken} daño (🛡️-${Math.floor(defense / 2)})\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
 
             if (player.hp <= 0) {
                 player.hp = 0;

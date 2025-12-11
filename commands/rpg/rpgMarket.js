@@ -181,7 +181,7 @@ export const marketCommand = {
             showIndex = true;
         } else {
             // Menú principal
-            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas*: Usa *.mercado armas*\n🛡️ *Armaduras*: Usa *.mercado armaduras*\n\n🛒 *COMPRA:*\n.comprar arma [ID] (1-20)\n.comprar armadura [ID] (1-20)`;
+            const text = `🏪 *MERCADO NEGRO* 🏪\n_Productos nuevos cada hora_\n\n📦 *CATÁLOGO:*\n\n⚔️ *Armas*: Usa *.mercado armas*\n🛡️ *Armaduras*: Usa *.mercado armaduras*\n\n🛒 *COMPRA:*\n.comprar arma [ID] (1-20)\n.comprar armadura [ID] (1-20)\n\n🎒 *GESTION:*\n.inv - Ver inventario\n.equipar [num] - Usar objeto\n.desequipar [tipo] - Quitar objeto`;
             await sock.sendMessage(from, { text }, { quoted: message });
             return;
         }

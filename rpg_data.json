@@ -75,7 +75,7 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 8,
-      "xp": 525,
+      "xp": 570,
       "xpToNext": 1702,
       "hp": 110,
       "maxHp": 110,
@@ -88,34 +88,63 @@
         "vit": 11
       },
       "inventory": [],
-      "gold": 387,
+      "gold": 95,
       "location": "town",
       "state": "idle",
       "class": "mage",
       "currentEnemy": null,
-      "lastTrain": 1765476862515
+      "lastTrain": 1765476862515,
+      "equipped": {
+        "weapon": {
+          "id": "4upn24ayl",
+          "rarity": "Común",
+          "type": "weapon",
+          "subtype": "staff",
+          "stats": {
+            "damage": 10,
+            "magicDamage": 7,
+            "element": "Fuego"
+          },
+          "name": "Cetro de Fuego Común",
+          "effect": "+7 Daño de Fuego",
+          "price": 150
+        },
+        "armor": {
+          "id": "i0p5w67o0",
+          "rarity": "Inusual",
+          "type": "armor",
+          "subtype": "chest",
+          "stats": {
+            "defense": 9,
+            "manaRegen": 9
+          },
+          "name": "Pechera de Regeneración de Maná",
+          "effect": "+9 Regeneración de Maná",
+          "price": 162
+        }
+      }
     },
     "59837836693652@lid": {
       "race": "dark_elf",
-      "level": 6,
-      "xp": 731,
-      "xpToNext": 757,
-      "hp": 54,
-      "maxHp": 90,
-      "mana": 130,
-      "maxMana": 170,
+      "level": 7,
+      "xp": 244,
+      "xpToNext": 1135,
+      "hp": 100,
+      "maxHp": 100,
+      "mana": 180,
+      "maxMana": 180,
       "stats": {
-        "str": 9,
-        "agi": 12,
-        "int": 17,
-        "vit": 9
+        "str": 10,
+        "agi": 13,
+        "int": 18,
+        "vit": 10
       },
       "inventory": [],
       "gold": 124,
       "location": "town",
       "state": "idle",
       "currentEnemy": null,
-      "lastTrain": 1765477562897,
+      "lastTrain": 1765479775809,
       "class": "mage"
     }
   },
