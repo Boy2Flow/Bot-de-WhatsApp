@@ -194,8 +194,8 @@ export const rpgCommand = {
 
         // CURAR
         if (subcommand === 'curar' || subcommand === 'heal') {
-            if (player.hp >= player.maxHp && player.state !== 'dead') {
-                await sock.sendMessage(from, { text: '✅ Ya estás al máximo' }, { quoted: message });
+            if (player.hp >= player.maxHp && player.mana >= player.maxMana && player.state !== 'dead') {
+                await sock.sendMessage(from, { text: '✅ Ya estás al máximo de vida y maná' }, { quoted: message });
                 return;
             }
 
@@ -208,11 +208,12 @@ export const rpgCommand = {
 
             player.gold -= cost;
             player.hp = player.maxHp;
+            player.mana = player.maxMana; // Restablecer maná
             player.state = 'idle';
             player.currentEnemy = null;
             updatePlayer(from, userId, player);
 
-            await sock.sendMessage(from, { text: `💖 Curado completamente!` }, { quoted: message });
+            await sock.sendMessage(from, { text: `💖 Curado completamente y maná restaurado!` }, { quoted: message });
             return;
         }
 

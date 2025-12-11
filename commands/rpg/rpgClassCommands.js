@@ -1,5 +1,5 @@
 import { CLASSES } from './rpgData.js';
-import { getPlayer, updatePlayer } from './rpgCore.js';
+import { getPlayer, updatePlayer, gainXp } from './rpgCore.js';
 
 export const rpgClassCommand = {
     name: 'clase',
@@ -65,22 +65,22 @@ export const rpgClassCommand = {
             const classKey = args[1]?.toLowerCase();
 
             if (player.class) {
-                await sock.sendMessage(from, { 
-                    text: `❌ Ya eres ${CLASSES[player.class].name}. No puedes cambiar de clase.` 
+                await sock.sendMessage(from, {
+                    text: `❌ Ya eres ${CLASSES[player.class].name}. No puedes cambiar de clase.`
                 }, { quoted: message });
                 return;
             }
 
             if (!classKey || !CLASSES[classKey]) {
-                await sock.sendMessage(from, { 
-                    text: '❌ Clase inválida. Usa: mage, archer, warrior, assassin' 
+                await sock.sendMessage(from, {
+                    text: '❌ Clase inválida. Usa: mage, archer, warrior, assassin'
                 }, { quoted: message });
                 return;
             }
 
             const selectedClass = CLASSES[classKey];
             player.class = classKey;
-            
+
             // Aplicar bonos de clase
             if (selectedClass.bonus.str) player.stats.str += selectedClass.bonus.str;
             if (selectedClass.bonus.agi) player.stats.agi += selectedClass.bonus.agi;
@@ -94,7 +94,7 @@ export const rpgClassCommand = {
             updatePlayer(from, userId, player);
 
             let text = `🎓 *¡CLASE ELEGIDA!* 🎓\n\nAhora eres *${selectedClass.name}*\n\n${selectedClass.description}\n\n`;
-            
+
             if (classKey === 'mage') {
                 text += `📚 *Hechizos Disponibles:*\n`;
                 Object.entries(selectedClass.spells).forEach(([key, spell]) => {
@@ -109,8 +109,8 @@ export const rpgClassCommand = {
         }
 
         // Comando no reconocido
-        await sock.sendMessage(from, { 
-            text: '❌ Comando no reconocido. Usa *.clase* para ver todos los comandos.' 
+        await sock.sendMessage(from, {
+            text: '❌ Comando no reconocido. Usa *.clase* para ver todos los comandos.'
         }, { quoted: message });
     }
 };
@@ -155,8 +155,8 @@ export const spellCommand = {
         }
 
         if (player.mana < spell.manaCost) {
-            await sock.sendMessage(from, { 
-                text: `❌ No tienes suficiente mana. Necesitas ${spell.manaCost}, tienes ${player.mana}.` 
+            await sock.sendMessage(from, {
+                text: `❌ No tienes suficiente mana. Necesitas ${spell.manaCost}, tienes ${player.mana}.`
             }, { quoted: message });
             return;
         }
@@ -170,7 +170,7 @@ export const spellCommand = {
         if (spellKey === 'heal') {
             player.hp = Math.min(player.hp + spell.heal, player.maxHp);
             battleLog = `✨ Lanzas *${spell.name}*\n💚 Recuperas ${spell.heal} HP\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}`;
-            
+
             updatePlayer(from, userId, { hp: player.hp, mana: player.mana });
             await sock.sendMessage(from, { text: battleLog }, { quoted: message });
             return;
@@ -182,7 +182,7 @@ export const spellCommand = {
 
         if (enemy.currentHp <= 0) {
             // Victoria
-            const { player: updatedPlayer, leveledUp } = require('./rpgCore.js').gainXp(from, userId, enemy.xp);
+            const { player: updatedPlayer, leveledUp } = gainXp(from, userId, enemy.xp);
             updatedPlayer.gold += enemy.level * 5;
             updatedPlayer.state = 'idle';
             updatedPlayer.currentEnemy = null;
@@ -190,7 +190,7 @@ export const spellCommand = {
             updatePlayer(from, userId, updatedPlayer);
 
             battleLog += `\n🎉 *¡VICTORIA!* 🎉\nHas derrotado al ${enemy.name}.\nGanaste *${enemy.xp} XP* y *${enemy.level * 5} oro*.`;
-            
+
             if (leveledUp) {
                 battleLog += `\n\n🆙 *¡SUBISTE DE NIVEL!* Ahora eres nivel ${updatedPlayer.level}.`;
             }
@@ -202,7 +202,7 @@ export const spellCommand = {
         // Turno del enemigo
         const enemyDmg = Math.max(1, enemy.atk);
         player.hp -= enemyDmg;
-        
+
         battleLog += `👹 El *${enemy.name}* contraataca y te hace *${enemyDmg}* de daño.\n`;
         battleLog += `\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💔 Enemigo HP: ${enemy.currentHp}/${enemy.hp}`;
 
@@ -211,7 +211,7 @@ export const spellCommand = {
             player.state = 'dead';
             player.currentEnemy = null;
             updatePlayer(from, userId, player);
-            
+
             battleLog += `\n\n💀 *¡HAS MUERTO!* 💀\nUsa *.rpg curar* para revivir.`;
         } else {
             updatePlayer(from, userId, { currentEnemy: enemy, hp: player.hp, mana: player.mana });

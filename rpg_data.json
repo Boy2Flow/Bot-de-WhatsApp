@@ -74,34 +74,34 @@
     },
     "29511206867105@lid": {
       "race": "dark_elf",
-      "level": 7,
-      "xp": 893,
-      "xpToNext": 1135,
-      "hp": 74,
-      "maxHp": 100,
-      "mana": 0,
-      "maxMana": 180,
+      "level": 8,
+      "xp": 235,
+      "xpToNext": 1702,
+      "hp": 110,
+      "maxHp": 110,
+      "mana": 190,
+      "maxMana": 190,
       "stats": {
-        "str": 10,
-        "agi": 13,
-        "int": 18,
-        "vit": 10
+        "str": 11,
+        "agi": 14,
+        "int": 19,
+        "vit": 11
       },
       "inventory": [],
-      "gold": 282,
+      "gold": 307,
       "location": "town",
       "state": "fighting",
       "class": "mage",
       "currentEnemy": {
-        "name": "Goblin",
-        "level": 2,
-        "hp": 35,
-        "atk": 5,
-        "xp": 20,
-        "image": "https://i.pinimg.com/originals/30/30/30/30303030303030303030303030303030.jpg",
-        "currentHp": 1
+        "name": "Orco Bandido",
+        "level": 5,
+        "hp": 80,
+        "atk": 12,
+        "xp": 60,
+        "image": "https://i.pinimg.com/originals/50/50/50/50505050505050505050505050505050.jpg",
+        "currentHp": 80
       },
-      "lastTrain": 1765471245915
+      "lastTrain": 1765476862515
     },
     "59837836693652@lid": {
       "race": "dark_elf",

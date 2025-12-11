@@ -28,6 +28,7 @@ import { rpgCommand, trainCommand } from './rpg/rpgCommands.js';
 import { rpgAdminCommand } from './rpg/rpgAdminCommands.js';
 import { rpgExtendedCommand } from './rpg/rpgExtendedCommands.js';
 import { rpgClassCommand, spellCommand } from './rpg/rpgClassCommands.js';
+import { marketCommand, buyCommand } from './rpg/rpgMarket.js';
 import { trollCommand, suicideCommand } from './trollCommand.js';
 import { marriageCommands } from './casarCommand.js';
 import { solterasCommands } from './solterasCommand.js';
@@ -71,6 +72,8 @@ export const commands = [
     rpgExtendedCommand,
     rpgClassCommand,
     spellCommand,
+    marketCommand,
+    buyCommand,
     trollCommand,
     suicideCommand,
     ...marriageCommands,
