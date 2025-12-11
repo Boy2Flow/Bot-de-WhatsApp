@@ -367,7 +367,7 @@
     },
     "139049750757567@lid": {
       "balance": 0,
-      "bank": 255476,
+      "bank": 254263,
       "inventory": [],
       "lastClaim": 0,
       "lastWork": 0,
@@ -481,7 +481,7 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 0,
+      "balance": 1213,
       "bank": 194494,
       "inventory": [],
       "lastClaim": 0,
