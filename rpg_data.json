@@ -98,7 +98,7 @@
     "59837836693652@lid": {
       "race": "dark_elf",
       "level": 5,
-      "xp": 114,
+      "xp": 229,
       "xpToNext": 505,
       "hp": 77,
       "maxHp": 80,
@@ -115,7 +115,7 @@
       "location": "town",
       "state": "idle",
       "currentEnemy": null,
-      "lastTrain": 1765442497720,
+      "lastTrain": 1765444852052,
       "class": "mage"
     }
   },
