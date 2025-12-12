@@ -256,24 +256,24 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 0,
-      "bank": 883318,
+      "balance": 2558,
+      "bank": 957068,
       "inventory": [
         "pico",
         "anillo"
       ],
-      "lastClaim": 1765457961471,
+      "lastClaim": 1765531849110,
       "lastWork": 0,
-      "lastRob": 1765445105460,
+      "lastRob": 1765531784946,
       "lastCrime": 1765230281438,
-      "lastSlut": 1765457274143,
+      "lastSlut": 1765531852322,
       "lastMine": 1765493601670,
       "jobCooldowns": {
-        "puta": 1765493515055,
-        "ceo": 1765493465171,
-        "uber": 1765493556442,
+        "puta": 1765531830365,
+        "ceo": 1765531827115,
+        "uber": 1765531921064,
         "lavaplatos": 1765119706817,
-        "hacker": 1765396419276,
+        "hacker": 1765531924474,
         "mendigo": 1764616080235
       },
       "roles": [
@@ -281,17 +281,17 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765493471265
+      "lastRoleClaim": 1765531837218
     },
     "263925891383340@lid": {
-      "balance": 0,
-      "bank": 538485,
+      "balance": 68,
+      "bank": 541476,
       "inventory": [
         "pico"
       ],
       "lastClaim": 1765457696960,
       "lastWork": 0,
-      "lastRob": 1765367628826,
+      "lastRob": 1765531795680,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 1765457673492,
@@ -367,7 +367,7 @@
       "lastRoleClaim": 1765493480298
     },
     "139049750757567@lid": {
-      "balance": 80000,
+      "balance": 59170,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1765458926410,
@@ -433,8 +433,8 @@
       "lastRoleClaim": 1765457687411
     },
     "259863120715836@lid": {
-      "balance": 498,
-      "bank": 46918,
+      "balance": 0,
+      "bank": 0,
       "inventory": [
         "lotería"
       ],
@@ -482,19 +482,19 @@
       }
     },
     "72692455727350@lid": {
-      "balance": 1726,
-      "bank": 614654,
+      "balance": 1626,
+      "bank": 646819,
       "inventory": [],
       "lastClaim": 1765458942393,
       "lastWork": 0,
-      "lastRob": 1765471443678,
+      "lastRob": 1765531741864,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 0,
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765471419942
+        "ceo": 1765531728416
       },
       "roles": [],
       "lastRoleClaim": 0
