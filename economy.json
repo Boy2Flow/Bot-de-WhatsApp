@@ -256,25 +256,25 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 6004,
-      "bank": 1320499,
+      "balance": 484,
+      "bank": 1371499,
       "inventory": [
         "pico",
         "anillo"
       ],
-      "lastClaim": 1765551298614,
+      "lastClaim": 1765582316261,
       "lastWork": 0,
-      "lastRob": 1765568322203,
+      "lastRob": 1765582361530,
       "lastCrime": 1765230281438,
-      "lastSlut": 1765568264277,
-      "lastMine": 1765568262264,
+      "lastSlut": 1765582307074,
+      "lastMine": 1765582308600,
       "jobCooldowns": {
-        "puta": 1765568255914,
+        "puta": 1765582297105,
         "ceo": 1765568252911,
-        "uber": 1765568270688,
-        "lavaplatos": 1765568274871,
-        "hacker": 1765568261137,
-        "mendigo": 1764616080235
+        "uber": 1765582305938,
+        "lavaplatos": 1765582381484,
+        "hacker": 1765582303605,
+        "mendigo": 1765582377126
       },
       "roles": [
         "bronce",
@@ -282,7 +282,7 @@
         "oro",
         "diamante"
       ],
-      "lastRoleClaim": 1765576782609
+      "lastRoleClaim": 1765582314109
     },
     "263925891383340@lid": {
       "balance": 100000,
@@ -387,29 +387,29 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 3086,
-      "bank": 44093,
+      "balance": 797,
+      "bank": 62815,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765558811368,
+      "lastClaim": 1765582403888,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765558814270,
+      "lastMine": 1765582461327,
       "jobCooldowns": {
-        "ceo": 1765551014295,
+        "ceo": 1765582411697,
         "puta": 1765220067716,
-        "uber": 1765558845954,
+        "uber": 1765582421110,
         "hacker": 1765309699336,
-        "lavaplatos": 1765551026923,
-        "mendigo": 1765551031879
+        "lavaplatos": 1765582433528,
+        "mendigo": 1765582441770
       },
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765558804210
+      "lastRoleClaim": 1765582397815
     },
     "59837836693652@lid": {
       "balance": 500,
