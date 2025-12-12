@@ -256,8 +256,8 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 1796,
-      "bank": 1007568,
+      "balance": 312,
+      "bank": 1027568,
       "inventory": [
         "pico",
         "anillo"
@@ -269,11 +269,11 @@
       "lastSlut": 1765545840573,
       "lastMine": 1765493601670,
       "jobCooldowns": {
-        "puta": 1765550655151,
+        "puta": 1765554648200,
         "ceo": 1765550651888,
         "uber": 1765545765721,
         "lavaplatos": 1765119706817,
-        "hacker": 1765550661276,
+        "hacker": 1765554654031,
         "mendigo": 1764616080235
       },
       "roles": [
@@ -281,7 +281,7 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765550664063
+      "lastRoleClaim": 1765554656725
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -340,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1274893,
+      "bank": 1597832,
       "inventory": [
         "pico"
       ],
@@ -351,7 +351,7 @@
       "lastSlut": 0,
       "lastMine": 1765470268545,
       "jobCooldowns": {
-        "ceo": 1765534854764,
+        "ceo": 1765554650210,
         "hacker": 1765534861540,
         "puta": 1765326649023,
         "uber": 1765303735635,
@@ -364,7 +364,7 @@
         "diamante",
         "leyenda"
       ],
-      "lastRoleClaim": 1765545380707
+      "lastRoleClaim": 1765554582256
     },
     "139049750757567@lid": {
       "balance": 242,
@@ -385,17 +385,17 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 716,
-      "bank": 40997,
+      "balance": 0,
+      "bank": 44093,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765550984908,
+      "lastClaim": 1765554621800,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765551046431,
+      "lastMine": 1765554625331,
       "jobCooldowns": {
         "ceo": 1765551014295,
         "puta": 1765220067716,
@@ -407,7 +407,7 @@
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765550980784
+      "lastRoleClaim": 1765554618032
     },
     "59837836693652@lid": {
       "balance": 500,
