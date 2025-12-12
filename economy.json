@@ -256,24 +256,24 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 0,
-      "bank": 1225568,
+      "balance": 1504,
+      "bank": 1285499,
       "inventory": [
         "pico",
         "anillo"
       ],
       "lastClaim": 1765551298614,
       "lastWork": 0,
-      "lastRob": 1765563233803,
+      "lastRob": 1765568322203,
       "lastCrime": 1765230281438,
-      "lastSlut": 1765545840573,
-      "lastMine": 1765559465811,
+      "lastSlut": 1765568264277,
+      "lastMine": 1765568262264,
       "jobCooldowns": {
-        "puta": 1765559458278,
-        "ceo": 1765550651888,
-        "uber": 1765559462560,
-        "lavaplatos": 1765119706817,
-        "hacker": 1765559475139,
+        "puta": 1765568255914,
+        "ceo": 1765568252911,
+        "uber": 1765568270688,
+        "lavaplatos": 1765568274871,
+        "hacker": 1765568261137,
         "mendigo": 1764616080235
       },
       "roles": [
@@ -282,7 +282,7 @@
         "oro",
         "diamante"
       ],
-      "lastRoleClaim": 1765563079468
+      "lastRoleClaim": 1765568247430
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -341,19 +341,19 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 10362560,
+      "bank": 303998,
       "inventory": [
         "pico"
       ],
       "lastClaim": 1765534843119,
       "lastWork": 0,
-      "lastRob": 1765562901952,
+      "lastRob": 1765568316475,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 1765561522649,
       "jobCooldowns": {
         "ceo": 1765554650210,
-        "hacker": 1765534861540,
+        "hacker": 1765568463319,
         "puta": 1765326649023,
         "uber": 1765303735635,
         "lavaplatos": 1765119200567
@@ -363,9 +363,10 @@
         "plata",
         "oro",
         "diamante",
-        "leyenda"
+        "leyenda",
+        "elite"
       ],
-      "lastRoleClaim": 1765554582256
+      "lastRoleClaim": 1765568214108
     },
     "139049750757567@lid": {
       "balance": 242,
