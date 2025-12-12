@@ -284,7 +284,7 @@
       "lastRoleClaim": 1765531837218
     },
     "263925891383340@lid": {
-      "balance": 68,
+      "balance": 1079,
       "bank": 541476,
       "inventory": [
         "pico"
@@ -294,7 +294,7 @@
       "lastRob": 1765531795680,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765457673492,
+      "lastMine": 1765535178232,
       "jobCooldowns": {
         "hacker": 1764615852418,
         "ceo": 1765457680489
@@ -340,19 +340,19 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1250164,
+      "bank": 1175393,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 0,
+      "lastClaim": 1765534843119,
       "lastWork": 0,
       "lastRob": 1765444925704,
       "lastCrime": 0,
       "lastSlut": 0,
       "lastMine": 1765470268545,
       "jobCooldowns": {
-        "ceo": 1765461878335,
-        "hacker": 1765326644247,
+        "ceo": 1765534854764,
+        "hacker": 1765534861540,
         "puta": 1765326649023,
         "uber": 1765303735635,
         "lavaplatos": 1765119200567
@@ -364,11 +364,11 @@
         "diamante",
         "leyenda"
       ],
-      "lastRoleClaim": 1765493480298
+      "lastRoleClaim": 1765534824695
     },
     "139049750757567@lid": {
-      "balance": 59170,
-      "bank": 0,
+      "balance": 242,
+      "bank": 58928,
       "inventory": [],
       "lastClaim": 1765458926410,
       "lastWork": 0,
@@ -385,29 +385,29 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 9721,
-      "bank": 4877,
+      "balance": 0,
+      "bank": 27516,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765457918771,
+      "lastClaim": 1765534834734,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765402657189,
+      "lastMine": 1765534839375,
       "jobCooldowns": {
-        "ceo": 1765402660948,
+        "ceo": 1765534856320,
         "puta": 1765220067716,
-        "uber": 1765378005786,
+        "uber": 1765534862165,
         "hacker": 1765309699336,
-        "lavaplatos": 1765378011843,
-        "mendigo": 1765378017609
+        "lavaplatos": 1765534882581,
+        "mendigo": 1765534878920
       },
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765402574175
+      "lastRoleClaim": 1765534824365
     },
     "59837836693652@lid": {
       "balance": 500,
@@ -460,7 +460,7 @@
       "lastRoleClaim": 1765442773537
     },
     "95529316954341@lid": {
-      "balance": 59,
+      "balance": 0,
       "bank": 0,
       "inventory": [
         "lotería",
@@ -468,7 +468,7 @@
       ],
       "lastClaim": 1765200679705,
       "lastWork": 0,
-      "lastRob": 1765203269142,
+      "lastRob": 1765535501305,
       "lastCrime": 1765200122917,
       "lastSlut": 1765199475733,
       "lastMine": 0,
@@ -479,11 +479,13 @@
         "puta": 1765199585027,
         "hacker": 1765199511096,
         "lavaplatos": 1765200195475
-      }
+      },
+      "roles": [],
+      "lastRoleClaim": 0
     },
     "72692455727350@lid": {
-      "balance": 1626,
-      "bank": 646819,
+      "balance": 0,
+      "bank": 546819,
       "inventory": [],
       "lastClaim": 1765458942393,
       "lastWork": 0,
@@ -575,6 +577,19 @@
     },
     "273417735545061@lid": {
       "balance": 2851,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "roles": [],
+      "lastRoleClaim": 0
+    },
+    "104969134952549@lid": {
+      "balance": 100000,
       "bank": 0,
       "inventory": [],
       "lastClaim": 0,

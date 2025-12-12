@@ -5151,3 +5151,34 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [12/12/2025, 10:41:32] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
 [12/12/2025, 10:41:40] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 1558
 [12/12/2025, 10:41:54] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 2000
+[12/12/2025, 11:19:02] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .bal 
+[12/12/2025, 11:19:13] 👤 guille~ (139049750757567) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[12/12/2025, 11:19:16] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @139049750757567
+[12/12/2025, 11:19:30] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay 242 @139049750757567
+[12/12/2025, 11:20:02] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .top ricos
+[12/12/2025, 11:20:24] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claimrol 
+[12/12/2025, 11:20:24] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claimrol leyenda
+[12/12/2025, 11:20:30] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[12/12/2025, 11:20:34] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claim 
+[12/12/2025, 11:20:39] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mine 
+[12/12/2025, 11:20:43] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .claim 
+[12/12/2025, 11:20:49] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work cep
+[12/12/2025, 11:20:54] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[12/12/2025, 11:20:56] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[12/12/2025, 11:21:01] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work hacker
+[12/12/2025, 11:21:01] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[12/12/2025, 11:21:02] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work uber
+[12/12/2025, 11:21:06] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .deposit all
+[12/12/2025, 11:21:10] 👤 Rafitas (72692455727350) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[12/12/2025, 11:21:18] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work mendigo
+[12/12/2025, 11:21:22] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work lavaplatos
+[12/12/2025, 11:21:29] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[12/12/2025, 11:22:57] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .tag Hijos de puta qué cojones hacéis que no hablais
+[12/12/2025, 11:26:17] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mine 
+[12/12/2025, 11:31:02] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[12/12/2025, 11:31:41] 👤 sel el lindo (95529316954341) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rob @29511206867105
+[12/12/2025, 11:31:58] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay @95529316954341 100000
+[12/12/2025, 11:32:09] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay 100000 @95529316954341
+[12/12/2025, 11:32:44] 👤 sel el lindo (95529316954341) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .roulette 100000
+[12/12/2025, 11:33:00] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .withdraw 100000
+[12/12/2025, 11:33:12] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .pay 100000 @104969134952549
