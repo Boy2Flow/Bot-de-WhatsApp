@@ -256,24 +256,24 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 264,
-      "bank": 977568,
+      "balance": 1796,
+      "bank": 1007568,
       "inventory": [
         "pico",
         "anillo"
       ],
-      "lastClaim": 1765545741539,
+      "lastClaim": 1765551298614,
       "lastWork": 0,
       "lastRob": 1765531784946,
       "lastCrime": 1765230281438,
       "lastSlut": 1765545840573,
       "lastMine": 1765493601670,
       "jobCooldowns": {
-        "puta": 1765545756196,
-        "ceo": 1765531827115,
+        "puta": 1765550655151,
+        "ceo": 1765550651888,
         "uber": 1765545765721,
         "lavaplatos": 1765119706817,
-        "hacker": 1765545772957,
+        "hacker": 1765550661276,
         "mendigo": 1764616080235
       },
       "roles": [
@@ -281,7 +281,7 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765545736682
+      "lastRoleClaim": 1765550664063
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -385,29 +385,29 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 0,
-      "bank": 27516,
+      "balance": 716,
+      "bank": 40997,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765534834734,
+      "lastClaim": 1765550984908,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765534839375,
+      "lastMine": 1765551046431,
       "jobCooldowns": {
-        "ceo": 1765534856320,
+        "ceo": 1765551014295,
         "puta": 1765220067716,
-        "uber": 1765534862165,
+        "uber": 1765551020528,
         "hacker": 1765309699336,
-        "lavaplatos": 1765534882581,
-        "mendigo": 1765534878920
+        "lavaplatos": 1765551026923,
+        "mendigo": 1765551031879
       },
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765534824365
+      "lastRoleClaim": 1765550980784
     },
     "59837836693652@lid": {
       "balance": 500,
@@ -485,7 +485,7 @@
     },
     "72692455727350@lid": {
       "balance": 0,
-      "bank": 546819,
+      "bank": 761293,
       "inventory": [],
       "lastClaim": 1765458942393,
       "lastWork": 0,
@@ -496,7 +496,7 @@
       "jobCooldowns": {
         "puta": 1765314952324,
         "hacker": 1765308569009,
-        "ceo": 1765531728416
+        "ceo": 1765550679725
       },
       "roles": [],
       "lastRoleClaim": 0
