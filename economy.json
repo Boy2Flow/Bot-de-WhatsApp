@@ -256,7 +256,7 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 312,
+      "balance": 19499,
       "bank": 1027568,
       "inventory": [
         "pico",
@@ -267,13 +267,13 @@
       "lastRob": 1765531784946,
       "lastCrime": 1765230281438,
       "lastSlut": 1765545840573,
-      "lastMine": 1765493601670,
+      "lastMine": 1765559465811,
       "jobCooldowns": {
-        "puta": 1765554648200,
+        "puta": 1765559458278,
         "ceo": 1765550651888,
-        "uber": 1765545765721,
+        "uber": 1765559462560,
         "lavaplatos": 1765119706817,
-        "hacker": 1765554654031,
+        "hacker": 1765559475139,
         "mendigo": 1764616080235
       },
       "roles": [
@@ -281,7 +281,7 @@
         "plata",
         "oro"
       ],
-      "lastRoleClaim": 1765554656725
+      "lastRoleClaim": 1765559450084
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -303,7 +303,7 @@
       "lastRoleClaim": 0
     },
     "199681804075134@lid": {
-      "balance": 26369,
+      "balance": 133989,
       "bank": 0,
       "inventory": [],
       "lastClaim": 1764615591913,
@@ -340,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1597832,
+      "bank": 1689161,
       "inventory": [
         "pico"
       ],
@@ -349,7 +349,7 @@
       "lastRob": 1765444925704,
       "lastCrime": 0,
       "lastSlut": 0,
-      "lastMine": 1765470268545,
+      "lastMine": 1765559378769,
       "jobCooldowns": {
         "ceo": 1765554650210,
         "hacker": 1765534861540,
@@ -385,21 +385,21 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 0,
+      "balance": 3086,
       "bank": 44093,
       "inventory": [
         "pico"
       ],
-      "lastClaim": 1765554621800,
+      "lastClaim": 1765558811368,
       "lastWork": 0,
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765554625331,
+      "lastMine": 1765558814270,
       "jobCooldowns": {
         "ceo": 1765551014295,
         "puta": 1765220067716,
-        "uber": 1765551020528,
+        "uber": 1765558845954,
         "hacker": 1765309699336,
         "lavaplatos": 1765551026923,
         "mendigo": 1765551031879
@@ -407,7 +407,7 @@
       "roles": [
         "bronce"
       ],
-      "lastRoleClaim": 1765554618032
+      "lastRoleClaim": 1765558804210
     },
     "59837836693652@lid": {
       "balance": 500,
