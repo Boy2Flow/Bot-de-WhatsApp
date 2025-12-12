@@ -256,8 +256,8 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 19499,
-      "bank": 1027568,
+      "balance": 1499,
+      "bank": 1045568,
       "inventory": [
         "pico",
         "anillo"
@@ -303,8 +303,8 @@
       "lastRoleClaim": 0
     },
     "199681804075134@lid": {
-      "balance": 133989,
-      "bank": 0,
+      "balance": 0,
+      "bank": 400000,
       "inventory": [],
       "lastClaim": 1764615591913,
       "lastWork": 0,
@@ -340,7 +340,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 1689161,
+      "bank": 4388161,
       "inventory": [
         "pico"
       ],
