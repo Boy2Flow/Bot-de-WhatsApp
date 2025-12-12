@@ -257,14 +257,14 @@
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
       "balance": 0,
-      "bank": 1103778,
+      "bank": 1225568,
       "inventory": [
         "pico",
         "anillo"
       ],
       "lastClaim": 1765551298614,
       "lastWork": 0,
-      "lastRob": 1765562997997,
+      "lastRob": 1765563233803,
       "lastCrime": 1765230281438,
       "lastSlut": 1765545840573,
       "lastMine": 1765559465811,
@@ -282,7 +282,7 @@
         "oro",
         "diamante"
       ],
-      "lastRoleClaim": 1765559450084
+      "lastRoleClaim": 1765563079468
     },
     "263925891383340@lid": {
       "balance": 0,
@@ -341,7 +341,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 7943700,
+      "bank": 10362560,
       "inventory": [
         "pico"
       ],
