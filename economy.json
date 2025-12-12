@@ -285,7 +285,7 @@
       "lastRoleClaim": 1765568247430
     },
     "263925891383340@lid": {
-      "balance": 0,
+      "balance": 100000,
       "bank": 544521,
       "inventory": [
         "pico"
@@ -304,7 +304,7 @@
       "lastRoleClaim": 0
     },
     "199681804075134@lid": {
-      "balance": 0,
+      "balance": 100000,
       "bank": 400000,
       "inventory": [],
       "lastClaim": 1764615591913,
@@ -341,7 +341,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 303998,
+      "bank": 3998,
       "inventory": [
         "pico"
       ],
@@ -591,6 +591,19 @@
       "lastRoleClaim": 0
     },
     "104969134952549@lid": {
+      "balance": 100000,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "roles": [],
+      "lastRoleClaim": 0
+    },
+    "15011263082681@lid": {
       "balance": 100000,
       "bank": 0,
       "inventory": [],
