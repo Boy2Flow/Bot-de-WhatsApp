@@ -1,7 +1,7 @@
 # 💚 REDES SOCIALES 💚
 
 🔗 **Instagram:** [https://www.instagram.com/boy2flow_](https://www.instagram.com/boy2flow_)  
-� **GitHub:** [https://github.com/Boy2Flow](https://github.com/Boy2Flow)
+🔗 **GitHub:** [https://github.com/Boy2Flow](https://github.com/Boy2Flow)
 
 # 🤖 Siri BOT - WhatsApp Multifuncional
 
@@ -36,7 +36,7 @@ Herramientas profesionales para dueños de grupos.
 - **Gestión de Miembros:** Expulsar, añadir, promover y degradar.
 - **Moderación:** Silenciar (`.mute`), advertir (`.warn`) y banear.
 - **Control del Chat:** Abrir/Cerrar grupo, borrar mensajes, limpiar chat.
-- **Menciones:** Tag all, menciones fantasma (`.hidetag`).
+- **Menciones:** Tag all, menciones fantasma (`.tag`).
 - **Configuración:** Cambiar nombre, descripción y enlaces del grupo.
 
 ### 💕 Sistema Social e Interacciones
