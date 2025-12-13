@@ -45,7 +45,7 @@
     "86273192673466@lid": {
       "race": "orc",
       "level": 5,
-      "xp": 332,
+      "xp": 442,
       "xpToNext": 505,
       "hp": 140,
       "maxHp": 140,
@@ -64,7 +64,7 @@
       "currentEnemy": null,
       "class": "warrior",
       "faction": "red_crowns",
-      "lastTrain": 1765650784773,
+      "lastTrain": 1765659897906,
       "afflictions": [
         "vampirism"
       ]

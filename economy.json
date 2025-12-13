@@ -412,8 +412,8 @@
       "lastRoleClaim": 0
     },
     "86273192673466@lid": {
-      "balance": 797,
-      "bank": 62815,
+      "balance": 0,
+      "bank": 74691,
       "inventory": [
         "pico"
       ],
@@ -422,14 +422,14 @@
       "lastRob": 1765311966630,
       "lastCrime": 1765228353136,
       "lastSlut": 1765050945590,
-      "lastMine": 1765582461327,
+      "lastMine": 1765659910764,
       "jobCooldowns": {
-        "ceo": 1765582411697,
+        "ceo": 1765659922462,
         "puta": 1765220067716,
-        "uber": 1765582421110,
+        "uber": 1765659961018,
         "hacker": 1765309699336,
-        "lavaplatos": 1765582433528,
-        "mendigo": 1765582441770
+        "lavaplatos": 1765659943243,
+        "mendigo": 1765659953991
       },
       "roles": [
         "bronce"

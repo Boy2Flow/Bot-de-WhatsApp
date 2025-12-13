@@ -7168,3 +7168,13 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 21:15:09] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg heal
 [13/12/2025, 21:15:39] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg heal
 [13/12/2025, 21:15:54] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
+[13/12/2025, 22:04:57] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[13/12/2025, 22:05:05] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[13/12/2025, 22:05:10] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mine 
+[13/12/2025, 22:05:16] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work cep
+[13/12/2025, 22:05:22] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[13/12/2025, 22:05:43] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work lavaplatos
+[13/12/2025, 22:05:53] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work mendigo
+[13/12/2025, 22:06:01] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work uber
+[13/12/2025, 22:06:06] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep all
+[13/12/2025, 22:13:54] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mensajes 
