@@ -6860,3 +6860,26 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 0:39:45] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .misparejas 
 [13/12/2025, 0:40:54] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .divorciar @199681804075134
 [13/12/2025, 0:41:10] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .parejas 
+[13/12/2025, 0:42:43] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[13/12/2025, 0:42:53] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .divorciar @70910480543941
+[13/12/2025, 0:43:05] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .divorciar @199681804075134
+[13/12/2025, 0:43:18] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .casar @
+[13/12/2025, 0:43:22] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .delete 
+[13/12/2025, 0:44:05] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .misparejas 
+[13/12/2025, 0:44:23] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .casar @144268589035668
+[13/12/2025, 0:44:36] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[13/12/2025, 0:44:49] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rosa @152119252390062
+[13/12/2025, 0:45:51] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .work ceo
+[13/12/2025, 0:45:58] 👤 Janire🌻 (152119252390062) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .dep 15000
+[13/12/2025, 0:46:31] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rosa @259863120715836
+[13/12/2025, 0:47:54] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rosa @152119252390062
+[13/12/2025, 0:48:59] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[13/12/2025, 0:50:08] 👤 Desconocido (34608837414) | 🏠 Privado | 💻 .menu 
+[13/12/2025, 0:50:18] 👤 Desconocido (34608837414) | 🏠 Privado | 💻 .menu 
+[13/12/2025, 0:50:23] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .menu 
+[13/12/2025, 0:50:33] 👤 B2F 💚 (34608837414) | 🏠 Privado | 💻 .menu 
+[13/12/2025, 0:50:37] 👤 B2F 💚 (34608837414) | 🏠 Privado | 💻 .menu 
+[13/12/2025, 0:57:11] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[13/12/2025, 0:58:22] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .kick @siri...
+[13/12/2025, 1:00:26] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .reload 
+[13/12/2025, 1:05:05] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .misparejas 

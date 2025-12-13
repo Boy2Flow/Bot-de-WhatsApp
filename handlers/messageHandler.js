@@ -115,6 +115,22 @@ export async function handleMessage(sock, message) {
             }
         }
 
+        // --- SISTEMA ANTI-MOROS (NASSAR) ---
+        if (/\bna(s+)ar\b/i.test(text)) {
+            const insults = [
+                'Ese moro cabron',
+                'Ese es un puto moro',
+                'moro de mierda',
+                'Nasarcalla moro',
+                'Nasar vete a comer jamon... ah no espera'
+            ];
+            const randomInsult = insults[Math.floor(Math.random() * insults.length)];
+
+            await sock.sendMessage(from, {
+                text: randomInsult
+            }, { quoted: message });
+        }
+
         // --- SISTEMA ANTI-SPAM (ENLACES DE GRUPO) ---
         if (isGroup) {
             // Regex para detectar enlaces de invitación de WhatsApp

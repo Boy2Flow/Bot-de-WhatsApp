@@ -40,6 +40,7 @@ import { reminderCommand, listRemindersCommand, delReminderCommand, alarmaComman
 import { vozCommand } from './voz.js';
 import { transcribirCommand } from './transcribir.js';
 import { setKeyCommand } from './apiConfigCommand.js';
+import { rosaCommand } from './rosaCommand.js';
 
 export const commands = [
     configCommand,
@@ -93,6 +94,7 @@ export const commands = [
     vozCommand,
     transcribirCommand,
     setKeyCommand,
+    rosaCommand,
     infoCommand,
     helpCommand
 ];

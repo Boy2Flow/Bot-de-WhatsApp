@@ -60,17 +60,17 @@ function saveDivorces(divorces) {
 // Registrar un divorcio en el historial
 function registerDivorce(groupId, user1, user2, initiator = null) {
     const divorces = loadDivorces();
-    
+
     if (!divorces[groupId]) {
         divorces[groupId] = [];
     }
-    
+
     divorces[groupId].push({
         couple: [user1, user2],
         date: new Date().toISOString(),
         initiator: initiator // Quién inició el divorcio (null si fue el dueño)
     });
-    
+
     saveDivorces(divorces);
 }
 
@@ -82,16 +82,16 @@ export const casarCommand = {
     groupOnly: true,
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
-        
+
         // Obtener ID del remitente
         const senderJid = message.key.participant || message.key.remoteJid;
 
         // Verificar que se mencionaron usuarios
         const mentionedJid = message.message?.extendedTextMessage?.contextInfo?.mentionedJid;
-        
+
         if (!mentionedJid || mentionedJid.length === 0) {
-            await sock.sendMessage(from, { 
-                text: '❌ Debes mencionar al menos a UN usuario.\n\n📝 Opciones de uso:\n• .casar @usuario - Te casas con esa persona\n• .casar @usuario1 @usuario2 - Casas a dos personas' 
+            await sock.sendMessage(from, {
+                text: '❌ Debes mencionar al menos a UN usuario.\n\n📝 Opciones de uso:\n• .casar @usuario - Te casas con esa persona\n• .casar @usuario1 @usuario2 - Casas a dos personas'
             }, { quoted: message });
             return;
         }
@@ -114,15 +114,15 @@ export const casarCommand = {
 
         // Cargar matrimonios
         const marriages = loadMarriages();
-        
+
         // Inicializar grupo si no existe
         if (!marriages[from]) {
             marriages[from] = [];
         }
 
         // Verificar si esta pareja específica ya está casada entre sí
-        const alreadyMarriedTogether = marriages[from].find(couple => 
-            (couple[0] === user1 && couple[1] === user2) || 
+        const alreadyMarriedTogether = marriages[from].find(couple =>
+            (couple[0] === user1 && couple[1] === user2) ||
             (couple[0] === user2 && couple[1] === user1)
         );
 
@@ -135,11 +135,11 @@ export const casarCommand = {
         }
 
         // Verificar cuántos matrimonios tiene cada persona (solo para mensaje informativo)
-        const user1Marriages = marriages[from].filter(couple => 
+        const user1Marriages = marriages[from].filter(couple =>
             couple.includes(user1)
         ).length;
-        
-        const user2Marriages = marriages[from].filter(couple => 
+
+        const user2Marriages = marriages[from].filter(couple =>
             couple.includes(user2)
         ).length;
 
@@ -151,13 +151,13 @@ export const casarCommand = {
 
         // Mensaje de boda festivo (diferente según el modo)
         let weddingMessage;
-        
+
         // Mensaje adicional si es poligamia
         let polygamyNote = '';
         if (isPolygamy) {
             const user1Total = user1Marriages + 1; // +1 porque acabamos de agregar el nuevo
             const user2Total = user2Marriages + 1;
-            
+
             if (user1Marriages > 0 && user2Marriages > 0) {
                 polygamyNote = `\n\n🔥 ¡POLIGAMIA DETECTADA! 🔥\n@${user1.split('@')[0]} ahora tiene ${user1Total} matrimonio(s)\n@${user2.split('@')[0]} ahora tiene ${user2Total} matrimonio(s)\n💘 ¡El amor no tiene límites! 💘`;
             } else if (user1Marriages > 0) {
@@ -166,7 +166,7 @@ export const casarCommand = {
                 polygamyNote = `\n\n🔥 ¡MATRIMONIO ADICIONAL! 🔥\n@${user2.split('@')[0]} ahora tiene ${user2Total} matrimonio(s)\n💘 ¡Coleccionista de corazones! 💘`;
             }
         }
-        
+
         if (isOfficiant) {
             // Modo oficiante: casa a dos personas
             weddingMessage = `
@@ -232,7 +232,7 @@ Y
 
         try {
             const mentions = isOfficiant ? [user1, user2, senderJid] : [user1, user2];
-            
+
             await sock.sendMessage(from, {
                 text: weddingMessage,
                 mentions: mentions
@@ -257,10 +257,10 @@ export const casadosCommand = {
     groupOnly: true,
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
-        
+
         try {
             const marriages = loadMarriages();
-            
+
             // Verificar si hay matrimonios en este grupo
             if (!marriages[from] || marriages[from].length === 0) {
                 await sock.sendMessage(from, {
@@ -272,18 +272,18 @@ export const casadosCommand = {
             // Crear lista de matrimonios
             let text = '💒 *REGISTRO DE MATRIMONIOS DEL GRUPO* 💒\n\n';
             text += '━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n';
-            
+
             const allMentions = [];
-            
+
             marriages[from].forEach((couple, index) => {
                 const user1 = couple[0];
                 const user2 = couple[1];
-                
+
                 text += `${index + 1}. 💑 @${user1.split('@')[0]} 💕 @${user2.split('@')[0]}\n`;
-                
+
                 allMentions.push(user1, user2);
             });
-            
+
             text += '\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
             text += `\n👫 Total de parejas: ${marriages[from].length}\n`;
             text += '\n💍 ¡Felicidades a todos los casados! 💍';
@@ -310,15 +310,15 @@ export const divorciarCommand = {
     groupOnly: true,
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
-        
+
         // Obtener ID del remitente y limpiar el número
         const senderJid = message.key.participant || message.key.remoteJid;
         const senderNumber = senderJid.split('@')[0].replace(/[^0-9]/g, '');
-        
+
         const isOwner = privilegedConfig.isSuperAdmin(senderJid);
 
         const marriages = loadMarriages();
-        
+
         // Verificar si hay matrimonios en este grupo
         if (!marriages[from] || marriages[from].length === 0) {
             await sock.sendMessage(from, {
@@ -329,10 +329,10 @@ export const divorciarCommand = {
 
         // Verificar que se mencionó a alguien
         const mentionedJid = message.message?.extendedTextMessage?.contextInfo?.mentionedJid;
-        
+
         if (!mentionedJid || mentionedJid.length === 0) {
-            await sock.sendMessage(from, { 
-                text: '❌ Debes mencionar a alguien.\n\n📝 Opciones de uso:\n• .divorciar @pareja - Te divorcias de tu pareja\n• .divorciar @usuario - (Solo Dueño) Divorcia a esa persona a la fuerza' 
+            await sock.sendMessage(from, {
+                text: '❌ Debes mencionar a alguien.\n\n📝 Opciones de uso:\n• .divorciar @pareja - Te divorcias de tu pareja\n• .divorciar @usuario - (Solo Dueño) Divorcia a esa persona a la fuerza'
             }, { quoted: message });
             return;
         }
@@ -347,32 +347,44 @@ export const divorciarCommand = {
             if (mentionedJid.length >= 2) {
                 const user1 = mentionedJid[0];
                 const user2 = mentionedJid[1];
-                coupleIndex = marriages[from].findIndex(couple => 
+                coupleIndex = marriages[from].findIndex(couple =>
                     (couple.includes(user1) && couple.includes(user2))
                 );
             } else {
-                // Si solo menciona a 1, busca matrimonios de esa persona
-                const userMarriages = marriages[from].map((c, i) => ({ couple: c, index: i }))
-                                                    .filter(item => item.couple.includes(mentionedUser));
-                
-                if (userMarriages.length === 0) {
-                    coupleIndex = -1;
-                } else if (userMarriages.length === 1) {
-                    // Si solo tiene un matrimonio, seleccionamos ese
-                    coupleIndex = userMarriages[0].index;
+                // PRIORIDAD: Verificar si el dueño se quiere divorciar de la persona mencionada
+                // Esto soluciona el problema de que el dueño no podía divorciarse de su pareja si esta tenía múltiples matrimonios
+                const ownMarriageIndex = marriages[from].findIndex(couple =>
+                    (couple.includes(senderJid) && couple.includes(mentionedUser))
+                );
+
+                if (ownMarriageIndex !== -1) {
+                    // Si el dueño está casado con esa persona, asumimos que quiere divorciarse de ella
+                    coupleIndex = ownMarriageIndex;
                 } else {
-                    // Si tiene múltiples, pedimos especificar
-                    await sock.sendMessage(from, {
-                        text: `⚠️ @${mentionedUser.split('@')[0]} tiene múltiples matrimonios ({${userMarriages.length}}).\n\n📝 Por favor menciona a AMBAS partes para divorciarlos: .divorciar @usuario1 @usuario2`,
-                        mentions: [mentionedUser]
-                    }, { quoted: message });
-                    return;
+                    // Si no, asumimos que intenta administrar el matrimonio de otros
+                    // Si solo menciona a 1, busca matrimonios de esa persona
+                    const userMarriages = marriages[from].map((c, i) => ({ couple: c, index: i }))
+                        .filter(item => item.couple.includes(mentionedUser));
+
+                    if (userMarriages.length === 0) {
+                        coupleIndex = -1;
+                    } else if (userMarriages.length === 1) {
+                        // Si solo tiene un matrimonio, seleccionamos ese
+                        coupleIndex = userMarriages[0].index;
+                    } else {
+                        // Si tiene múltiples, pedimos especificar
+                        await sock.sendMessage(from, {
+                            text: `⚠️ @${mentionedUser.split('@')[0]} tiene múltiples matrimonios ({${userMarriages.length}}).\n\n📝 Por favor menciona a AMBAS partes para divorciarlos: .divorciar @usuario1 @usuario2`,
+                            mentions: [mentionedUser]
+                        }, { quoted: message });
+                        return;
+                    }
                 }
             }
         } else {
             // Usuario normal intenta divorciarse
             // Busca matrimonio entre senderJid y mentionedUser
-            coupleIndex = marriages[from].findIndex(couple => 
+            coupleIndex = marriages[from].findIndex(couple =>
                 (couple.includes(senderJid) && couple.includes(mentionedUser))
             );
         }
@@ -380,7 +392,7 @@ export const divorciarCommand = {
         if (coupleIndex === -1) {
             // Mensaje de error personalizado
             if (isOwner) {
-                 await sock.sendMessage(from, {
+                await sock.sendMessage(from, {
                     text: `⚠️ No se encontró un matrimonio válido con esa(s) persona(s).`,
                 }, { quoted: message });
             } else {
@@ -402,9 +414,9 @@ export const divorciarCommand = {
         const isPartOfCouple = couple.includes(senderJid);
 
         if (!isOwner && !isPartOfCouple) {
-             // Este caso teóricamente no debería alcanzarse con la nueva lógica de búsqueda
-             // pero lo dejamos como fallback
-             return;
+            // Este caso teóricamente no debería alcanzarse con la nueva lógica de búsqueda
+            // pero lo dejamos como fallback
+            return;
         }
 
         // Eliminar el matrimonio
@@ -417,7 +429,7 @@ export const divorciarCommand = {
 
         // Mensaje diferente según quién ejecuta el divorcio
         let divorceMessage;
-        
+
         if (isOwner) {
             divorceMessage = `
 ╔═══════════════════════════════╗
@@ -558,10 +570,10 @@ export const divorciadosCommand = {
     groupOnly: true,
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
-        
+
         try {
             const divorces = loadDivorces();
-            
+
             // Verificar si hay divorcios en este grupo
             if (!divorces[from] || divorces[from].length === 0) {
                 await sock.sendMessage(from, {
@@ -573,34 +585,34 @@ export const divorciadosCommand = {
             // Crear lista de divorcios
             let text = '💔 *HISTORIAL DE DIVORCIOS DEL GRUPO* 💔\n\n';
             text += '━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n';
-            
+
             const allMentions = [];
-            
+
             divorces[from].forEach((divorce, index) => {
                 const user1 = divorce.couple[0];
                 const user2 = divorce.couple[1];
                 const date = new Date(divorce.date);
-                const dateStr = date.toLocaleDateString('es-ES', { 
-                    day: '2-digit', 
-                    month: '2-digit', 
-                    year: 'numeric' 
+                const dateStr = date.toLocaleDateString('es-ES', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric'
                 });
-                
+
                 text += `${index + 1}. 💔 @${user1.split('@')[0]} ❌ @${user2.split('@')[0]}\n`;
                 text += `   📅 ${dateStr}\n`;
-                
+
                 if (divorce.initiator) {
                     text += `   👤 Iniciado por: @${divorce.initiator.split('@')[0]}\n`;
                     allMentions.push(divorce.initiator);
                 } else {
                     text += `   👑 Divorcio forzado por el dueño\n`;
                 }
-                
+
                 text += '\n';
-                
+
                 allMentions.push(user1, user2);
             });
-            
+
             text += '━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
             text += `\n💔 Total de divorcios: ${divorces[from].length}\n`;
             text += '\n😢 El amor es complicado...';
@@ -628,10 +640,10 @@ export const miMatrimonioCommand = {
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
         const senderJid = message.key.participant || message.key.remoteJid;
-        
+
         try {
             const marriages = loadMarriages();
-            
+
             // Verificar si hay matrimonios en este grupo
             if (!marriages[from] || marriages[from].length === 0) {
                 await sock.sendMessage(from, {
@@ -641,7 +653,7 @@ export const miMatrimonioCommand = {
             }
 
             // Filtrar SOLO mis matrimonios
-            const myMarriages = marriages[from].filter(couple => 
+            const myMarriages = marriages[from].filter(couple =>
                 couple.includes(senderJid)
             );
 
@@ -655,17 +667,17 @@ export const miMatrimonioCommand = {
             // Crear lista de MIS matrimonios
             let text = '💒 *MIS MATRIMONIOS* 💒\n\n';
             text += '━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n';
-            
+
             const mentions = [senderJid];
-            
+
             myMarriages.forEach((couple, index) => {
                 // Encontrar a la pareja (el que no es el sender)
                 const partner = couple[0] === senderJid ? couple[1] : couple[0];
-                
+
                 text += `${index + 1}. 💑 Tú 💕 @${partner.split('@')[0]}\n`;
                 mentions.push(partner);
             });
-            
+
             text += '\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
             text += `\n💘 Total de amores: ${myMarriages.length}\n`;
 
