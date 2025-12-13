@@ -7157,3 +7157,12 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 20:21:11] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg start [wood_elf]
 [13/12/2025, 20:21:30] 👤 🎄 (263925891383340) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg start wood elf
 [13/12/2025, 20:23:49] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .clase 
+[13/12/2025, 21:13:11] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explore
+[13/12/2025, 21:13:19] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explore
+[13/12/2025, 21:13:28] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg 
+[13/12/2025, 21:13:37] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 21:14:19] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .atacar 
+[13/12/2025, 21:14:25] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .atacar 
+[13/12/2025, 21:14:30] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg perfil
+[13/12/2025, 21:14:57] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg perfil
+[13/12/2025, 21:15:09] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg heal
