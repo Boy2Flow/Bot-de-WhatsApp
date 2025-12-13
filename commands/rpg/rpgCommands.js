@@ -1,349 +1,412 @@
 import { RACES, MONSTERS, LOCATIONS, AFFLICTIONS } from './rpgData.js';
 import { getPlayer, createPlayer, updatePlayer, gainXp } from './rpgCore.js';
 
+// Helper para calcular daño PvP
+function calculatePvpDamage(attacker, defender) {
+    const weapon = attacker.equipped?.weapon;
+    let weaponDmg = weapon?.stats?.damage || 0;
+
+    // Stats base
+    let baseDmg = 0;
+    if (weapon?.subtype === 'staff') {
+        baseDmg = Math.floor(attacker.stats.int * 1.5);
+        if (weapon.stats.magicDamage) weaponDmg += weapon.stats.magicDamage;
+    } else {
+        baseDmg = Math.floor(attacker.stats.str * 1.5);
+    }
+
+    // Hechizo
+    const spell = attacker.equipped?.spell;
+    let spellDmg = 0;
+    if (spell) {
+        let baseSpellDmg = spell.stats.magicDamage || 0;
+        if (spell.subtype === 'summon' && spell.stats.summonDamage) {
+            baseSpellDmg = spell.stats.summonDamage;
+        }
+        spellDmg = baseSpellDmg + Math.floor(attacker.stats.int * 2);
+    }
+
+    const totalDmg = baseDmg + weaponDmg + spellDmg + Math.floor(Math.random() * 5);
+
+    // Defensa
+    const armor = defender.equipped?.armor;
+    let defense = armor?.stats?.defense || 0;
+    if (armor?.stats?.magicDef) defense += Math.floor(armor.stats.magicDef / 2);
+
+    // Reducción
+    return Math.max(1, totalDmg - Math.floor(defense / 2));
+}
+
+// Lógica principal de atacar/combate (reutilizable)
+async function processAttack(sock, message, args, player) {
+    const from = message.key.remoteJid;
+    const userId = message.key.participant || message.key.remoteJid;
+
+    // --- LÓGICA PVP ---
+    const mentionedJid = message.message?.extendedTextMessage?.contextInfo?.mentionedJid?.[0];
+    const pvpAction = args[0]?.toLowerCase(); // aceptar, denegar, etc.
+
+    // 1. Iniciar Desafío (.atacar @usuario)
+    if (mentionedJid) {
+        if (mentionedJid === userId) {
+            await sock.sendMessage(from, { text: '❌ No puedes atacarte a ti mismo.' }, { quoted: message });
+            return;
+        }
+
+        const target = getPlayer(from, mentionedJid);
+        if (!target) {
+            await sock.sendMessage(from, { text: '❌ El usuario mencionado no tiene personaje RPG o no existe.' }, { quoted: message });
+            return;
+        }
+
+        if (player.hp <= 0 || target.hp <= 0) {
+            await sock.sendMessage(from, { text: '❌ Uno de los jugadores está muerto.' }, { quoted: message });
+            return;
+        }
+
+        // Guardar desafío en memoria
+        if (!global.pvpChallenges) global.pvpChallenges = {};
+        global.pvpChallenges[mentionedJid] = userId;
+
+        const text = `⚔️ *¡DESAFÍO PVP!* ⚔️\n\n@${userId.split('@')[0]} ha desafiado a @${mentionedJid.split('@')[0]} a un duelo a muerte.\n\n🛡️ *Para aceptar:* .atacar aceptar\n🏳️ *Para rechazar:* .atacar denegar`;
+        await sock.sendMessage(from, { text, mentions: [userId, mentionedJid] }, { quoted: message });
+        return;
+    }
+
+    // 2. Aceptar Desafío (.atacar aceptar)
+    if (pvpAction === 'aceptar' || pvpAction === 'accept') {
+        if (!global.pvpChallenges || !global.pvpChallenges[userId]) {
+            await sock.sendMessage(from, { text: '❌ No tienes ningún desafío pendiente.' }, { quoted: message });
+            return;
+        }
+
+        const challengerId = global.pvpChallenges[userId];
+        const challenger = getPlayer(from, challengerId);
+        const defender = player;
+
+        delete global.pvpChallenges[userId];
+
+        if (!challenger || challenger.hp <= 0) {
+            await sock.sendMessage(from, { text: '❌ El desafiante ya no está disponible.' }, { quoted: message });
+            return;
+        }
+
+        // --- SIMULACIÓN DE COMBATE PVP ---
+        let log = `⚔️ *DUELO: ${challengerId.split('@')[0]} vs ${userId.split('@')[0]}* ⚔️\n\n`;
+        let turn = 1;
+        let p1 = { ...challenger, id: challengerId };
+        let p2 = { ...defender, id: userId };
+
+        while (p1.hp > 0 && p2.hp > 0 && turn <= 10) {
+            // Turno P1 -> P2
+            let dmg1 = calculatePvpDamage(p1, p2);
+            p2.hp -= dmg1;
+            log += `👊 *R${turn}*: @${p1.id.split('@')[0]} hace ${dmg1} daño.\n`;
+
+            if (p2.hp <= 0) break;
+
+            // Turno P2 -> P1
+            let dmg2 = calculatePvpDamage(p2, p1);
+            p1.hp -= dmg2;
+            log += `🛡️ *R${turn}*: @${p2.id.split('@')[0]} devuelve ${dmg2} daño.\n`;
+
+            turn++;
+        }
+
+        // Resultado
+        let winner = null;
+        let loser = null;
+
+        if (p1.hp <= 0 && p2.hp <= 0) {
+            log += `\n💀 *¡EMPATE MORTAL!* Ambos han caído.`;
+            updatePlayer(from, challengerId, { hp: 1, state: 'idle' });
+            updatePlayer(from, userId, { hp: 1, state: 'idle' });
+        } else if (p1.hp <= 0) {
+            winner = defender;
+            loser = challenger;
+            log += `\n🏆 *¡VICTORIA para @${userId.split('@')[0]}!*`;
+        } else {
+            winner = challenger;
+            loser = defender;
+            log += `\n🏆 *¡VICTORIA para @${challengerId.split('@')[0]}!*`;
+        }
+
+        if (winner && loser) {
+            const xpW = 150;
+            const xpL = 50;
+            const lostGold = Math.floor(loser.gold * 0.1);
+            loser.gold -= lostGold;
+            winner.gold += lostGold;
+
+            const { leveledUp: lvlW } = gainXp(from, (winner === challenger ? challengerId : userId), xpW);
+            gainXp(from, (loser === challenger ? challengerId : userId), xpL);
+
+            updatePlayer(from, (winner === challenger ? challengerId : userId), { gold: winner.gold });
+            updatePlayer(from, (loser === challenger ? challengerId : userId), { hp: 0, state: 'dead', gold: loser.gold });
+
+            log += `\n\n💰 Botín: ${lostGold} oro robado.`;
+            log += `\n✨ XP: Ganador +${xpW} | Perdedor +${xpL}`;
+            if (lvlW) log += `\n🆙 ¡El ganador subió de nivel!`;
+        }
+
+        await sock.sendMessage(from, { text: log, mentions: [challengerId, userId] }, { quoted: message });
+        return;
+    }
+
+    // 3. Rechazar Desafío
+    if (pvpAction === 'denegar' || pvpAction === 'deny') {
+        if (!global.pvpChallenges || !global.pvpChallenges[userId]) {
+            await sock.sendMessage(from, { text: '❌ No tienes desafíos.' }, { quoted: message });
+            return;
+        }
+        delete global.pvpChallenges[userId];
+        await sock.sendMessage(from, { text: '🏳️ Desafío rechazado cobardemente.' }, { quoted: message });
+        return;
+    }
+
+    // --- LÓGICA PVE ---
+    if (player.state !== 'fighting' || !player.currentEnemy) {
+        await sock.sendMessage(from, { text: '❌ No hay enemigo. Usa .rpg explorar o etiqueta a alguien para PvP.' }, { quoted: message });
+        return;
+    }
+
+    const enemy = player.currentEnemy;
+
+    const weapon = player.equipped?.weapon;
+    let weaponDmg = weapon?.stats?.damage || 0;
+
+    let statScaling = 0;
+    if (weapon?.subtype === 'staff') {
+        statScaling = Math.floor(player.stats.int * 1.5);
+        if (weapon.stats.magicDamage) weaponDmg += weapon.stats.magicDamage;
+    } else {
+        statScaling = Math.floor(player.stats.str * 1.5);
+    }
+
+    const spell = player.equipped?.spell;
+    let spellDmg = 0;
+    let spellMsg = '';
+
+    if (spell) {
+        let baseSpellDmg = spell.stats.magicDamage || 0;
+        let isSummon = false;
+
+        if (spell.subtype === 'summon' && spell.stats.summonDamage) {
+            baseSpellDmg = spell.stats.summonDamage;
+            isSummon = true;
+        }
+
+        spellDmg = baseSpellDmg + Math.floor(player.stats.int * 2);
+
+        if (isSummon) {
+            spellMsg = `\n👻 *${spell.name}*: +${spellDmg} daño (Invocación)`;
+        } else {
+            spellMsg = `\n🔥 *${spell.name}*: +${spellDmg} daño mágico`;
+        }
+    }
+
+    const playerDmg = statScaling + weaponDmg + spellDmg + Math.floor(Math.random() * 5);
+    enemy.currentHp -= playerDmg;
+
+    let battleLog = `🗡️ Atacas: ${playerDmg} daño total${spellMsg}\n`;
+
+    if (enemy.currentHp <= 0) {
+        const { player: updatedPlayer, leveledUp } = gainXp(from, userId, enemy.xp);
+        updatedPlayer.gold += enemy.level * 5;
+        updatedPlayer.state = 'idle';
+        updatedPlayer.currentEnemy = null;
+        updatePlayer(from, userId, updatedPlayer);
+
+        battleLog += `\n🎉 ¡VICTORIA!\n+${enemy.xp} XP | +${enemy.level * 5} oro`;
+        if (leveledUp) battleLog += `\n\n🆙 ¡NIVEL ${updatedPlayer.level}!`;
+
+        await sock.sendMessage(from, { text: battleLog }, { quoted: message });
+        return;
+    }
+
+    const armor = player.equipped?.armor;
+    let defense = armor?.stats?.defense || 0;
+    if (armor?.stats?.magicDef) defense += Math.floor(armor.stats.magicDef / 2);
+
+    let enemyAttack = enemy.atk;
+    const damageTaken = Math.max(1, enemyAttack - Math.floor(defense / 2));
+    player.hp -= damageTaken;
+
+    if (enemy.canInfect && Math.random() < 0.2) {
+        const afflictionKey = enemy.canInfect;
+        if (!player.afflictions) player.afflictions = [];
+        if (!player.afflictions.includes(afflictionKey)) {
+            player.afflictions.push(afflictionKey);
+            const affData = AFFLICTIONS[afflictionKey];
+            battleLog += `\n\n⚠️ *¡MALDICIÓN OCURRIDA!*\n¡Has contraído: *${affData.name}*!`;
+            updatePlayer(from, userId, { afflictions: player.afflictions });
+        }
+    }
+
+    battleLog += `👹 Enemigo ataca: ${damageTaken} daño (🛡️-${Math.floor(defense / 2)})\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
+
+    if (player.hp <= 0) {
+        player.hp = 0;
+        player.state = 'dead';
+        player.currentEnemy = null;
+        updatePlayer(from, userId, player);
+        battleLog += `\n\n💀 ¡MUERTO! Usa .rpg curar`;
+    } else {
+        updatePlayer(from, userId, { currentEnemy: enemy, hp: player.hp });
+    }
+
+    await sock.sendMessage(from, { text: battleLog }, { quoted: message });
+}
+
 export const rpgCommand = {
     name: 'rpg',
-    aliases: ['rol', 'aventura'],
-    description: 'Juego de Rol de Fantasía',
+    aliases: ['rol', 'aventura', 'atacar'], // Agregado 'atacar' para que lo reconozca
+    description: 'Juego de Rol de Fantasía y Combate',
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
         const userId = message.key.participant || message.key.remoteJid;
-        const subcommand = args[0]?.toLowerCase();
+
+        let subcommand = args[0]?.toLowerCase();
+        let pvpArgs = args.slice(1);
+
+        // Si el comando invocado fue directamente '.atacar' (verificamos si el first arg NO es 'start', 'perfil', etc.)
+        // O si viene de un alias. Como el messageHandler pasa 'atacar' como commandName y args empieza con lo siguiente.
+        // Pero rpgCommand.execute recibe (sock, message, args).
+        // Si el usuario escribe .atacar @user -> commandName='atacar', args=['@user']
+        // El handler busca command.name='rpg' OR alias='atacar'.
+        // Entonces entra aquí.
+        // Si args[0] es @user (empieza por @ o número), asumimos que es acción de atacar DIRECTA.
+
+        const isDirectAttack = message.message?.conversation?.startsWith('.atacar') ||
+            message.message?.extendedTextMessage?.text?.startsWith('.atacar') ||
+            message.message?.conversation?.startsWith('.fight') ||
+            message.message?.extendedTextMessage?.text?.startsWith('.fight');
+
+        // Corrección de argumentos si se llamó directamente
+        if (isDirectAttack) {
+            // Si fue llamado como .atacar @user, args es ['@user'].
+            // Queremos que subcommand sea 'atacar'.
+            subcommand = 'atacar';
+            pvpArgs = args; // pasamos todos los args a processAttack
+        }
 
         let player = getPlayer(from, userId);
 
-        // AYUDA
-        if (!subcommand || subcommand === 'help' || subcommand === 'ayuda' || subcommand === 'menu') {
-            const helpText = `
-⚔️ *GUÍA COMPLETA RPG* ⚔️
+        // AYUDA COMPACTA SI NO HAY ARGS
+        if (!subcommand && !isDirectAttack) {
+            // ... (mostrar ayuda simplificada)
+            subcommand = 'menu';
+        }
 
-📋 *COMANDOS BÁSICOS*
-🔹 *.rpg start [raza]* - Crear personaje
-🔹 *.rpg perfil* - Ver estadísticas
-🔹 *.rpg explorar* - Buscar aventuras
-🔹 *.rpg atacar* - Atacar enemigo
-🔹 *.rpg curar* - Recuperar salud (10 oro)
+        // --- MANEJO DE COMANDOS ---
 
-🧬 *RAZAS DISPONIBLES*
-• human - Humano (equilibrado)
-• orc - Orco (tanque fuerte)
-• wood_elf - Elfo del Bosque (ágil)
-• high_elf - Alto Elfo (mago)
-• dark_elf - Elfo Oscuro (asesino)
-• nord - Nórdico (guerrero)
-• dwarf - Enano (resistente)
-
-⚔️ *SISTEMA DE CLASES*
-🔹 *.clase* - Ver clases disponibles
-🔹 *.clase elegir [clase]* - Elegir clase
-
-🎓 *Clases:*
-• mage - Hechicero (OP, lanza hechizos)
-• archer - Arquero (críticos, inmune a robos)
-• warrior - Guerrero (daño x2, riesgo x1.5)
-• assassin - Asesino (roba oro extra)
-
-🔮 *HECHIZOS (Solo Hechicero)*
-🔹 *.hechizo [nombre]* - Lanzar hechizo
-• fireball - Bola de fuego (30 dmg)
-• icespike - Estaca de hielo (25 dmg)
-• lightning - Rayo (35 dmg)
-• heal - Curación (+40 HP)
-
-🌟 *SISTEMA EXTENDIDO*
-🔹 *.rpgx* - Ver comandos avanzados
-• Facciones militares
-• Profesiones especiales
-• Aflicciones y maldiciones
-
-🛡️ *ADMIN (Solo Owner)*
-🔹 *.rpgadmin* - Panel de administración
-• Gestión de jugadores
-• Modificar stats
-• Borrar datos
-
-💡 *CÓMO JUGAR*
-1️⃣ Crea personaje: .rpg start [raza]
-2️⃣ Elige clase: .clase elegir [clase]
-3️⃣ Explora y combate: .rpg explorar
-4️⃣ Sube de nivel y hazte poderoso
-
-🎮 ¡Comienza tu aventura ahora!
-            `.trim();
+        if (subcommand === 'menu' || subcommand === 'help' || subcommand === 'ayuda') {
+            const helpText = `⚔️ *RPG MENU* ⚔️\n.rpg start [raza]\n.rpg perfil\n.rpg explorar\n.atacar @user\n.mercado\n.clase\n.train`;
             await sock.sendMessage(from, { text: helpText }, { quoted: message });
             return;
         }
 
-        // START
-        if (subcommand === 'start' || subcommand === 'iniciar') {
-            if (player) {
-                await sock.sendMessage(from, { text: '❌ Ya tienes personaje.' }, { quoted: message });
-                return;
-            }
-
+        if (subcommand === 'start') {
             const raceKey = args[1]?.toLowerCase();
-            if (!raceKey || !RACES[raceKey]) {
-                let text = '⚔️ Elige tu raza:\n\n';
-                Object.entries(RACES).forEach(([key, race]) => {
-                    text += `🔹 ${race.name} (.rpg start ${key})\n`;
-                });
+            if (!player && raceKey && RACES[raceKey]) {
+                createPlayer(from, userId, raceKey);
+                await sock.sendMessage(from, { text: '✅ Personaje creado.' }, { quoted: message });
+            } else if (!player) {
+                let text = '⚔️ *Elige Raza:*\n';
+                Object.keys(RACES).forEach(k => text += `.rpg start ${k}\n`);
                 await sock.sendMessage(from, { text }, { quoted: message });
-                return;
+            } else {
+                await sock.sendMessage(from, { text: '❌ Ya tienes personaje.' }, { quoted: message });
             }
-
-            player = createPlayer(from, userId, raceKey);
-            const race = RACES[raceKey];
-            await sock.sendMessage(from, { text: `✅ Personaje creado!\n\n🧬 ${race.name}\n⚔️ STR: ${race.stats.str} | 🏹 AGI: ${race.stats.agi}\n🧠 INT: ${race.stats.int} | 🛡️ VIT: ${race.stats.vit}\n\n🎮 Usa .rpg explorar` }, { quoted: message });
             return;
         }
 
         if (!player) {
-            await sock.sendMessage(from, { text: '❌ No tienes personaje. Usa .rpg start' }, { quoted: message });
+            await sock.sendMessage(from, { text: '❌ Crea personaje con .rpg start' }, { quoted: message });
             return;
         }
 
-        // PERFIL
-        if (subcommand === 'perfil' || subcommand === 'stats') {
-            const race = RACES[player.race];
-
-            // Calcular stats totales con equipo
-            const weapon = player.equipped?.weapon;
-            const armor = player.equipped?.armor;
-
-            const totalStr = player.stats.str + (weapon?.stats?.str || 0);
-            const totalAgi = player.stats.agi + (weapon?.stats?.agi || 0);
-            const totalInt = player.stats.int + (weapon?.stats?.int || 0);
-            const totalVit = player.stats.vit + (armor?.stats?.vit || 0);
-
-            let affText = '';
-            if (player.afflictions && player.afflictions.length > 0) {
-                const affNames = player.afflictions.map(k => AFFLICTIONS[k]?.name || k).join(', ');
-                affText = `\n🦠 *Aflicciones:* ${affNames}`;
-            }
-
-            // Información de equipo
-            let equipText = '\n\n🛡️ *EQUIPO:*';
-            equipText += `\n⚔️ Arma: ${weapon ? `${weapon.name} (+${weapon.stats.damage} dmg)` : 'Ninguna'}`;
-            equipText += `\n🛡️ Armadura: ${armor ? `${armor.name} (+${armor.stats.defense} def)` : 'Ninguna'}`;
-
-            const text = `📜 *PERFIL*\n👤 ${message.pushName || 'Aventurero'}\n🧬 ${race.name}\n📊 Nivel ${player.level} (${player.xp}/${player.xpToNext} XP)\n\n❤️ HP: ${player.hp}/${player.maxHp}\n✨ Mana: ${player.mana}/${player.maxMana}\n💰 Oro: ${player.gold}\n\n⚔️ STR: ${totalStr} | 🏹 AGI: ${totalAgi}\n🧠 INT: ${totalInt} | 🛡️ VIT: ${totalVit}${affText}${equipText}`;
-            await sock.sendMessage(from, { text }, { quoted: message });
+        if (subcommand === 'atacar' || subcommand === 'fight' || subcommand === 'attack') {
+            await processAttack(sock, message, pvpArgs, player);
             return;
         }
 
-        // EXPLORAR
-        if (subcommand === 'explorar' || subcommand === 'explore') {
-            if (player.hp <= 0) {
-                await sock.sendMessage(from, { text: '💀 Estás muerto. Usa .rpg curar' }, { quoted: message });
-                return;
-            }
-
-            if (player.state === 'fighting') {
-                await sock.sendMessage(from, { text: '⚔️ Ya estás en combate!' }, { quoted: message });
-                return;
-            }
+        if (subcommand === 'explorar') {
+            if (player.state === 'fighting') return sock.sendMessage(from, { text: '⚔️ Estás en combate.' });
+            if (player.hp <= 0) return sock.sendMessage(from, { text: '💀 Estás muerto.' });
 
             const roll = Math.random();
-
             if (roll < 0.6) {
-                const monster = MONSTERS[Math.floor(Math.random() * MONSTERS.length)];
-                updatePlayer(from, userId, {
-                    state: 'fighting',
-                    currentEnemy: { ...monster, currentHp: monster.hp }
-                });
-
-                await sock.sendMessage(from, { text: `⚔️ *¡ENEMIGO!*\n\n${monster.name} (Nvl ${monster.level})\n❤️ HP: ${monster.hp}\n⚔️ ATK: ${monster.atk}\n\n🎮 Usa .rpg atacar` }, { quoted: message });
-            } else if (roll < 0.8) {
-                const goldFound = Math.floor(Math.random() * 20) + 5;
-                player.gold += goldFound;
+                const m = MONSTERS[Math.floor(Math.random() * MONSTERS.length)];
+                updatePlayer(from, userId, { state: 'fighting', currentEnemy: { ...m, currentHp: m.hp } });
+                await sock.sendMessage(from, { text: `⚔️ *¡${m.name}!* (HP: ${m.hp})\nUsa .atacar` });
+            } else {
+                player.gold += 10;
                 updatePlayer(from, userId, { gold: player.gold });
-                await sock.sendMessage(from, { text: `💰 Encontraste ${goldFound} oro!` }, { quoted: message });
-            } else {
-                await sock.sendMessage(from, { text: '🍃 No encontraste nada.' }, { quoted: message });
+                await sock.sendMessage(from, { text: '💰 Encontraste 10 oro.' });
             }
             return;
         }
 
-        // ATACAR
-        if (subcommand === 'atacar' || subcommand === 'fight' || subcommand === 'attack') {
-            if (player.state !== 'fighting' || !player.currentEnemy) {
-                await sock.sendMessage(from, { text: '❌ No hay enemigo. Usa .rpg explorar' }, { quoted: message });
-                return;
-            }
+        if (subcommand === 'perfil') {
+            await sock.sendMessage(from, { text: `📜 *${message.pushName}* (Lvl ${player.level})\n❤️ ${player.hp}/${player.maxHp} | 💰 ${player.gold}` });
+            return;
+        }
 
-            const enemy = player.currentEnemy;
-
-            // CÁLCULO DE DAÑO DEL JUGADOR
-            // Base STR + Daño de Arma + Random
-            const weapon = player.equipped?.weapon;
-            let weaponDmg = weapon?.stats?.damage || 0;
-
-            // Si es bastón mágico, usa INT en lugar de STR para el escalado
-            let statScaling = 0;
-            if (weapon?.subtype === 'staff') {
-                statScaling = Math.floor(player.stats.int * 1.5);
-                // Bonus de magia
-                if (weapon.stats.magicDamage) weaponDmg += weapon.stats.magicDamage;
-            } else {
-                statScaling = Math.floor(player.stats.str * 1.5);
-            }
-
-            // Daño de Hechizo (Si está equipado)
-            const spell = player.equipped?.spell;
-            let spellDmg = 0;
-            let spellMsg = '';
-
-            if (spell) {
-                // Escala con INT (x2) + Daño Base del Hechizo
-                spellDmg = (spell.stats.magicDamage || 0) + Math.floor(player.stats.int * 2);
-                spellMsg = `\n🔥 *${spell.name}*: +${spellDmg} daño mágico`;
-            }
-
-            const playerDmg = statScaling + weaponDmg + spellDmg + Math.floor(Math.random() * 5);
-            enemy.currentHp -= playerDmg;
-
-            let battleLog = `🗡️ Atacas: ${playerDmg} daño total${spellMsg}\n`;
-
-            if (enemy.currentHp <= 0) {
-                const { player: updatedPlayer, leveledUp } = gainXp(from, userId, enemy.xp);
-                updatedPlayer.gold += enemy.level * 5;
-                updatedPlayer.state = 'idle';
-                updatedPlayer.currentEnemy = null;
-                updatePlayer(from, userId, updatedPlayer);
-
-                battleLog += `\n🎉 ¡VICTORIA!\n+${enemy.xp} XP | +${enemy.level * 5} oro`;
-
-                if (leveledUp) {
-                    battleLog += `\n\n🆙 ¡NIVEL ${updatedPlayer.level}!`;
-                }
-
-                await sock.sendMessage(from, { text: battleLog }, { quoted: message });
-                return;
-            }
-
-            // CÁLCULO DE DAÑO RECIBIDO
-            // Defensa de armadura reduce daño
-            const armor = player.equipped?.armor;
-            let defense = armor?.stats?.defense || 0;
-
-            // Bonus por defensa mágica si aplica (simplificado: defensa general por ahora)
-            if (armor?.stats?.magicDef) defense += Math.floor(armor.stats.magicDef / 2);
-
-            // Fórmula simple de reducción: Daño - (Defensa / 2)
-            // Mínimo 1 de daño siempre
-            let enemyAttack = enemy.atk;
-            if (player.afflictions?.includes('vampirism')) {
-                // Vampiros reciben menos daño físico pero más mágico (no implementado tipos de daño enemigo aún)
-            }
-
-            const damageTaken = Math.max(1, enemyAttack - Math.floor(defense / 2));
-            player.hp -= damageTaken;
-
-            // Lógica de Infección (Vampirismo / Licantropía)
-            if (enemy.canInfect && Math.random() < 0.2) {
-                const afflictionKey = enemy.canInfect;
-                if (!player.afflictions) player.afflictions = [];
-
-                if (!player.afflictions.includes(afflictionKey)) {
-                    player.afflictions.push(afflictionKey);
-                    const affData = AFFLICTIONS[afflictionKey];
-                    battleLog += `\n\n⚠️ *¡MALDICIÓN OCURRIDA!*\n¡El ataque te ha infectado!\nHas contraído: *${affData.name}*\n_${affData.description}_`;
-
-                    // Aseguramos guardar la nueva aflicción inmediatamente
-                    updatePlayer(from, userId, { afflictions: player.afflictions });
-                }
-            }
-
-            battleLog += `👹 Enemigo ataca: ${damageTaken} daño (🛡️-${Math.floor(defense / 2)})\n\n❤️ Tu HP: ${player.hp}/${player.maxHp}\n💔 Enemigo: ${enemy.currentHp}/${enemy.hp}`;
-
-            if (player.hp <= 0) {
-                player.hp = 0;
-                player.state = 'dead';
-                player.currentEnemy = null;
+        if (subcommand === 'curar') {
+            if (player.gold >= 10) {
+                player.gold -= 10;
+                player.hp = player.maxHp;
+                player.mana = player.maxMana;
+                player.state = 'idle';
                 updatePlayer(from, userId, player);
-                battleLog += `\n\n💀 ¡MUERTO! Usa .rpg curar`;
+                await sock.sendMessage(from, { text: '💖 Curado.' });
             } else {
-                updatePlayer(from, userId, { currentEnemy: enemy, hp: player.hp });
+                await sock.sendMessage(from, { text: '❌ Necesitas 10 oro.' });
             }
+            return;
+        }
+    }
+};
 
-            await sock.sendMessage(from, { text: battleLog }, { quoted: message });
+export const attackCommand = {
+    name: 'atacar',
+    aliases: ['fight', 'attack'],
+    description: 'Atacar enemigo o jugador',
+    execute: async (sock, message, args) => {
+        // Redirige al comando principal pero forzando la acción
+        // Esto es necesario para que el handler lo encuentre como comando independiente
+        const from = message.key.remoteJid;
+        const userId = message.key.participant || message.key.remoteJid;
+        const player = getPlayer(from, userId);
+
+        if (!player) {
+            await sock.sendMessage(from, { text: '❌ Crea un personaje con .rpg start' }, { quoted: message });
             return;
         }
 
-        // CURAR
-        if (subcommand === 'curar' || subcommand === 'heal') {
-            if (player.hp >= player.maxHp && player.mana >= player.maxMana && player.state !== 'dead') {
-                await sock.sendMessage(from, { text: '✅ Ya estás al máximo de vida y maná' }, { quoted: message });
-                return;
-            }
-
-            const cost = player.state === 'dead' ? 0 : 10;
-
-            if (player.gold < cost) {
-                await sock.sendMessage(from, { text: `❌ Necesitas ${cost} oro` }, { quoted: message });
-                return;
-            }
-
-            player.gold -= cost;
-            player.hp = player.maxHp;
-            player.mana = player.maxMana; // Restablecer maná
-            player.state = 'idle';
-            player.currentEnemy = null;
-            updatePlayer(from, userId, player);
-
-            await sock.sendMessage(from, { text: `💖 Curado completamente y maná restaurado!` }, { quoted: message });
-            return;
-        }
-
-        await sock.sendMessage(from, { text: '❌ Comando no reconocido. Usa .rpg' }, { quoted: message });
+        await processAttack(sock, message, args, player);
     }
 };
 
 export const trainCommand = {
     name: 'train',
-    aliases: ['entrenar', 'training'],
-    description: 'Entrena para ganar experiencia (Cada 5 min)',
+    aliases: ['entrenar'],
+    description: 'Entrenar XP',
     execute: async (sock, message, args) => {
         const from = message.key.remoteJid;
         const userId = message.key.participant || message.key.remoteJid;
-
         const player = getPlayer(from, userId);
-
-        if (!player) {
-            await sock.sendMessage(from, { text: '❌ No tienes personaje. Usa .rpg start para crear uno.' }, { quoted: message });
-            return;
-        }
+        if (!player) return;
 
         const now = Date.now();
-        const cooldown = 5 * 60 * 1000; // 5 minutos
-        const lastTrain = player.lastTrain || 0;
-        const timeDiff = now - lastTrain;
-
-        if (timeDiff < cooldown) {
-            const remaining = cooldown - timeDiff;
-            const minutes = Math.floor(remaining / 60000);
-            const seconds = Math.floor((remaining % 60000) / 1000);
-            await sock.sendMessage(from, { text: `⏳ *Estás agotado.*\nDebes descansar ${minutes}m ${seconds}s antes de volver a entrenar.` }, { quoted: message });
-            return;
+        if (now - (player.lastTrain || 0) < 300000) {
+            return sock.sendMessage(from, { text: '⏳ Espera un poco.' });
         }
 
-        // Calcular XP ganada (Entre 100 y 300 + Nivel * 2)
-        const xpGain = Math.floor(Math.random() * 201) + 100 + (player.level * 2);
-
-        // Actualizar jugador
+        const xp = 100 + player.level * 2;
         updatePlayer(from, userId, { lastTrain: now });
-
-        // Dar XP
-        const { player: updatedPlayer, leveledUp } = gainXp(from, userId, xpGain);
-
-        let msg = `🏋️ *ENTRENAMIENTO COMPLETADO*\n\n💪 Has ganado *${xpGain} XP*\n📊 Nivel: ${updatedPlayer.level}`;
-
-        if (leveledUp) {
-            msg += `\n\n🎉 *¡HAS SUBIDO DE NIVEL!*\nTodas tus estadísticas han aumentado.`;
-        } else {
-            msg += `\n📈 XP: ${updatedPlayer.xp}/${updatedPlayer.xpToNext}`;
-        }
-
-        await sock.sendMessage(from, { text: msg }, { quoted: message });
+        const { leveledUp } = gainXp(from, userId, xp);
+        await sock.sendMessage(from, { text: `💪 +${xp} XP${leveledUp ? ' | 🆙 LEVEL UP!' : ''}` });
     }
 };

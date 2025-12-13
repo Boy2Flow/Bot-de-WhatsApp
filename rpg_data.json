@@ -45,7 +45,7 @@
     "86273192673466@lid": {
       "race": "orc",
       "level": 5,
-      "xp": 24,
+      "xp": 332,
       "xpToNext": 505,
       "hp": 140,
       "maxHp": 140,
@@ -64,7 +64,7 @@
       "currentEnemy": null,
       "class": "warrior",
       "faction": "red_crowns",
-      "lastTrain": 1765647630012,
+      "lastTrain": 1765650784773,
       "afflictions": [
         "vampirism"
       ]
@@ -72,11 +72,11 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 9,
-      "xp": 1497,
+      "xp": 1517,
       "xpToNext": 2553,
-      "hp": 120,
+      "hp": 115,
       "maxHp": 120,
-      "mana": 200,
+      "mana": 160,
       "maxMana": 200,
       "stats": {
         "str": 12,
@@ -85,7 +85,7 @@
         "vit": 12
       },
       "inventory": [],
-      "gold": 149,
+      "gold": 172,
       "location": "town",
       "state": "idle",
       "class": "mage",

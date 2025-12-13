@@ -33,13 +33,19 @@ const ENCHANTMENTS = [
 ];
 
 const SPELL_BOOKS = [
-    { name: 'Grimorio: Levantar Esqueleto', type: 'summon', element: 'dark', rarity: 'Común', basePrice: 1500, desc: 'Invoca un esqueleto guerrero' },
-    { name: 'Grimorio: Estaca de Tierra', type: 'damage', element: 'earth', rarity: 'Común', basePrice: 1200, desc: 'Daño de tierra perforante' },
-    { name: 'Grimorio: Gran Bola de Fuego', type: 'damage', element: 'fire', rarity: 'Raro', basePrice: 3500, desc: 'Explosión masiva de fuego' },
-    { name: 'Grimorio: Invocar Atronach', type: 'summon', element: 'fire', rarity: 'Raro', basePrice: 4000, desc: 'Invoca un golem de fuego' },
-    { name: 'Grimorio: Rayo', type: 'damage', element: 'lightning', rarity: 'Común', basePrice: 1300, desc: 'Ataque eléctrico rápido' },
-    { name: 'Grimorio: Tormenta de Rayos', type: 'damage', element: 'lightning', rarity: 'Épico', basePrice: 8000, desc: 'Lluvia de rayos devastadora' },
-    { name: 'Grimorio: Señor Drémora', type: 'summon', element: 'dark', rarity: 'Legendario', basePrice: 15000, desc: 'Invoca un poderoso guerrero daedra' }
+    // --- Destrucción ---
+    { name: 'Grimorio: Gran Bola de Fuego', type: 'damage', element: 'fire', rarity: 'Raro', basePrice: 350, desc: 'Bola de fuego mágica', damage: 45 },
+    { name: 'Grimorio: Estaca de Tierra', type: 'damage', element: 'earth', rarity: 'Común', basePrice: 120, desc: 'Daga de tierra mágica', damage: 30 },
+    { name: 'Grimorio: Rayo', type: 'damage', element: 'lightning', rarity: 'Común', basePrice: 450, desc: 'Impacto mágico eléctrico', damage: 55 },
+    { name: 'Grimorio: Tormenta de Hielo', type: 'damage', element: 'ice', rarity: 'Épico', basePrice: 800, desc: 'Gélida carga mágica que ataca a todos los enemigos', damage: 80, area: true },
+    { name: 'Grimorio: Tormenta de Rayos', type: 'damage', element: 'lightning', rarity: 'Épico', basePrice: 1000, desc: 'Tormenta eléctrica que ataca a todos los enemigos', damage: 100, area: true },
+
+    // --- Conjuración ---
+    { name: 'Grimorio: Levantar Esqueleto', type: 'summon', element: 'dark', rarity: 'Común', basePrice: 300, desc: 'Invoca no muerto esqueleto con una espada', summonStats: { hp: 50, damage: 30 } },
+    { name: 'Grimorio: Atronatch en Llamas', type: 'summon', element: 'fire', rarity: 'Raro', basePrice: 500, desc: 'Invoca Atronatch de fuego que lanza bolas ígneas', summonStats: { hp: 100, damage: 50 } },
+    { name: 'Grimorio: Golem de Hielo', type: 'summon', element: 'ice', rarity: 'Raro', basePrice: 500, desc: 'Invoca tanque mágico de hielo', summonStats: { hp: 200, damage: 45 } },
+    { name: 'Grimorio: Golem de Rayos', type: 'summon', element: 'lightning', rarity: 'Épico', basePrice: 750, desc: 'Invoca golem de rayos mágicos y tierra', summonStats: { hp: 250, damage: 65 } },
+    { name: 'Grimorio: Señor Drémora', type: 'summon', element: 'dark', rarity: 'Legendario', basePrice: 1500, desc: 'Invoca príncipe daédrico de Oblivion', summonStats: { hp: 500, damage: 150 } }
 ];
 
 // --- FUNCIONES DE GENERACIÓN ---
@@ -136,9 +142,18 @@ function generateRandomSpellItem() {
         rarity: baseSpell.rarity,
         element: baseSpell.element,
         effect: baseSpell.desc,
-        stats: { magicDamage: 10 }, // Stats base genéricos por ahora
         price: baseSpell.basePrice
     };
+
+    if (baseSpell.type === 'damage') {
+        item.stats = { magicDamage: baseSpell.damage };
+        if (baseSpell.area) item.stats.area = true;
+    } else if (baseSpell.type === 'summon') {
+        item.stats = {
+            summonHp: baseSpell.summonStats.hp,
+            summonDamage: baseSpell.summonStats.damage
+        };
+    }
 
     return item;
 }
@@ -234,6 +249,8 @@ export const marketCommand = {
             text += `   📝 ${item.rarity}\n`;
             if (item.stats.damage) text += `   ⚔️ Daño: ${item.stats.damage}\n`;
             if (item.stats.magicDamage) text += `   🔥 Daño Mágico: ${item.stats.magicDamage}\n`;
+            if (item.stats.summonDamage) text += `   👻 Daño Invoc.: ${item.stats.summonDamage}\n`;
+            if (item.stats.summonHp) text += `   ❤️ PV Invoc.: ${item.stats.summonHp}\n`;
             if (item.stats.defense) text += `   🛡️ Defensa: ${item.stats.defense}\n`;
             if (item.effect) text += `   ✨ ${item.effect}\n`;
             text += `   💰 ${item.price} oro\n\n`;

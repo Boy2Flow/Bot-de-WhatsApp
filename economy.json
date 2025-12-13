@@ -346,7 +346,7 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 525073,
+      "bank": 664573,
       "inventory": [
         "pico",
         "escudo",
@@ -391,7 +391,7 @@
         "leyenda",
         "elite"
       ],
-      "lastRoleClaim": 1765634894782
+      "lastRoleClaim": 1765650001470
     },
     "139049750757567@lid": {
       "balance": 242,
@@ -629,6 +629,19 @@
       "lastRoleClaim": 0
     },
     "15011263082681@lid": {
+      "balance": 100000,
+      "bank": 0,
+      "inventory": [],
+      "lastClaim": 0,
+      "lastWork": 0,
+      "lastRob": 0,
+      "lastCrime": 0,
+      "lastSlut": 0,
+      "lastMine": 0,
+      "roles": [],
+      "lastRoleClaim": 0
+    },
+    "30937035366489@lid": {
       "balance": 100000,
       "bank": 0,
       "inventory": [],

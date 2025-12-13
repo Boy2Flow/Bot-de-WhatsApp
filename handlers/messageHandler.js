@@ -7,6 +7,7 @@ import { getBotStatus } from '../commands/systemCommands.js';
 import { getGeminiResponse } from '../commands/aiCommand.js';
 import { groupConfig } from '../utils/groupConfigManager.js';
 import { config as privilegedConfig } from '../config/privilegedUsers.js';
+import { checkLevelUp } from '../commands/levelSystem.js';
 import fs from 'fs';
 import path from 'path';
 
@@ -50,8 +51,11 @@ function trackMessage(groupId, userId) {
         data[groupId][userId]++;
 
         fs.writeFileSync(MESSAGES_FILE, JSON.stringify(data, null, 2));
+
+        return data[groupId][userId];
     } catch (error) {
         console.error('Error tracking message:', error);
+        return 0;
     }
 }
 
@@ -78,8 +82,13 @@ export async function handleMessage(sock, message) {
         // Track message count
         const from = message.key.remoteJid;
         const senderJid = message.key.participant || message.key.remoteJid;
+        let msgCount = 0;
         try {
-            trackMessage(from, senderJid);
+            msgCount = trackMessage(from, senderJid);
+            if (msgCount > 0) {
+                // Verificar subida de nivel (no esperamos await para no bloquear)
+                checkLevelUp(sock, from, senderJid, msgCount).catch(err => console.error('Error en checkLevelUp:', err));
+            }
         } catch (e) {
             console.error('Error tracking message:', e);
         }

@@ -21,10 +21,11 @@ import { aiCommand } from './aiCommand.js';
 import { pingCommand } from './ping.js';
 import { ipCommand } from './ip.js';
 import { mensajesCommand } from './mensajes.js';
+import { rankCommand, topMessagesCommand } from './levelSystem.js';
 import { inactivosCommand } from './inactivos.js';
 import { premioCommand } from './premio.js';
 import { configCommand } from './groupConfig.js';
-import { rpgCommand, trainCommand } from './rpg/rpgCommands.js';
+import { rpgCommand, trainCommand, attackCommand } from './rpg/rpgCommands.js';
 import { rpgAdminCommand } from './rpg/rpgAdminCommands.js';
 import { rpgExtendedCommand } from './rpg/rpgExtendedCommands.js';
 import { rpgClassCommand, spellCommand } from './rpg/rpgClassCommands.js';
@@ -46,6 +47,8 @@ export const commands = [
     configCommand,
     premioCommand,
     mensajesCommand,
+    rankCommand,
+    topMessagesCommand,
     inactivosCommand,
     aiCommand,
     pingCommand,
@@ -70,6 +73,7 @@ export const commands = [
     ...gameCommands,
     rpgCommand,
     trainCommand,
+    attackCommand,
     rpgAdminCommand,
     rpgExtendedCommand,
     rpgClassCommand,
