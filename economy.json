@@ -256,24 +256,24 @@
   },
   "34632587817-1635700083@g.us": {
     "152119252390062@lid": {
-      "balance": 0,
-      "bank": 1441749,
+      "balance": 102507,
+      "bank": 1496749,
       "inventory": [
         "pico",
         "anillo"
       ],
       "lastClaim": 1765623009101,
       "lastWork": 0,
-      "lastRob": 1765623118644,
+      "lastRob": 1765663615326,
       "lastCrime": 1765230281438,
       "lastSlut": 1765623166542,
-      "lastMine": 1765623088935,
+      "lastMine": 1765663433234,
       "jobCooldowns": {
-        "puta": 1765623011514,
-        "ceo": 1765623001964,
+        "puta": 1765663427605,
+        "ceo": 1765663425188,
         "uber": 1765582305938,
         "lavaplatos": 1765582381484,
-        "hacker": 1765623020677,
+        "hacker": 1765663432138,
         "mendigo": 1765582377126
       },
       "roles": [
@@ -282,7 +282,7 @@
         "oro",
         "diamante"
       ],
-      "lastRoleClaim": 1765623006460
+      "lastRoleClaim": 1765663422851
     },
     "263925891383340@lid": {
       "balance": 100000,
@@ -346,29 +346,9 @@
     },
     "29511206867105@lid": {
       "balance": 0,
-      "bank": 664573,
+      "bank": 825217,
       "inventory": [
-        "pico",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo",
-        "escudo"
+        "pico"
       ],
       "lastClaim": 1765534843119,
       "lastWork": 0,
@@ -377,7 +357,7 @@
       "lastSlut": 0,
       "lastMine": 1765561522649,
       "jobCooldowns": {
-        "ceo": 1765554650210,
+        "ceo": 1765663663385,
         "hacker": 1765568463319,
         "puta": 1765326649023,
         "uber": 1765303735635,
@@ -391,10 +371,10 @@
         "leyenda",
         "elite"
       ],
-      "lastRoleClaim": 1765650001470
+      "lastRoleClaim": 1765663504820
     },
     "139049750757567@lid": {
-      "balance": 242,
+      "balance": 176,
       "bank": 58928,
       "inventory": [],
       "lastClaim": 1765458926410,
