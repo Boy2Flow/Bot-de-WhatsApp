@@ -44,27 +44,27 @@
     },
     "86273192673466@lid": {
       "race": "orc",
-      "level": 4,
-      "xp": 94,
-      "xpToNext": 337,
-      "hp": 106,
-      "maxHp": 130,
-      "mana": 50,
-      "maxMana": 50,
+      "level": 5,
+      "xp": 24,
+      "xpToNext": 505,
+      "hp": 140,
+      "maxHp": 140,
+      "mana": 60,
+      "maxMana": 60,
       "stats": {
-        "str": 17,
-        "agi": 6,
-        "int": 5,
-        "vit": 13
+        "str": 18,
+        "agi": 7,
+        "int": 6,
+        "vit": 14
       },
       "inventory": [],
-      "gold": 105,
+      "gold": 155,
       "location": "town",
       "state": "idle",
       "currentEnemy": null,
       "class": "warrior",
       "faction": "red_crowns",
-      "lastTrain": 1765646974892,
+      "lastTrain": 1765647630012,
       "afflictions": [
         "vampirism"
       ]

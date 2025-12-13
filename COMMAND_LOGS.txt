@@ -7088,3 +7088,22 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 18:32:07] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
 [13/12/2025, 18:32:19] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
 [13/12/2025, 18:32:40] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpgx 
+[13/12/2025, 18:33:18] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpgx estado
+[13/12/2025, 18:34:03] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpgx aprender vampire_hunter
+[13/12/2025, 18:34:23] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 18:34:35] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 18:34:42] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:34:49] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:36:05] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 18:36:14] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 18:36:29] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:36:39] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:36:49] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:37:04] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg atacar
+[13/12/2025, 18:37:18] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg estatus
+[13/12/2025, 18:39:33] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg 
+[13/12/2025, 18:39:44] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg perfil
+[13/12/2025, 18:40:30] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[13/12/2025, 18:41:08] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg perfil
+[13/12/2025, 18:41:37] 👤 Aitor (86273192673466) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg tienda
+[13/12/2025, 18:41:48] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
