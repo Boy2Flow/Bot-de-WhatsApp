@@ -345,15 +345,35 @@
       "lastRoleClaim": 0
     },
     "29511206867105@lid": {
-      "balance": 41157,
-      "bank": 343498,
+      "balance": 0,
+      "bank": 525073,
       "inventory": [
-        "pico"
+        "pico",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo",
+        "escudo"
       ],
       "lastClaim": 1765534843119,
       "lastWork": 0,
       "lastRob": 1765568316475,
-      "lastCrime": 0,
+      "lastCrime": 1765635002285,
       "lastSlut": 0,
       "lastMine": 1765561522649,
       "jobCooldowns": {
@@ -371,7 +391,7 @@
         "leyenda",
         "elite"
       ],
-      "lastRoleClaim": 1765576797462
+      "lastRoleClaim": 1765634894782
     },
     "139049750757567@lid": {
       "balance": 242,
