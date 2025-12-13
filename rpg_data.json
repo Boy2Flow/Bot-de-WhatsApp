@@ -44,42 +44,39 @@
     },
     "86273192673466@lid": {
       "race": "orc",
-      "level": 1,
-      "xp": 0,
-      "xpToNext": 100,
-      "hp": 70,
-      "maxHp": 70,
-      "mana": 20,
-      "maxMana": 20,
+      "level": 4,
+      "xp": 94,
+      "xpToNext": 337,
+      "hp": 106,
+      "maxHp": 130,
+      "mana": 50,
+      "maxMana": 50,
       "stats": {
-        "str": 8,
-        "agi": 3,
-        "int": 2,
-        "vit": 7
+        "str": 17,
+        "agi": 6,
+        "int": 5,
+        "vit": 13
       },
       "inventory": [],
-      "gold": 10,
+      "gold": 105,
       "location": "town",
-      "state": "fighting",
-      "currentEnemy": {
-        "name": "Vampiro Menor",
-        "level": 7,
-        "hp": 100,
-        "atk": 15,
-        "xp": 100,
-        "canInfect": "vampirism",
-        "image": "https://i.pinimg.com/originals/55/55/55/55555555555555555555555555555555.jpg",
-        "currentHp": 100
-      }
+      "state": "idle",
+      "currentEnemy": null,
+      "class": "warrior",
+      "faction": "red_crowns",
+      "lastTrain": 1765646974892,
+      "afflictions": [
+        "vampirism"
+      ]
     },
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 9,
-      "xp": 912,
+      "xp": 1497,
       "xpToNext": 2553,
-      "hp": 108,
+      "hp": 120,
       "maxHp": 120,
-      "mana": 160,
+      "mana": 200,
       "maxMana": 200,
       "stats": {
         "str": 12,
@@ -88,12 +85,12 @@
         "vit": 12
       },
       "inventory": [],
-      "gold": 148,
+      "gold": 149,
       "location": "town",
       "state": "idle",
       "class": "mage",
       "currentEnemy": null,
-      "lastTrain": 1765644781186,
+      "lastTrain": 1765646411184,
       "equipped": {
         "weapon": {
           "id": "4upn24ayl",
@@ -122,7 +119,10 @@
           "effect": "+9 Regeneración de Maná",
           "price": 162
         }
-      }
+      },
+      "afflictions": [
+        "vampirism"
+      ]
     },
     "59837836693652@lid": {
       "race": "dark_elf",
@@ -146,6 +146,26 @@
       "currentEnemy": null,
       "lastTrain": 1765560690335,
       "class": "mage"
+    },
+    "30937035366489@lid": {
+      "race": "orc",
+      "level": 1,
+      "xp": 0,
+      "xpToNext": 100,
+      "hp": 70,
+      "maxHp": 70,
+      "mana": 20,
+      "maxMana": 20,
+      "stats": {
+        "str": 8,
+        "agi": 3,
+        "int": 2,
+        "vit": 7
+      },
+      "inventory": [],
+      "gold": 0,
+      "location": "town",
+      "state": "idle"
     }
   },
   "120363407168412278@g.us": {
