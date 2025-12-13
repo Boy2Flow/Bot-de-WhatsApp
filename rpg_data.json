@@ -72,7 +72,7 @@
     "29511206867105@lid": {
       "race": "dark_elf",
       "level": 9,
-      "xp": 1517,
+      "xp": 1635,
       "xpToNext": 2553,
       "hp": 115,
       "maxHp": 120,
@@ -90,7 +90,7 @@
       "state": "idle",
       "class": "mage",
       "currentEnemy": null,
-      "lastTrain": 1765646411184,
+      "lastTrain": 1765651988045,
       "equipped": {
         "weapon": {
           "id": "4upn24ayl",
