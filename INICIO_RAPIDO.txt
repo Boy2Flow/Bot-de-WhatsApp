@@ -34,7 +34,7 @@
     npm start
 
 6️⃣  ESCANEAR CÓDIGO QR
-    └─ Abre WhatsApp en tu teléfono (+34 608837414)
+    └─ Abre WhatsApp en tu teléfono 
     └─ Ve a: Dispositivos vinculados
     └─ Toca: Vincular dispositivo
     └─ Escanea el código QR que aparece en la terminal
