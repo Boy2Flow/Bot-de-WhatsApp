@@ -7141,3 +7141,6 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 19:53:18] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
 [13/12/2025, 20:00:08] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rosa @152119252390062
 [13/12/2025, 20:01:42] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mute @29511206867105
+[13/12/2025, 20:12:55] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .unmute @29511206867105
+[13/12/2025, 20:14:01] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .reload 
+[13/12/2025, 20:14:10] 👤 B2F 💚 (97852307026020) | 🏠 Bot | 💻 .backup 
