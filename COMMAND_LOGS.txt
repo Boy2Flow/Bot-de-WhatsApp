@@ -7013,3 +7013,12 @@ Formato: [Fecha] 👤 Usuario | 🏠 Grupo | 💻 Comando
 [13/12/2025, 15:36:48] 👤 Gustabo Garcia (259863120715836) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mute @29511206867105
 [13/12/2025, 16:55:19] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mensajes 
 [13/12/2025, 17:29:46] 👤 B2F 💚 (97852307026020) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .unmute @29511206867105
+[13/12/2025, 17:53:00] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[13/12/2025, 17:53:13] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .mercado hechizos
+[13/12/2025, 17:54:05] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .train 
+[13/12/2025, 17:54:26] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg 
+[13/12/2025, 17:55:36] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
+[13/12/2025, 17:56:07] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explore
+[13/12/2025, 17:56:15] 👤 𒉭Jemuzu Djevel𒉭 (29511206867105) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explore
+[13/12/2025, 17:58:32] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg start [raza]
+[13/12/2025, 18:01:38] 👤 Alejandro (30937035366489) | 🏠 ꧁☬☠︎SURFERS OF MADRID☠︎☬꧂📍 | 💻 .rpg explorar
